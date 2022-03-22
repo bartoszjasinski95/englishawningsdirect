@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100&display=swap");
 * {
-  font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   scroll-padding-top: 2rem;
@@ -71,9 +69,15 @@ header {
 }
 .cart-title {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
   margin-top: 2rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .cart-box {
   display: grid;
@@ -93,17 +97,37 @@ header {
   row-gap: 0.5rem;
 }
 .cart-product-title {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
   text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .cart-price {
+  text-align: center;
+  font-size: 1.1rem;
   font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .cart-quantity {
   border: 1px solid var(--tex-color);
   outline-color: var(--main-color);
-  text-align: center;
   font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .cart-remove {
   font-size: 24px;
@@ -113,8 +137,16 @@ header {
 .total {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1.5rem;
-  border-top: 1px solid var(--tex-color);
+  border: 1px solid var(--tex-color);
+  outline-color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .total-title {
   font-size: 1rem;
@@ -134,15 +166,16 @@ header {
   display: flex;
   margin: 1.5rem auto 0 auto;
   padding: 12px 20px;
-  background: var(--main-color);
+  background: #a300a3;
   color: var(--bg-color);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .btn-buy:hover {
-  background: var(--text-color);
+  background: #b42dad;
 }
 #close-cart {
   position: absolute;

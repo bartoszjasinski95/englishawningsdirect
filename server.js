@@ -29,6 +29,9 @@ var Sample = require("./models/sample")
 app.get('/', (req, res) => {
     res.render('index.ejs');
 });
+app.get('/index', (req, res) => {
+    res.render('index.ejs');
+});
 
 app.get('/about', (req, res) => {
     res.render('about.ejs');
@@ -109,6 +112,10 @@ app.get('/test', (req, res) => {
 
 app.get('/ultimateguide', (req, res) => {
     res.render('ultimateguide.ejs');
+});
+
+app.get('/brackets', (req, res) => {
+    res.render('brackets.ejs');
 });
 
 

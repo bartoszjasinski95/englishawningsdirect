@@ -138,3 +138,6 @@ function updatetotal(str) {
         document.querySelector(".total-title").innerHTML = str;    
         document.getElementById("price").value = str;    
 }
+
+
+

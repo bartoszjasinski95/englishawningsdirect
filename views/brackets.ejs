@@ -82,6 +82,14 @@ h4{
     z-index: 10;
     opacity: 1;
 }
+h8{
+  font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
 
 p{
   font-family: 'Oswald', sans-serif;
@@ -95,10 +103,10 @@ p{
 .advantages{
   text-decoration: underline violet;
 }
-.slidebracket{
-  margin-left: 38%;
-}
 
+.active {
+  background: rgba(255, 255, 255, 0.9);
+}
 /* Question */
 
 input.question,
@@ -220,8 +228,6 @@ input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input
 .emailusform{
   padding-left: 29%;
 }
-
-
 
 /*FOOTER*/
 
@@ -347,11 +353,16 @@ ul.social-network li {
   margin-top: 21.3%;
   z-index: 10000;
 }
-img{
-  position: static;
-  z-index: 10;
-}
 
+.menu-left{
+  font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
         </style>
 </head>
 <%- include('partials/navbar'); -%>
@@ -359,7 +370,7 @@ img{
 <%- include('partials/cookies'); -%> 
 <%- include('partials/sidebar'); -%>
 
-<h1> Our Bracket Types</h1>
+<h1>Bracket Types</h1>
 <br>
   <!-- /.container -->
     <div class="bracketcolumn">
@@ -544,8 +555,11 @@ img{
         </footer>
         
 <!-- FOOTER OVER-->
+
+
     <!--Link to JS CART-->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
 
 </body>
