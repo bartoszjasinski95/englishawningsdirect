@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="store.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<!-- Link to CSS CART-->
+<link rel="stylesheet" href="/css/style.css" />
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+     
+        <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+            /*BUTTONS ADD to */
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: #be18ff;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    margin: 5px;
+    margin-right: 55px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: rgb(155, 65, 65);
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+.shop-item-image {
+    height: 100px;
+    width: 650px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+
+}
+
+/* SAMPLES IMAGE SIZES */
+.shop-content{
+    width: 100%;
+    padding: 10%;
+}
+.product-box{
+    width: 280px;
+    padding: 5px;
+    z-index: 1;
+
+}
+input {
+  display: none;
+    z-index: 100000;
+    position: fixed;
+}
+
+img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+    border-radius: 25px;
+  z-index: 1;
+  padding: 20px;
+}
+
+input:checked ~ label > img {
+  transform: scale(3);
+  cursor: zoom-out;
+  
+}
+
+
+/* SAMPLE IMAGES SIZES OVER */
+
+
+        </style>
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Samples</title>
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%> 
+<%- include('partials/sidebar'); -%>
+        <br>
+        <br>
+        <br>
+        <br>
+  
+          <!--START OF SAMPLES-->
+  </div>
+  
+  <div class="Eolis-shop">
+    <!--shop-->
+    
+    <section class="shop container">
+        <div class="usernum" style="display: flex; flex-direction: column; align-items: center; ">
+            <h1>Our range of fabric colours</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+        <h4 style="margin: 10px;">Please Enter Your Number to get sample</h4>
+        <h5>(for conformation)</h5>
+        <br>
+        <input type="tel" name="username" id="username" style="display: inline; width: 20vw; position: relative;">
+    </div>
+      <!--Content-->
+      <div class="shop-content">
+
+        <!--Box 1-->
+        <div class="product-box">
+            <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+                <img src="/samples/0028__silver__melange.jpg" alt="" class="product-img">
+                <h2 class="product-title">Silver melange_0028</h2>
+            </label>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+        <!--Box 3-->
+    </label>
+        <div class="product-box">
+            <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+                <img src="/samples/0054__melbourne.jpg" alt="" class="product-img">
+                <h2 class="product-title">Melbourne_0054</h2>
+            </label>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 4-->
+
+        <div class="product-box">
+
+            <img src="/samples/0034__tweed__senape.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed senape_0034</h2>
+
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 5-->
+
+        <div class="product-box">
+            <img src="/samples/0180__sunrise.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sunrise_0180</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 6-->
+
+        <div class="product-box">
+            <img src="/samples/0186__brisbane.jpg" alt="" class="product-img">
+            <h2 class="product-title">Brisbane_0186</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 6-->
+
+        <div class="product-box">
+            <img src="/samples/0364__silver__white.jpg" alt="" class="product-img">
+            <h2 class="product-title">Silver white_0364</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 6-->
+
+        <div class="product-box">
+            <img src="/samples/0396__jade.jpg" alt="" class="product-img">
+            <h2 class="product-title">Jade_0396</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 7-->
+
+        <div class="product-box">
+            <img src="/samples/0403__tweed__brown.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed brown_0403</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0402__charcoal__tweed.jpg" alt="" class="product-img">
+            <h2 class="product-title">Charcoal tweed_0402</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0452__canberra.jpg" alt="" class="product-img">
+            <h2 class="product-title">Canberra_0452</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0493__gladstone.jpg" alt="" class="product-img">
+            <h2 class="product-title">Gladstone_0493</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0497__broken__hill.jpg" alt="" class="product-img">
+            <h2 class="product-title">Broken hill_0497</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0505__stitch__calcite.jpg" alt="" class="product-img">
+            <h2 class="product-title">Stitch calcite_0505</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0507__stitch__ruby.jpg" alt="" class="product-img">
+            <h2 class="product-title">Stitch ruby_0507</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0512__stitch__andesite.jpg" alt="" class="product-img">
+            <h2 class="product-title">Stitch andesite_0512</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0597__stone__tweed.jpg" alt="" class="product-img">
+            <h2 class="product-title">Stone tweed_0597</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0638__ash.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ash_0638</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0715__platinum.jpg" alt="" class="product-img">
+            <h2 class="product-title">Platinum_0715</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0734__winetone.jpg" alt="" class="product-img">
+            <h2 class="product-title">Wintetone_0734</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0794__tweed__argent.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed agrent_0794</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0734__winetone.jpg" alt="" class="product-img">
+            <h2 class="product-title">Wintetone_0734</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0814__amber__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Amber beige_0814</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0923__marble.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marble_0923</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0937__iron.jpg" alt="" class="product-img">
+            <h2 class="product-title">Iron_0937</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0990__candlelight.jpg" alt="" class="product-img">
+            <h2 class="product-title">Candlelight_0990</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0991__lantern.jpg" alt="" class="product-img">
+            <h2 class="product-title">Lantern_0991</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0992__timber.jpg" alt="" class="product-img">
+            <h2 class="product-title">Timber_0992</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/0993__concrete.jpg" alt="" class="product-img">
+            <h2 class="product-title">Concrete_0993</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/1524__graphite__zip.jpg" alt="" class="product-img">
+            <h2 class="product-title">Graphite_1524</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/1597__zip__grey.jpg" alt="" class="product-img">
+            <h2 class="product-title">Zip grey_1597</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2013__amarillo.jpg" alt="" class="product-img">
+            <h2 class="product-title">Amarillo_2013</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2015__amarillo.jpg" alt="" class="product-img">
+            <h2 class="product-title">Amarillo_2015</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2016__argentina.jpg" alt="" class="product-img">
+            <h2 class="product-title">Argentina_2016</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2018__azul.jpg" alt="" class="product-img">
+            <h2 class="product-title">Azul_2018</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2038__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Beige_2038</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2041__berna.jpg" alt="" class="product-img">
+            <h2 class="product-title">Berna_2041</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2042__blanco.jpg" alt="" class="product-img">
+            <h2 class="product-title">Blanco_2042</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2047__coco.jpg" alt="" class="product-img">
+            <h2 class="product-title">Coco_2047</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2050__orange.jpg" alt="" class="product-img">
+            <h2 class="product-title">Orange_2050</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2061__canada.jpg" alt="" class="product-img">
+            <h2 class="product-title">Canada_2061</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2080__dakar.jpg" alt="" class="product-img">
+            <h2 class="product-title">Dakar_2080</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2085__tweed__negro.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed negro_2085</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2101__granate.jpg" alt="" class="product-img">
+            <h2 class="product-title">Granate_2101</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2103__gris.jpg" alt="" class="product-img">
+            <h2 class="product-title">Gris_21031</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2121__marte.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marte_2121</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2143__marfil.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marfil_2143</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2145__marine.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marine_2145</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2148__marron__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marron beige_2148</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2170__negro.jpg" alt="" class="product-img">
+            <h2 class="product-title">Negro_2170</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2174__new__york.jpg" alt="" class="product-img">
+            <h2 class="product-title">New york_2174</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2179__pluton.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pluton_2179</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2180__ocre.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ocre_2180</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2191__orlando.jpg" alt="" class="product-img">
+            <h2 class="product-title">Orlando_2191</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2210__rioja.jpg" alt="" class="product-img">
+            <h2 class="product-title">Rioja_2210</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2211__bright__red.jpg" alt="" class="product-img">
+            <h2 class="product-title">Bright red_2211</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2226__siroco.jpg" alt="" class="product-img">
+            <h2 class="product-title">Siroco_2226</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2238__texas.jpg" alt="" class="product-img">
+            <h2 class="product-title">Texas_2238</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2245__verde__botella.jpg" alt="" class="product-img">
+            <h2 class="product-title">Verde botella_2245</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2250__vision.jpg" alt="" class="product-img">
+            <h2 class="product-title">Vision_2250</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2275__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Beige_2275</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2296__avena.jpg" alt="" class="product-img">
+            <h2 class="product-title">Avena_2296</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2316__cafe.jpg" alt="" class="product-img">
+            <h2 class="product-title">Cafe_2316</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2687__vanilla.jpg" alt="" class="product-img">
+            <h2 class="product-title">Vanilla_2687</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2701__jamaica.jpg" alt="" class="product-img">
+            <h2 class="product-title">Jamaica_2701</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2777__breeze.jpg" alt="" class="product-img">
+            <h2 class="product-title">Breeze_2777</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2796__antracita.jpg" alt="" class="product-img">
+            <h2 class="product-title">Antracita_2796</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2802__zinc.jpg" alt="" class="product-img">
+            <h2 class="product-title">Zinc_2802</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2821__silver.jpg" alt="" class="product-img">
+            <h2 class="product-title">Silver_2821</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2823__manchester.jpg" alt="" class="product-img">
+            <h2 class="product-title">Manchester_2823</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2831__mineral.jpg" alt="" class="product-img">
+            <h2 class="product-title">Mineral_2831</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2838__integral.jpg" alt="" class="product-img">
+            <h2 class="product-title">Integral_2838</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2929__natural.jpg" alt="" class="product-img">
+            <h2 class="product-title">Natural_2929</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/2979__perla.jpg" alt="" class="product-img">
+            <h2 class="product-title">Perla_2979</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3427__bologna.jpg" alt="" class="product-img">
+            <h2 class="product-title">Bologna_3427</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3463__snowflake.jpg" alt="" class="product-img">
+            <h2 class="product-title">Snowflake_3463</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3605__palermo.jpg" alt="" class="product-img">
+            <h2 class="product-title">Palermo_3605</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3608__metropolitan.jpg" alt="" class="product-img">
+            <h2 class="product-title">Metropolitan_3608</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3672__taranto.jpg" alt="" class="product-img">
+            <h2 class="product-title">Taranto_3672</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3746__ancona.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ancona_3746</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3861__salerno.jpg" alt="" class="product-img">
+            <h2 class="product-title">Salerno_3861</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3864__foggia.jpg" alt="" class="product-img">
+            <h2 class="product-title">Foggia_3864</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3868__milano.jpg" alt="" class="product-img">
+            <h2 class="product-title">Milano_3868</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3875__padova.jpg" alt="" class="product-img">
+            <h2 class="product-title">Padova_3875</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3881__andria.jpg" alt="" class="product-img">
+            <h2 class="product-title">Andria_3881</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3882__ravenna.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ravenna_3882</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/3889__firenze.jpg" alt="" class="product-img">
+            <h2 class="product-title">Firenze_3889</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4639__sahara__dust.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sahara dust_4639</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="samples/4640__namib.jpg" alt="" class="product-img">
+            <h2 class="product-title">Namib_4640</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4643__cliffs.jpg" alt="" class="product-img">
+            <h2 class="product-title">Cliffs_4643</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4644__fjord.jpg" alt="" class="product-img">
+            <h2 class="product-title">Fjord_4644</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4655__ladakh.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ladakh_4655</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4657__rosopsida.jpg" alt="" class="product-img">
+            <h2 class="product-title">Rosopsida_4657</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4658__gobi.jpg" alt="" class="product-img">
+            <h2 class="product-title">Gobi_4658</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4662__beach.jpg" alt="" class="product-img">
+            <h2 class="product-title">Beach_4662</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/4665__vulcano.jpg" alt="" class="product-img">
+            <h2 class="product-title">Vulcano_4665</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/5106__alberta.jpg" alt="" class="product-img">
+            <h2 class="product-title">Alberta_5106</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/6106__sunbury.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sunbury_6106</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/6319__nauges__flame.jpg" alt="" class="product-img">
+            <h2 class="product-title">Nauges flame_6319</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/6711__edmonton.jpg" alt="" class="product-img">
+            <h2 class="product-title">Edmonton_6711</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/6712__calgary.jpg" alt="" class="product-img">
+            <h2 class="product-title">Calgary_6712</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/6727__dark__linen.jpg" alt="" class="product-img">
+            <h2 class="product-title">Dark linen_6727</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/7131__multico__flame.jpg" alt="" class="product-img">
+            <h2 class="product-title">Multico flame_7131</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/7151__tweed__rock.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed rock_7151</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/7324__ebony__tweed.jpg" alt="" class="product-img">
+            <h2 class="product-title">Ebony tweed_7324</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/7351__oslo__fire.jpg" alt="" class="product-img">
+            <h2 class="product-title">Oslo fire_7351</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/7926__tweed__latte.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tweed latte_7926</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8203__basalt.jpg" alt="" class="product-img">
+            <h2 class="product-title">Basalt_8203</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8224__lisbonne__nature.jpg" alt="" class="product-img">
+            <h2 class="product-title">Lisbone nature_8224</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8265__amarillo--CZeDRD.jpg" alt="" class="product-img">
+            <h2 class="product-title">Amarillo czedrd_8265</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8268__blanco.jpg" alt="" class="product-img">
+            <h2 class="product-title">Blanco_8268</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8271__gris.jpg" alt="" class="product-img">
+            <h2 class="product-title">Gris_8271</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8272__marfil.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marfil_8272</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8275__negro.jpg" alt="" class="product-img">
+            <h2 class="product-title">Negro_8275</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8442__tandem__blanco.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tandem blanco_8442</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8445__tandem__piedra.jpg" alt="" class="product-img">
+            <h2 class="product-title">Tandem piedra_8445</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8446__tandem__grafito.jp" alt="" class="product-img">
+            <h2 class="product-title">Tandem grafito_8446</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8488__antracita.jpg" alt="" class="product-img">
+            <h2 class="product-title">8488_Antracita</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8615__white__linen.jpg" alt="" class="product-img">
+            <h2 class="product-title">White linen_8615</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8854__marseille__flame.jpg" alt="" class="product-img">
+            <h2 class="product-title">Marseille flame_8854</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8904__lin__melange.jpg" alt="" class="product-img">
+            <h2 class="product-title">Lin melange_8904</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8931__sienne__stone.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sienne stone_8931</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/8935__hardelot__nature.jpg" alt="" class="product-img">
+            <h2 class="product-title">Hardelot nature_8935</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/9415__pietra__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pietra beige_9415</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/9878__mossy__tweed.jpg" alt="" class="product-img">
+            <h2 class="product-title">Mossy tweed_9878</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d100__sienne__nature.jpg" alt="" class="product-img">
+            <h2 class="product-title">Sienne nature_d100</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d113__naples__stone.jpg" alt="" class="product-img">
+            <h2 class="product-title">Naples stone_d113</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d299__wide__chine__green.jpg" alt="" class="product-img">
+            <h2 class="product-title">Wide chine green_d299</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d300__wide__chine__yellow.jpg" alt="" class="product-img">
+            <h2 class="product-title">Wide chine yellow_d300</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d301__wide__chine__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Wide chine beige_d301</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d304__naples__light__grey.jpg" alt="" class="product-img">
+            <h2 class="product-title">Naples light grey_d304</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d305__naples__heather.jpg" alt="" class="product-img">
+            <h2 class="product-title">Naples heather_d305</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d307__naples__linen.jpg" alt="" class="product-img">
+            <h2 class="product-title">Naples linen_d307</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d319__pencil__dark__grey.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pencil dark grey_d319</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d320__pencil__grey.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pencil grey_d320</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d323__pencil__yellow.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pencil yellow_d323</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/d324__pencil__beige.jpg" alt="" class="product-img">
+            <h2 class="product-title">Pencil beige_d324</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u104__flanelle.jpg" alt="" class="product-img">
+            <h2 class="product-title">Flanelle_u104</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u105__curry.jpg" alt="" class="product-img">
+            <h2 class="product-title">Curry_u105</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u190__silver__grey.jpg" alt="" class="product-img">
+            <h2 class="product-title">Silver grey_u190</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u235__chaume__pigue.jpg" alt="" class="product-img">
+            <h2 class="product-title">Chaume pigue_u235</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u390__switch__rouge.jpg" alt="" class="product-img">
+            <h2 class="product-title">Swtitch rouge_u390</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u393__switch__empire.jpg" alt="" class="product-img">
+            <h2 class="product-title">Switch empire_u393</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u411__carmin__pigue.jpg" alt="" class="product-img">
+            <h2 class="product-title">Carmin pigue_u411</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u412__piment__pigue.jpg" alt="" class="product-img">
+            <h2 class="product-title">Piment pigue_u412</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u413__potiron__pigue.jpg" alt="" class="product-img">
+            <h2 class="product-title">Potiron pigue_u413</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <!--Box 8-->
+
+        <div class="product-box">
+            <img src="/samples/u417__meleze__pigue.jpg" alt="" class="product-img">
+            <h2 class="product-title">Meleze pigue_u417</h2>
+            <span class="price">£0</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+      </div>
+    </section>
+  </div>
+ <!-- FOOTER START -->
+ <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <!--Column1-->
+          <div class="footer-pad">
+            <div class="heading-footer">
+                English
+                <br>
+                 Awnings Direct
+            </div>
+            <ul class="list-unstyled">
+                <li>EnglishAwningsDirect.com</a></li>
+                <li>United Kingdom, Dorset</a></li>
+                <li>Unit 6 West Howe Industrial Estate</a></li>
+                <li>Elliot road</a></li>
+                <li>BH11 8JX</li> 
+            </ul>
+          </div>
+        </div>
+        <!--Column2-->
+        <div class="col-md-3 col-sm-6">
+          <div class="footer-pad">
+            <h8>Awnings</h8>
+            <ul class="list-unstyled">
+              <li><a href="/casablanca/">Casablanca full cassette</a></li>
+              <li><a href="/corsica/">Corsica full cassette</a></li>
+              <li><a href="/palladio/">Palladio full cassette</a></li>
+              <li><a href="/silverplus/">Silver plus</a></li>
+              <li><a href="/boxitalia/">Italia sun blind</a></li>
+              <li><a href="/bora/">Bora side screen</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <!--Column3-->
+          <div class="footer-pad">
+            <h8>Features</h8>
+            <ul class="list-unstyled">
+              <li><a href="/color-pallet/">Fabric Colours</a></li>
+              <li><a href="/about/">Quality</a></li>
+              <li><a href="/about/#demo">Style</a></li>
+              <li><a href="/about/#ease">Ease</a></li>
+              <li><a href="/about/#features">Adjustment</a></li>
+              <li><a href="/about/#howto">Us</a></li>
+            </ul>
+          </div>
+        </div>
+          <div class="col-md-3">
+              <h8>Follow Us</h8>
+              <ul class="social-network social-circle">
+                <br>
+                <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <br>
+                <br>
+                <br>
+              </ul>	
+              <ul>
+                <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+                <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+              </ul>
+                    
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+          </div>
+      </div>
+  
+  
+    </div>
+    </div>
+  </footer>
+  
+<!-- FOOTER OVER-->
+        <!--Link to JS CART-->
+        <script src="/js/script1.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+</body>
+</html>

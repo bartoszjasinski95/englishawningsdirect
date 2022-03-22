@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+
+     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
+     <link rel="stylesheet" href="/css/stylefitting.css">
+       
+    
+
+    <title>Instalation form</title>
+    
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%>
+
+<%- include('partials/sidebar'); -%>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<div class="fittingheader">
+<legend>Instalation form</legend>
+</div>
+
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">First Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label" >Last Name</label> 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       
+<div class="form-group">
+  <label class="col-md-4 control-label">Phone</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+  <input name="phone" placeholder="(+44)77857 44009" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+      
+<div class="form-group">
+  <label class="col-md-4 control-label">Address</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="address" placeholder="Address" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Text input-->
+ 
+<div class="form-group">
+  <label class="col-md-4 control-label">City</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="city" placeholder="city" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">State</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-control selectpicker" >
+      <option value=" " >Please select your state</option>
+      <option>Bedfordshire</option>
+      <option>Berkshire</option>
+      <option >Bristol</option>
+      <option >Buckinghampshire</option>
+      <option >Cambridgeshire</option>
+      <option >Cheshire</option>
+      <option >City of London</option>
+      <option >Cornwall</option>
+      <option >Cumbria</option>
+      <option> Derbyshire</option>
+      <option >Devon</option>
+      <option >Dorset</option>
+      <option >Durham</option>
+      <option >East Riding of Yorkshire</option>
+      <option >East Sussex</option>
+      <option >Essex</option>
+      <option> Gloucestershire</option>
+      <option >Greater London</option>
+      <option >Greater Manchester</option>
+      <option>Hampshire</option>
+      <option >Herefordshire</option>
+      <option> Hertforshire</option>
+      <option >Isle of Wight</option>
+      <option >Kent</option>
+      <option>Lancashire</option>
+      <option>Leicestershire</option>
+      <option>Lincolnshire</option>
+      <option>Merseyside</option>
+      <option>Norfolk</option>
+      <option>North Yorkshire</option>
+      <option>Northamponshire</option>
+      <option>Northumberland</option>
+      <option>Nottinghamshire</option>
+      <option>Oxfordshire</option>
+      <option>Rutland</option>
+      <option>Shropshire</option>
+      <option>Somerset</option>
+      <option>South Yorkshire</option>
+      <option>Stafforshire</option>
+      <option>Suffolk</option>
+      <option>Surrey</option>
+      <option>Tyne and Wear</option>
+      <option>Warwickshire</option>
+      <option>West Midlands</option>
+      <option> West Sussex</option>
+      <option>West Yorkshire</option>
+      <option>Wiltshire</option>
+      <option >Worcestershire</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Post code</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input name="zip" placeholder="Post code" class="form-control"  type="text">
+    </div>
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Website or domain name</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="website" placeholder="Website or domain name" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- radio checks -->
+ <div class="form-group">
+                        <label class="col-md-4 control-label">Please select your awning type ?</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting1" value="yes" /> Yes
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting1" value="no" /> No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label class="col-md-4 control-label">Awning power?</label>
+                      <div class="col-md-4">
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="hosting2" value="yes" /> Yes
+                              </label>
+                          </div>
+                          <div class="radio">
+                              <label>
+                                  <input type="radio" name="hosting2" value="no" /> No
+                              </label>
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Any old awning to be removed?</label>
+                    <div class="col-md-4">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting3" value="yes" /> Yes
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="hosting3" value="no" /> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+
+              <!-- Problem text -->
+<div class="form-group">
+  <label class="col-md-4 control-label">Please advise of any potential site problems e.g. wall mounting.</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Potential problems"></textarea>
+  </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Awning width in metres e.g. 3 meters </label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Awnning width"></textarea>
+  </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Distance to nearest plug socket from LH side of the awning</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Distance in metric"></textarea>
+  </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Awning quantity</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Awning quantity"></textarea>
+  </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Notes</label>
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+        	<textarea class="form-control" name="comment" placeholder="Notes"></textarea>
+  </div>
+  </div>
+</div>
+<br>
+<div class="form-group">
+    <label class="col-md-4 control-label">Select files</label>
+    <div class="col-md-4 inputGroupContainer">
+<input type="file" id="myfile" name="myfile" multiple>
+<br>
+<br>
+<br>
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<script  src="./scriptfitting.js"></script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Awnings direct</h4>
+                <ul class="list-unstyled">
+                  <li>Awnings direct C.O. UK</a></li>
+                  <li>United Kingdom, Dorset</a></li>
+                  <li>Unit 6 West howe industrial estate</a></li>
+                  <li>Elliot road</a></li>
+                  <li>BH11 8JX</li>
+                  <li>FAQs</a></li>
+                </ul>
+              </div>
+            </div>
+            <!--Column2-->
+            <div class="col-md-3 col-sm-6">
+              <div class="footer-pad">
+                <h4>Awnings</h4>
+                <ul class="list-unstyled">
+                  <li><a href="/casablanca/">Casablanca cassette</a></li>
+                  <li><a href="/corsica/">corsica cassette</a></li>
+                  <li><a href="/palladio/">Palladio cassette</a></li>
+                  <li><a href="/silverplus/">Silver plus</a></li>
+                  <li><a href="/boxitalia/">Italia sun blind</a></li>
+                  <li><a href="/bora/">Bora</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column3-->
+              <div class="footer-pad">
+                <h4>Features</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">3D adjustment</a></li>
+                  <li><a href="/color-pallet/">Collor sample pallet</a></li>
+                  <li><a href="/about/">Quality</a></li>
+                  <li><a href="/about/#demo">Style</a></li>
+                  <li><a href="/about/#ease">Ease</a></li>
+                  <li><a href="/about/#features">Adjustment</a></li>
+                  <li><a href="/about/#howto">Us</a></li>
+                </ul>
+              </div>
+            </div>
+              <div class="col-md-3">
+                  <h4>Follow Us</h4>
+                  <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/insigniablinds1"  target="_blank" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                  </ul>				
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2022 - Insignia Shade & Shutter company.  All rights reserved.</p>
+              </div>
+          </div>
+      
+      
+        </div>
+        </div>
+      </footer>
+    
+    
+  <script>
+      var closebtns = document.getElementsByClassName("close");
+      var i;
+      
+      for (i = 0; i < closebtns.length; i++) {
+        closebtns[i].addEventListener("click", function() {
+          this.parentElement.style.display = 'none';
+        });
+      }
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container1 = document.getElementById('container1');
+        
+        signUpButton.addEventListener('click', () => {
+            container1.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+            container1.classList.remove("right-panel-active");
+        });
+    </script>
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

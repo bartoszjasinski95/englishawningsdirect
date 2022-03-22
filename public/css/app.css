@@ -1,0 +1,320 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+
+    /* TICKIS */
+    .rowhome{
+      padding-left: 34%;
+    
+    }
+
+
+
+h1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+        li.bullethome1 {
+  list-style:none;
+  position: relative;
+  padding-left:50px;
+  line-height: 2;
+  font-size:20px;
+  font-family:sans-serif;
+          
+        }
+        li.bullethome1:before {
+           content:"\f00c";
+        }
+        li.bullethome1:hover:before {
+          color:#7e1b97;
+        }
+        li.bullethome1:before {
+          font-family:FontAwesome;
+          position: absolute;
+          left: 0;
+          color:#ce7bbd;
+          font-size:32px;
+        }
+        
+
+
+h4{
+  font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+h5{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+h6{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+h8{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+h9{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:94px; font-weight:400; text-transform: uppercase; color:black; margin-top:40px; padding:0px;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:24px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz/wizualizacja_corsica_2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+        
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+  z-index: 1000;
+  
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+.checkatradehome{
+  position:relative;
+  height:160px;
+  width:100%;
+  display:block;
+  width:150px;
+  margin:0;
+  padding:0;
+  position:absolute;
+  bottom: -220%;
+  padding-left: 5%;
+}
+
+.bullethome1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+/* IMAGES HOME SPONSORS BOTTOM */
+.images-home-sponsors-raw{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column-images-home-sponsors {
+  float: left;
+  width: 300px;
+  padding: 0px;
+  margin: 0;
+}
+
+/* Clearfix (clear floats) */
+.column-images-home-sponsors:after {
+  content: "";
+  clear: both;
+  display: table;
+}

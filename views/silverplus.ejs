@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<!-- Link to CSS CART-->
+<link rel="stylesheet" href="/css/style.css" />
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+     <style>
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+
+
+        .silverplusfront{
+            margin-left: 350px;
+        }
+        .silverplussite{
+            margin-left: 803px;
+        }
+                /* TICKIS */
+
+
+                .headproperties{
+  font-family: 'Oswald', sans-serif;
+    text-decoration: underline #7e1b97;
+    letter-spacing: 7px;
+    text-align: center;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+        /* TICKIS properties*/
+        li.two {
+  color:black;
+  list-style:none;
+  position: relative;
+  padding-left:50px;
+  line-height: 2;
+  font-size:20px;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+}
+li.two:before {
+   content:"\f00c";
+}
+li.two:hover:before {
+  color:#7e1b97;
+}
+li.two:before {
+  font-family:FontAwesome;
+  position: absolute;
+  left: 0;
+  color:#ce7bbd;
+  font-size:32px;
+}
+
+
+
+.columnpro1{
+    float: left;
+    width: 50%;
+    padding: 0px;
+    margin-left: 20%;
+    height: 500px;
+}
+/* Clear floats after the columns */
+.rowpro1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*{outline:none !important;box-sizing:border-box !important;}
+a{color: rgb(51, 51, 51);}
+.cell_flex{display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex: 0 1 auto;-webkit-box-flex: 0;flex: 0 1 auto;-ms-flex-direction: row;-webkit-box-orient: horizontal;-webkit-box-direction: normal;flex-direction: row;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+
+.offer_parameters_wrapper .system_img{width: calc(100% / 3);border:1px solid #ddd;margin: 0;margin-top: -1px;font-size: 1.5em;padding: 20px 40px;text-align: center;position: relative;}
+.offer_parameters_wrapper .system_img figcaption{margin-bottom: 20px;}
+.offer_parameters_wrapper .system_img img{max-width: 70%;}
+.offer_parameters_wrapper .system_img .img{width:100%;height: 60%;max-height: 450px;max-width: 450px;background-position:center;background-size:contain;background-repeat:no-repeat;}
+.offer_parameters_wrapper .parameters_row{width: calc(100% / 3 * 2);}
+.offer_parameters_wrapper .parameters_row ul,
+.offer_parameters_wrapper .parameters_row ol{padding: 0 !important;margin:0;width: 100%;list-style:none;display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex: 0 1 auto;-webkit-box-flex: 0;flex: 0 1 auto;-ms-flex-direction: row;-webkit-box-orient: horizontal;-webkit-box-direction: normal;flex-direction: row;-ms-flex-wrap: wrap;flex-wrap: wrap;}
+.offer_parameters_wrapper .parameters_row ul li,
+.offer_parameters_wrapper .parameters_row ol li,
+.offer_parameters_wrapper .item{font-size:1.5em;font-style: italic;line-height:1em;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:calc(100% / 3);flex-basis:calc(100% / 3);padding: 20px 40px;border: 1px solid #ddd;margin-left: -1px;margin-top: -1px;position: relative;}
+.offer_parameters_wrapper .parameters_row h1,
+.offer_parameters_wrapper .parameters_row h2,
+.offer_parameters_wrapper .parameters_row ul li strong,
+.offer_parameters_wrapper .parameters_row ol li strong,
+.offer_parameters_wrapper .system_img figcaption{display:block;font-weight:400;color:#999;padding-bottom: 5px;font-size: 14px;font-style: normal;text-align: left;}
+
+
+.cell_flex {
+    box-shadow: 0px 20px 20px #a46497;
+    
+}
+.cell_flex :hover {
+  background: url(http://img7.imageshack.us/img7/2341/skwf.jpg);
+  box-shadow: inset 0px 0px 0px #b8b8b8;
+}
+.offer_parameters_wrapper.cell_flex{
+  margin-left: 20%;
+    margin-right: 10%;
+    width: 65%;
+}
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+/* CSSY SELECTIONS */
+
+
+
+.motorclass {
+  padding: 0px 25px 25px;
+  position: relative;
+  width: 100%;
+  
+
+}
+
+@media (min-width: 900px) {
+  .motorclass {
+    padding: 0 0 40px;
+  }
+}
+
+
+/* WHOLE OBJECTS */
+
+.motors {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  z-index: 0;
+}
+
+.panel {
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.pricing-table {
+  box-shadow: 10px 10px 30px 6px rgba(0, 0, 0, 0.08), 10px 10px 30px 6px rgba(0, 0, 0, 0.09), 10px 10px 30px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .pricing-table {
+    flex-direction: row;
+  }
+}
+
+.pricing-table  {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 900px) {
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    flex-basis: 100%;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-features {
+  color: #016FF9;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 50px 0 25px;
+}
+
+.pricing-features-item {
+  border-top: 1px solid white;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: 1px solid white;
+}
+
+.pricing-price {
+  color: #016FF9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+
+
+
+
+/* CSS BUY OPTIONS */
+
+
+.content {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  margin: 5em auto 0;
+}
+.content article {
+  transition: transform .3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.content article label {
+  display: inline-block;
+  margin-bottom: 3em;
+}
+.content article label input {
+  display: inline-block;
+}
+
+.legend {
+  z-index: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+label {
+  box-sizing: border-box;
+  padding: 1em;
+  cursor: pointer;
+  transition: all .15s ease-in-out;
+  color: #0a4069;
+  border: 1px solid rgba(254, 254, 254, 0.6);
+  border-radius: 0;
+  flex: 0 0 6em;
+}
+label:first-child {
+  margin-right: 0;
+  border-radius: .2em 0 0 .2em;
+}
+label:last-child {
+  margin-left: 0;
+  border-radius: 0 .2em .2em 0;
+}
+
+
+
+
+input[name='status']:checked + .content {
+  z-index: 10;
+}
+input[name='status']:checked + .content article {
+  transform: translateX(0);
+}
+input[name='status']:checked + .content article .chart .bar .growing-bar {
+  transition-delay: .3s;
+  transition-duration: .6s;
+}
+/* MOTORS */
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='motor-choice']:checked ~ label[for='crank'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='motor-choice']:checked + .small-font-size {
+  font-size: 2em;
+}
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='motor-choice']:checked ~ label[for='nemo-red'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='motor-choice']:checked + .small-font-size {
+  font-size: 2em;
+}
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='motor-choice']:checked ~ label[for='nemo-yellow'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='motor-choice']:checked + .small-font-size {
+  font-size: 2em;
+}
+/* SENSORS */
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='sensors']:checked ~ label[for='shock'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='sensors']:checked + .small-font-size {
+  font-size: 2em;
+}
+
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='sensors']:checked ~ label[for='eolis'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='sensors']:checked + .small-font-size {
+  font-size: 2em;
+}
+
+
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='sensors']:checked ~ label[for='soliris'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='sensors']:checked + .small-font-size {
+  font-size: 2em;
+}
+
+/* VALANCE TYPES */
+
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='valance-type']:checked ~ label[for='straight'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+input[id='valance-type']:checked + .small-font-size {
+  font-size: 2em;
+}
+
+
+input[id='status-1']:checked ~ .legend > label[for='status-1'],
+input[id='status-2']:checked ~ .legend > label[for='status-2'],
+input[id='status-3']:checked ~ .legend > label[for='status-3'],
+input[id='valance-type']:checked ~ label[for='wavy'] {
+  color: white;
+  border: 1px solid #7e1b97;
+  background-color: #7e1b97;
+}
+
+
+/* SELECT COLOR */
+.desc { color:#7e1b97;}
+        
+        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+        .dropdown dd { position:relative; }
+        .dropdown a, .dropdown a:visited { color:black; text-decoration:none; outline:none;}
+        .dropdown a:hover { color:black;}
+        .dropdown dt a:hover { color:grey; border: 1px solid grey;}
+        .dropdown dt a {background:white url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #7e1b97; width:300px;}
+        .dropdown dt a span {cursor:pointer; display:block; padding:5px;}
+        .dropdown dd ul { background:white none repeat scroll 0 0; border:1px solid #7e1b97; color:#7e1b97; display:none;
+                          left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
+        .dropdown span.value { display:none;}
+        .dropcolor a { padding:5px; display:block;}
+        .dropcolor a:hover { background-color:rgb(204, 202, 202);}
+        
+        .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:none;}
+
+        .flag{
+            width: 280px;
+            height: 50px;
+            
+        }
+
+        .dropdown{
+          margin-left: 42%;
+          display: block;
+          z-index: 1000;
+          bottom: 10%;
+          list-style: none;
+          overflow-y: auto;
+          min-height: 350px;
+         
+          
+        }
+        .dropcolors{
+          float: none;
+          display: block;     
+        }
+
+        .dropcolorfabric{
+          text-align: center;
+        }
+
+        /* SELECT COLOR OVER */
+
+/* HANDING OPTION */
+.handingoption{
+        text-align: center;
+}
+/* HANDING OPTION OVER */
+
+/* PRICE LIST START */
+.containerpricelist th  {
+	  font-weight: bold;
+	  font-size: 1em;
+  text-align: left;
+  color: #185875;
+}
+
+.containerpricelist td {
+	  font-weight: normal;
+	  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
+	        box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.containerpricelist {
+	  text-align: left;
+	  overflow: hidden;
+	  width: 70%;
+	  margin-left: 18%;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.containerpricelist td, .container th {
+	  padding-bottom: 2%;
+	  padding-top: 2%;
+  padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.containerpricelist tr:nth-child(odd) {
+	  background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.containerpricelist tr:nth-child(even) {
+	  background-color: #2C3446;
+}
+
+.containerpricelist th {
+	  background-color: #1F2739;
+}
+
+.containerpricelist td:first-child { color: #FB667A; }
+
+.containerpricelist tr:hover {
+   background-color: #464A52;
+-webkit-box-shadow: 0 0px 0px 0px #0E1119;
+	   -moz-box-shadow: 0 0px 0px 0px #0E1119;
+	        box-shadow: 0 0px 0px 0px #0E1119;
+}
+
+.containerpricelist td:hover {
+  background-color: #a46497;
+  color: #403E10;
+  font-weight: bold;
+  
+  box-shadow: #7e1b97 5px 5px, #7e1b97 -5px -5px, #7e1b97 5px -5px, #7e1b97 5px 5px, #7e1b97 5px 5px, #7e1b97 -5px 5px;
+  transform: translate3d( 1px, 1px, 1px);
+  
+  transition-delay: 0s;
+	  transition-duration: 0.4s;
+	  transition-property: all;
+  transition-timing-function: line;
+}
+
+@media (max-width: 800px) {
+.containerpricelist td:nth-child(4),
+.containerpricelist th:nth-child(4) { display: none; }
+}
+
+tr{
+  color: white;
+}
+
+/* PRICE LIST OVER */
+.navibarmenu {
+  width: 75px;
+  right: 1%;
+  cursor: pointer;
+  margin-top: 24.2%;
+  z-index:10000;
+}
+/* AWNINGS LEFT MENU */
+.column1{
+  z-index: 10;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 3px;
+  margin-top: -1%;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+    </style>
+    <title>Silver plus</title>
+
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%> 
+<%- include('partials/sidebar'); -%>
+    
+  
+    <br>
+    <br>
+    <br>
+    <div class="rowawningmenu">
+      <div class="column1" style="background-color:white;">
+        <a href="/casablanca/">/ Casablanca <br> full cassette</a>
+        <br>
+        <br>
+        <a href="/corsica/">/ Corsica <br> full cassette</a>
+        <br>
+        <br>
+        <a href="/palladio/">/ Palladio <br> semi cassette</a>
+        <br>
+        <br>
+        <a href="/Silverplus/">/ Silver plus <br> no cassette</a>
+        <br>
+        <br>
+        <a href="/boxitalia/">/ Italia <br> sun blind</a>
+        <br>
+        <br>
+        <a href="/bora/">/ Bora <br> side screen</a>       
+      </div>
+
+
+<br>
+<br>
+<h7>Silver Plus.</h7>
+<br>
+<br>
+        <div class="silverplusfront";>
+            <img src="/img/awnings style/Silver Plus.png" width="1300px" alt="">
+        </div>
+        <div class="silverplussite";>
+            <img src="/img/awnings style/Silver Plus site.png" width="1100px" alt="">
+        </div>
+        <br>
+        <br>
+        <div class="row";>
+            <div class="columnpro1" style="background-color:white;">
+              <div class="headproperties">
+              <h2>Properties</h2>
+              </div>
+              <p>            <ul>
+                <li class="two">
+                The structure of the system is made of extruded aluminum, which ensures durability and strength of the awning.
+                </li>
+                <br>
+                <li class="two">
+                The use of a Flyer chain in the structure of the arms, combined with the precision of articulated joints, guarantees the awning
+                reliable, long-term operation.
+                </li>
+                <br>
+                <li class="two">
+                The fabric by building it in the cassette allows you to protect the fabric against weather conditions.
+                </li>
+                <br>
+                <li class="two">
+                Awning fabrics are produced on the basis of high-quality materials, covered with an impregnation that constitutes a protective barrier and
+                increasing resistance to dirt.
+                </li>
+                <br>
+                <li class="two">
+                Increased functionality thanks to the use of automation with wind-shock sensors and radio control.
+                </li>
+
+              </ul></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="offer_parameters_wrapper cell_flex">
+
+            <figure class="system_img">
+                <figcaption>
+                    Draft of the system
+                </figcaption>
+                <img src="https://archiselt.com/en/media/system/oferta/s_Silver-Plus.png" class="img-flex">
+            </figure>
+    
+            <div class="parameters_row">
+                <div class="cell_flex">
+                        <ul> 	<li><strong>Electric drive:</strong>&nbsp;yes</li> 	<li><strong>Manual drive:</strong>&nbsp;yes</li> 
+                                <li><strong>Maximum width:</strong>&nbsp;5.3 m</li> 	<li><strong>Maximum projection:</strong>&nbsp;2.5 m</li> 
+                                    <li><strong>Cassette:</strong>&nbsp;no</li> 	<li><strong>Optional hood: </strong>&nbsp;yes</li> 
+                                        <li><strong>Tilt angle:&nbsp;</strong>5° - 40°</li> 	<li><strong>Colour:</strong>&nbsp;RAL</li> 
+                                            <li><strong>Valance:</strong>&nbsp;yes</li> </ul> 
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--Silver plus-->
+
+        <table class="containerpricelist">
+          <thead>
+              <tr>
+                  <th><h1>Projection (cm)</h1></th>
+                  <h1>Width (cm)</h1>
+                  <th><h1>200-230</h1></th>
+                  <th><h1>231-290</h1></th>
+                  <th><h1>291-350</h1></th>
+                  <th><h1>351-410</h1></th>
+                  <th><h1>411-470</h1></th>
+                  <th><h1>471-530</h1></th>
+                  
+              </tr>
+          </thead>
+          <tbody>
+              
+              <tr>
+              
+                  <td>160</td>
+                  <td>£586</td>
+                  <td>£615</td>
+                  <td>£662</td>
+                  <td>£735</td>
+                  <td>£785</td>
+                  <td>£859</td>
+                  
+                  
+              </tr>
+              <tr>
+                  <td>190</td>
+                  <td></td>
+                  <td>£683</td>
+                  <td>£727</td>
+                  <td>£790</td>
+                  <td>£863</td>
+                  <td>£928</td>
+                  
+              </tr>
+              <tr>
+                  <td>220</td>
+                  <td></td>
+                  <td>£727</td>
+                  <td>£758</td>
+                  <td>£859</td>
+                  <td>£895</td>
+                  <td>£958</td>
+                  
+              </tr>
+          <tr>
+                  <td>250</td>
+                  <td></td>
+                  <td></td>
+                  <td>£792</td>
+                  <td>£882</td>
+                  <td>£930</td>
+                  <td>£985</td>
+                  
+              </tr>
+
+
+          </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br><form action="http://localhost:8080/customizedorder" method="post">
+        <div class="projection-width">
+        <h2>Write your specific measurements in cm:</h2>
+          <p>Please be aware to add extra 10cm by each site for mounting</p>
+          <br>
+          
+            
+              Projection: <input type="text" name="projection">
+              Width: <input type="text" name="width"><br> 
+        
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="wallmountchoice">
+          <h2>Please select your mounting bracket:</h2>
+          <p>For brackets description click <a href="/about/#features">HERE</a></p>
+        
+        <br>
+        <br>
+        <br>
+          
+            <div class="rowbrackets">
+              <div class="columnbrackets" style="background-color:white;">
+            
+                  <input type="radio" id="spreader" name="wallmount" value="spreader">
+                  <label for="spreader">Spreader bracket</label><br>
+          
+                  <input type="radio" id="gutter" name="wallmount" value="gutter">
+                  <label for="gutter">Gutter bracket</label><br>
+          
+                  <input type="radio" id="offset-spreader" name="wallmount" value="offset-spreader">
+                  <label for="offset-spreader">Offset spreader bracket</label>
+                <br>
+                  <input type="radio" id="wastepipe" name="wallmount" value="wastepipe">
+                  <label for="wastepipe">Waste pipe bracket</label><br>
+          
+                  <input type="radio" id="centre-spreader" name="wallmount" value="centre-spreader">
+                  <label for="centre-spreader">Centre spread bracket</label><br>
+              </div>
+              <div class="columnbrackets" style="background-color:white;">
+                
+                  <input type="radio" id="free-standing-post" name="wallmount" value="free-standing-post">
+                  <label for="free-standing-post">Free standing post</label><br>
+          
+                  <input type="radio" id="free-standing-frame" name="wallmount" value="free-standing-frame">
+                  <label for="free-standing-frame">Free standing frame</label><br>
+          
+                  <input type="radio" id="offset-gutter" name="wallmount" value="offset-gutter">
+                  <label for="offset-gutter">Offset gutter bracket</label><br>
+          
+                  <input type="radio" id="Last bracket" name="wallmount" value="Last bracket">
+                  <label for="Last bracket">Last bracket</label><br>
+        
+            </div>
+          </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- OVER PRICE LIST-->
+        <div class="fontcololor">
+          <h2>Please select your fabric color:</h2>
+          </div>
+          <br>
+          <br>
+          
+                  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
+                  <dl id="sample" class="dropdown">
+                      <dt class="dropcolorfabric"><a href="#dropcolor"><span>Please select colour</span></a></dt>
+                      
+                      <dd>
+                        <ul class="dropcolors">
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0028__silver__melange.jpg" alt="" />Silver melange_0028<span class="value">Silver melange_0028</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0034__tweed__senape.jpg" alt="" />Tweed senape_0034<span class="value">Tweed senape_0034</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0054__melbourne.jpg" alt="" />Melbourne_0054<span class="value">Melbourne_0054</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0180__sunrise.jpg" alt="" />Sunrise_0180<span class="value">Sunrise_0180</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0186__brisbane.jpg" alt="" />Brisbane_0186<span class="value">Brisbane_0186</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"> <img class="flag" src="/images/fabrics colors/0364__silver__white.jpg" alt="" />Silver white_0364<span class="value">Silver white_0364</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0396__jade.jpg" alt="" />Jade_0396<span class="value">Jade_0396</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0402__charcoal__tweed.jpg" alt="" />Charcoal tweed_0402<span class="value">Charcoal tweed_0402</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0403__tweed__brown.jpg" alt="" />Tweed brown_0403<span class="value">Tweed brown_0403 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0452__canberra.jpg" alt="" />Canberra_0452<span class="value">Canberra_0452</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0493__gladstone.jpg" alt="" />Gladstone_0493<span class="value">Gladstone_0493</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0497__broken__hill.jpg" alt="" />Broken hill_0497<span class="value"> Broken hill_0497</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0505__stitch__calcite.jpg" alt="" />Stitch calcite_0505<span class="value"> Stitch calcite_0505</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0507__stitch__ruby.jpg" alt="" />Stitch ruby_0507<span class="value"> Stitch ruby_0507</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0512__stitch__andesite.jpg" alt="" /><span class="value"> </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0597__stone__tweed.jpg" alt="" />Stone tweed_0597<span class="value"> Stone tweed_0597</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0638__ash.jpg" alt="" />Ash_0638<span class="value"> Ash_0638</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0715__platinum.jpg" alt="" />Platinum_0715<span class="value"> Platinum_0715</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0734__winetone.jpg" alt="" />Winetone_0734<span class="value"> Winetone_0734</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0794__tweed__argent.jpg" alt="" />Tweed argent_0794<span class="value"> Tweed argent_0794</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0814__amber__beige.jpg" alt="" />Amber beige_0814<span class="value"> Amber beige_0814</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0923__marble.jpg" alt="" />Marble_0923<span class="value"> Marble_0923</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0937__iron.jpg" alt="" />Iron_0937<span class="value">Iron_0937 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0990__candlelight.jpg" alt="" />Candlelight_0990<span class="value">Candlelight_0990 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0992__timber.jpg" alt="" />Timber_0992<span class="value"> Timber_0992</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0993__concrete.jpg" alt="" />Concrete_0993<span class="value"> Concrete_0993</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/1524__graphite__zip.jpg" alt="" />Graphite_1524<span class="value"> Graphite_1524</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/1597__zip__grey.jpg" alt="" />Zip grey_1597<span class="value"> Zip grey_1597</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2013__amarillo.jpg" alt="" />Amarillo_2013<span class="value"> Amarillo_2013</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2015__amarillo.jpg" alt="" />Amarillo_2015<span class="value"> Amarillo_2015</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2016__argentina.jpg" alt="" />Argentina_2016<span class="value"> Argentina_2016</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2018__azul.jpg" alt="" />Azul_2018<span class="value">Azul_2018</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2038__beige.jpg" alt="" />Beige_2038<span class="value"> Beige_2038</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2041__berna.jpg" alt="" />Berna_2041<span class="value">Berna_2041 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2042__blanco.jpg" alt="" />Blanco_2042<span class="value"> Blanco_2042</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2047__coco.jpg" alt="" />Coco_2047<span class="value"> Coco_2047</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2050__orange.jpg" alt="" />Orange_2050<span class="value"> Orange_2050</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2061__canada.jpg" alt="" />Canada_2061<span class="value"> Canada_2061</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2080__dakar.jpg" alt="" />Dakar_2080<span class="value"> Dakar_2080</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2085__tweed__negro.jpg" alt="" />Tweed negro_2085<span class="value"> Tweed negro_2085</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2101__granate.jpg" alt="" />Granate_2101<span class="value"> Granate_2101</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2103__gris.jpg" alt="" />Gris_2103<span class="value"> Gris_2103</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2121__marte.jpg" alt="" />Marte_2121<span class="value"> Marte_2121</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2143__marfil.jpg" alt="" />Marfill_2143<span class="value"> Marfill_2143</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2145__marine.jpg" alt="" />Marine_2145<span class="value">Marine_2145 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2148__marron__beige.jpg" alt="" />Marron beige_2148<span class="value"> Marron beige_2148</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2170__negro.jpg" alt="" />Negro_2170<span class="value"> Negro_2170</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2174__new__york.jpg" alt="" />New york_2174<span class="value"> New york_2174</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2179__pluton.jpg" alt="" />Pluton_2179<span class="value">Pluton_2179 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2180__ocre.jpg" alt="" />Ocre_2180<span class="value"> Ocre_2180</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2191__orlando.jpg" alt="" />Orlando_2191<span class="value"> Orlando_2191</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2210__rioja.jpg" alt="" />Rioja_2210<span class="value"> Rioja_2210</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2211__bright__red.jpg" alt="" />Bright red_2211<span class="value"> Bright red_2211</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2226__siroco.jpg" alt="" />Siroco_2226<span class="value"> Siroco_2226</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2238__texas.jpg" alt="" />Texas_2238<span class="value"> Texas_2238</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2245__verde__botella.jpg" alt="" />Verde botella_2245<span class="value"> Verde botella_2245</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2250__vision.jpg" alt="" />Vision_2250<span class="value">Vision_2250 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2275__beige.jpg" alt="" />Beige_2275<span class="value"> Beige_2275</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2296__avena.jpg" alt="" />Avena_2296<span class="value"> Avena_2296</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2316__cafe.jpg" alt="" />Cafe_2316<span class="value">Cafe_2316 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2687__vanilla.jpg" alt="" />Vanilla_2687<span class="value"> Vanilla_2687</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2701__jamaica.jpg" alt="" />Jamaica_2701<span class="value">Jamaica_2701 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2777__breeze.jpg" alt="" />Breeze_2777<span class="value"> Breeze_2777</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2796__antracita.jpg" alt="" />Antracita_2796<span class="value">Antracita_2796</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2802__zinc.jpg" alt="" />Zinc_2802<span class="value"> Zinc_2802</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2821__silver.jpg" alt="" />Silver_2821<span class="value"> Silver_2821</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2823__manchester.jpg" alt="" />Manchester_2823<span class="value"> Manchester_2823</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2831__mineral.jpg" alt="" />Mineral_2831<span class="value">Mineral_2831 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2838__integral.jpg" alt="" />Integral_2838<span class="value"> Integral_2838</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2929__natural.jpg" alt="" />Natural_2929<span class="value"> Natural_2929</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/2979__perla.jpg" alt="" />Perla_2979<span class="value"> Perla_2979</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3427__bologna.jpg" alt="" />Bologna_3427<span class="value">Bologna_3427 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3463__snowflake.jpg" alt="" />Snowflake_3463<span class="value">Snowflake_3463 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3605__palermo.jpg" alt="" />Palermo_3605<span class="value"> Palermo_3605</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="images/fabrics colors/3608__metropolitan.jpg" alt="" />Metropolitan_3608<span class="value"> Metropolitan_3608</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="images/fabrics colors/3672__taranto.jpg" alt="" />Taranto_3672<span class="value"> Taranto_3672</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3746__ancona.jpg" alt="" />Ancona_3746<span class="value"> Ancona_3746</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3861__salerno.jpg" alt="" />Salerno_3861<span class="value"> Salerno_3861</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3864__foggia.jpg" alt="" />Foggia_3864<span class="value"> Foggia_3864</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3868__milano.jpg" alt="" />Milano_3868<span class="value">Milano_3868 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3875__padova.jpg" alt="" />Padova_3875<span class="value">Padova_3875 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3881__andria.jpg" alt="" />Andria_3881<span class="value">Andria_3881 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3882__ravenna.jpg" alt="" />Ravenna_3882<span class="value">Ravenna_3882 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/3889__firenze.jpg" alt="" />Firenze_3889<span class="value">Firenze_3889 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4639__sahara__dust.jpg" alt="" />Sahara dust_4639<span class="value"> Sahara dust_4639</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4640__namib.jpg" alt="" />Namib_4640<span class="value"> Namib_4640</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4643__cliffs.jpg" alt="" />Cliffs_4643<span class="value">Cliffs_4643 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4644__fjord.jpg" alt="" />Fjord_4644<span class="value"> Fjord_4644</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4655__ladakh.jpg" alt="" />Ladakh_4655<span class="value">Ladakh_4655 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4657__rosopsida.jpg" alt="" />Rosopsida_4657<span class="value">Rosopsida_4657</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4658__gobi.jpg" alt="" />Gobi_4658<span class="value"> Gobi_4658</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4662__beach.jpg" alt="" />Beach_4662<span class="value">Beach_4662 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/4665__vulcano.jpg" alt="" />Vulcano_4665<span class="value"> Vulcano_4665</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/5106__alberta.jpg" alt="" />Alberta_5106<span class="value">Alberta_5106 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/6106__sunbury.jpg" alt="" />Sunbury_6106<span class="value"> Sunbury_6106</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/6319__nauges__flame.jpg" alt="" />Nauges flame_6319<span class="value"> Nauges flame_6319</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/6711__edmonton.jpg" alt="" />Edmonton_6711<span class="value"> Edmonton_6711</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/6712__calgary.jpg" alt="" />Calgary_6712<span class="value">Calgary_6712 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/7131__multico__flame.jpg" alt="" />Multico flame_7131<span class="value"> Multico flame_7131</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/7151__tweed__rock.jpg" alt="" />Tweed rock_7151<span class="value"> Tweed rock_7151</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/7324__ebony__tweed.jpg" alt="" />Ebony tweed_7324<span class="value"> Ebony tweed_7324</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/7351__oslo__fire.jpg" alt="" />Oslo fire_7351<span class="value">Oslo fire_7351</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/7926__tweed__latte.jpg" alt="" />Tweed latte_7926<span class="value">Tweed latte_7926</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8203__basalt.jpg" alt="" />Basalt_8203<span class="value">Basalt_8203 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8224__lisbonne__nature.jpg" alt="" />Lisbone nature_8224<span class="value">Lisbone nature_8224 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8265__amarillo--CZeDRD.jpg" alt="" />Amarillo czedrd_8625<span class="value"> Amarillo czedrd_8625</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8265__amarillo.jpg" alt="" />Amarillo_8265<span class="value"> Amarillo_8265</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8268__blanco.jpg" alt="" />Blanco_8268<span class="value"> Blanco_8268</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8271__gris.jpg" alt="" />Gris_8271<span class="value">Gris_8271</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8272__marfil.jpg" alt="" />Marfil_8272<span class="value">Marfil_8272 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8275__negro.jpg" alt="" />Negro_8275<span class="value">Negro_8275 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8442__tandem__blanco.jpg" alt="" />Tandem blanco_8442<span class="value">Tandem blanco_8442 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8445__tandem__piedra.jpg" alt="" />Tandem piedra_8445<span class="value"> Tandem piedra_8445</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8446__tandem__grafito.jpg" alt="" />Tandem grafito_8446<span class="value">Tandem grafito_8446 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8488__antracita.jpg" alt="" />Antracita_8488<span class="value">Antracita_8488 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors//8615__white__linen.jpg" alt="" />White linen_8615<span class="value"> White linen_8615</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8854__marseille__flame.jpg" alt="" />Marseille_8854<span class="value">Marseille_8854 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8904__lin__melange.jpg" alt="" />Lin melange_8904<span class="value"> Lin melange_8904</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8931__sienne__stone.jpg" alt="" />Sienne stone_8931<span class="value"> Sienne stone_8931</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/8935__hardelot__nature.jpg" alt="" />Hardelot nature_8935<span class="value">Hardelot nature_8935</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/9415__pietra__beige.jpg" alt="" />Pietra beige_9415<span class="value"> Pietra beige_9415</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/9878__mossy__tweed.jpg" alt="" />Mossy tweed_9878<span class="value">Mossy tweed_9878 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d100__sienne__nature.jpg" alt="" />Sienne nature_d100<span class="value">Sienne nature_d100 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d113__naples__stone.jpg" alt="" />Naples stone_d113<span class="value"> Naples stone_d113</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d299__wide__chine__green.jpg" alt="" />Wide chine green_d299<span class="value">Wide chine green_d299 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d300__wide__chine__yellow.jpg" alt="" />Wide chine yellow_d300<span class="value"> Wide chine yellow_d300</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d301__wide__chine__beige.jpg" alt="" />Wide chine beige_d301<span class="value"> Wide chine beige_d301</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d304__naples__light__grey.jpg" alt="" />Naples light_d304<span class="value"> Naples light_d304</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d307__naples__linen.jpg" alt="" />Naples linen_d307<span class="value"> Naples linen_d307</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d319__pencil__dark__grey.jpg" alt="" />Pencil dark grey_d319<span class="value"> Pencil dark grey_d319</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d320__pencil__grey.jpg" alt="" />Pencil grey_d320<span class="value"> Pencil grey_d320</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d323__pencil__yellow.jpg" alt="" />Pencil yellow_d323<span class="value"> Pencil yellow_d323</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/d324__pencil__beige.jpg" alt="" />Pencil beige_d324<span class="value">Pencil beige_d324 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u104__flanelle.jpg" alt="" />Flanelle_u104<span class="value"> Flanelle_u104</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u105__curry.jpg" alt="" />Curry_u105<span class="value">Curry_u105</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u190__silver__grey.jpg" alt="" />Silver grey_u190<span class="value"> Silver grey_u190</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u235__chaume__pigue.jpg" alt="" />Chaume pigue_u235<span class="value">Chaume pigue_u235</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u390__switch__rouge.jpg" alt="" />Switch rogue_u390<span class="value"> Switch rogue_u390</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u393__switch__empire.jpg" alt="" />Switch empire_u393<span class="value">Switch empire_u393 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u411__carmin__pigue.jpg" alt="" />Carmin pigue_u411<span class="value">Carmin pigue_u411</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u412__piment__pigue.jpg" alt="" />Piment pigue_u412<span class="value"> Piment pigue_u412</span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u413__potiron__pigue.jpg" alt="" />Potiron pigue_u413<span class="value">Potiron pigue_u413 </span></a></li>
+                            <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/u417__meleze__pigue.jpg" alt="" />Meleze pigue_u417<span class="value">Meleze pigue_u417 </span></a></li>
+                        </ul>  
+                    </dd>
+                </dl>
+                <span id="result"></span>
+                
+                <script>
+                  $(".dropdown img.flag").addClass("flagvisibility");
+           
+           $(".dropdown dt a").click(function() {
+               $(".dropdown dd ul").toggle();
+           });
+                       
+           $(".dropdown dd ul li a").click(function() {
+               var text = $(this).find("span").text();
+               $(".dropdown dt a span").text(text);
+               $(".dropdown dd ul").hide();
+               $("#result")/("Selected value is: " + getSelectedValue("sample"));
+           });
+                       
+           function getSelectedValue(id) {
+               return $("#" + id).find("dt a span.value")();
+           }
+           
+           $(document).bind('click', function(e) {
+               var $clicked = $(e.target);
+               if (! $clicked.parents().hasClass("dropdown"))
+                   $(".dropdown dd ul").hide();
+           });
+           
+           
+           
+               $(".dropdown img.flag").toggleClass("flagvisibility");
+           
+           
+           </script>
+        <div class="framecolors">
+          <h2>Frame color:</h2>
+        
+              <p>Please select your frame color:</p>
+                    <input type="radio" id="white" name="framecolor" value="white">
+              <label for="white">White</label>
+        
+              <input type="radio" id="silver" name="framecolor" value="silver">
+              <label for="silver">Silver</label>
+        
+              <input type="radio" id="black" name="framecolor" value="black">
+              <label for="black">Black</label>
+            
+              <input type="radio" id="anyspecific" name="framecolor" value="anyspecific">
+              <label for="anyspecific">Any specific RAL color</label>
+            <br>
+        </div>
+        
+        <br>
+        <br>
+        
+        
+        
+            <!--HANDING OPTION-->
+            <div class="handingoption">
+                <h2>Please select your handing:</h2>
+                <input type="radio" id="left" name="handingoption" value="left">
+                <label for="left">Left</label>
+                <input type="radio" id="right" name="handingoption" value="right">
+                <label for="right">Right</label><br>
+            </div>
+            <br>
+            <br>
+            <br>
+                <div>
+                  <input type="radio" name="status" id="status-1" checked>
+                  <section class="content">
+                    <article>
+                      <br>
+                      <br>
+                      <h2>Please choose your motor</h2>
+        
+                      <div class="motorclass">
+                        <div class="motors">
+                          <div class="panel pricing-table">
+                            
+                            <div class="pricing-plan">
+                              <img src="/img/accessories/crank motor handle.jpg" alt="" class="pricing-img">
+                              <h2 class="pricing-header">Crank</h2>
+                              <ul class="pricing-features">
+                                <li class="pricing-features-item">Basic motor </li>
+                                <li class="pricing-features-item">Hand operated</li>
+                              </ul>
+                              <span class="pricing-price">Free</span>
+                              
+                                <input type="radio" id="motorchoice" name="motorchoice" value="crank">
+              <label for="crank">Choose</label><br>
+                                </div>
+                            
+                                <div class="pricing-plan">
+                                  <img src="/img/accessories/nemored.jpeg" alt="" class="pricing-img">
+                                  <h2 class="pricing-header">Nemo red motor</h2>
+                                  <ul class="pricing-features">
+                                    <li class="pricing-features-item">Built-in radio receiver</li>
+                                    <li class="pricing-features-item">Electronic limit switches</li>
+                                    <li class="pricing-features-item">Remote controller icnluded</li>
+                                  </ul>
+                                  <span class="pricing-price">£130</span>
+              
+                                  <input type="radio" id="motorchoice" name="motorchoice" value="nemo-red">
+                  <label for="nemo-red">Choose</label><br>
+                                </div>
+                                  
+                                <div class="pricing-plan">
+                                  <img src="/img/accessories/nemoyellowrts.jpeg" alt="" class="pricing-img">
+                                  <h2 class="pricing-header">Nemo yellow motor</h2>
+                                  <ul class="pricing-features">
+                                    <li class="pricing-features-item">Built-in control unit</li>
+                                    <li class="pricing-features-item">Electronic limit switches</li>
+                                    <li class="pricing-features-item">Electronically controlled motor rotation</li>
+                                    <li class="pricing-features-item">Remote controller included</li>
+                                  </ul>
+                                  <span class="pricing-price">£220</span>
+                                  <input type="radio" id="motorchoice" name="motorchoice" value="nemo-yellow">
+                  <label for="nemo-yellow">Choose</label>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+              
+                    </article>
+                  </section>
+                 
+                  <input type="radio" name="status" id="status-2">
+                  <section class="content">
+                    <article>
+                      <br>
+                      <br>
+                      <h2>Please choose your sensor</h2>
+        
+                      <div class="motorclass">
+                      <div class="motors">
+                        <div class="panel pricing-table">
+              
+                          <div class="pricing-plan">
+                              <img src="/img/accessories/Shock.jpeg" alt="" class="pricing-img">
+                              <h2 class="pricing-header">Shock</h2>
+                              <ul class="pricing-features">
+                                <li class="pricing-features-item">Installation on the projection profile of the awning</li>
+                                <li class="pricing-features-item">Wind sensor</li>
+                                <li class="pricing-features-item">Including simple controller</li>
+                                <li class="pricing-features-item">Including battery</li>
+                              </ul>
+                              <span class="pricing-price">£40</span>
+                              <input type="radio" id="sensors" name="sensorchoice" value="shock">
+              <label for="shock">Choose</label><br>
+                            </div>
+                          
+                          <div class="pricing-plan">
+                            <img src="/img/accessories/Eolis.jpeg" width="168px" alt="" class="pricing-img">
+                            <h2 class="pricing-header">Eolis</h2>
+                            <ul class="pricing-features">
+                              <li class="pricing-features-item">Wind sensor</li>
+                              <li class="pricing-features-item">Including Telis 1 controller</li>
+                              <li class="pricing-features-item">Including battery</li>
+                            </ul>
+                            <span class="pricing-price">£79</span>
+                            <input type="radio" id="sensors" name="sensorchoice" value="eolis">
+                            <label for="eolis">Choose</label><br>
+                          </div>
+                          
+                          <div class="pricing-plan">
+                            <img src="/img/accessories/Soliris.jpeg" width="200px" alt="" class="pricing-img">
+                            <h2 class="pricing-header">Soliris</h2>
+                            <ul class="pricing-features">
+                              <li class="pricing-features-item">wind&sun</li>
+                              <li class="pricing-features-item">radio controlled</li>
+                              <li class="pricing-features-item">Including Telis 4 controller</li>
+                              <li class="pricing-features-item">Power Supply: 230V~</li>
+                             
+                            </ul>
+                            <span class="pricing-price">£99</span>
+                            <input type="radio" id="sensors" name="sensorchoice" value="soliris">
+                            <label for="soliris">Choose</label><br>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </article>
+                  </section>
+        
+                  <nav class="legend">
+                    <label for="status-1">Choose motor</label>
+                    <label for="status-2">Choose sensor</label>
+                  </nav>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+        <div class="understandbox">
+          <h2>Final Checks:</h2>
+        
+            <br>
+            <br>
+            <h9><input type="checkbox" required name="terms"> I understand this is a bespoke product and
+               cannot be cancelled once the
+                manufacture has commenced</h9>
+          <br>
+            <h9><input type="checkbox" name="terms"> I can confirm that my choices are 
+              suitable for myself and wall mounting.</h9>
+        <br>
+        <h9><input type="checkbox" required name="terms"> I agree to Insignia <a href="">Terms&conditions.</a></h9>
+        
+            <p><input type="submit"></p>
+            
+        </div>
+        </form>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+ <!-- FOOTER START -->
+ <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <div class="heading-footer">
+              English
+              <br>
+               Awnings Direct
+          </div>
+          <ul class="list-unstyled">
+            <li>EnglishAwningsDirect.com</a></li>
+            <li>United Kingdom, Dorset</a></li>
+            <li>Unit 6 West Howe Industrial Estate</a></li>
+            <li>Elliot road</a></li>
+            <li>BH11 8JX</li> 
+          </ul>
+        </div>
+      </div>
+      <!--Column2-->
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-pad">
+          <h8>Awnings</h8>
+          <ul class="list-unstyled">
+            <li><a href="/casablanca/">Casablanca full cassette</a></li>
+            <li><a href="/corsica/">Corsica full cassette</a></li>
+            <li><a href="/palladio/">Palladio full cassette</a></li>
+            <li><a href="/silverplus/">Silver plus</a></li>
+            <li><a href="/boxitalia/">Italia sun blind</a></li>
+            <li><a href="/bora/">Bora side screen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column3-->
+        <div class="footer-pad">
+          <h8>Features</h8>
+          <ul class="list-unstyled">
+            <li><a href="/color-pallet/">Fabric Colours</a></li>
+            <li><a href="/about/">Quality</a></li>
+            <li><a href="/about/#demo">Style</a></li>
+            <li><a href="/about/#ease">Ease</a></li>
+            <li><a href="/about/#features">Adjustment</a></li>
+            <li><a href="/about/#howto">Us</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-3">
+            <h8>Follow Us</h8>
+            <ul class="social-network social-circle">
+              <br>
+              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <br>
+              <br>
+              <br>
+            </ul>	
+            <ul>
+              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+            </ul>
+                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+        </div>
+    </div>
+
+
+  </div>
+  </div>
+</footer>
+
+<!-- FOOTER OVER-->
+          <!--Link to JS CART-->
+          <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <link rel="stylesheet" href="/css/styleaccessoriess.css">
+    <!-- Link to CSS CART-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--Usage as font-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+     
+
+    <style>
+                @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+  /*
+Basic input element using psuedo classes
+*/
+
+h1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+h3{
+  font-family: 'Oswald', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 7px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: #a46497(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 5px;
+  margin: 0;
+  width: 20%;
+  border-top: 1.5px solid #a46497;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 60%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #7e1b97;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin-left: -480px;
+  position: absolute;
+  color: #a46497;
+  font-size: 30px;
+  top: -100px;
+  left: 450px;
+  z-index: 0;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+input,
+span,
+label,
+textarea {
+  font-family: 'Lora', sans-serif;
+  display: block;
+  padding: 15px;
+  border: none;
+  font-size: 25px;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.emailusform{
+  padding-left: 29%;
+}
+
+
+
+
+
+        
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+/* BUTTON SEND EMAIL */
+.emailbutton{
+  border: none;
+  margin-left: 650px;
+}
+.emailbutton:focus {
+    border: none;
+    outline: none;
+}
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+/* SELECT COLOR */
+.desc { color:#7e1b97;}
+        
+        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+        .dropdown dd { position:relative; }
+        .dropdown a, .dropdown a:visited { color:black; text-decoration:none; outline:none;}
+        .dropdown a:hover { color:black;}
+        .dropdown dt a:hover { color:grey; border: 1px solid grey;}
+        .dropdown dt a {background:white url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                        border:1px solid #7e1b97; width:300px;}
+        .dropdown dt a span {cursor:pointer; display:block; padding:5px;}
+        .dropdown dd ul { background:white none repeat scroll 0 0; border:1px solid #7e1b97; color:#7e1b97; display:none;
+                          left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
+        .dropdown span.value { display:none;}
+        .dropcolor a { padding:5px; display:block;}
+        .dropcolor a:hover { background-color:rgb(204, 202, 202);}
+        
+        .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+        .flagvisibility { display:none;}
+
+        .flag{
+            width: 280px;
+            height: 50px;
+            
+        }
+
+        .dropdown{
+          margin-left: 65%;
+          display: block;
+          z-index: 1000;
+          bottom: 10%;
+          list-style: none;
+          overflow-y: auto;
+          min-height: 350px;
+         
+          
+        }
+        .dropcolors{
+          float: none;
+          display: block;     
+        }
+
+        .dropcolorfabric{
+          text-align: center;
+        }
+.fontcololor{
+  margin-left: 52%;
+}
+.perlaimg{
+margin-right: 5%;
+}
+
+
+        /* SELECT COLOR OVER */
+
+        </style>
+    <title>Document</title>
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%> 
+<%- include('partials/sidebar'); -%>  
+
+<div class="containeraccessories">
+  <!-- / .topnav -->
+  <br>
+  <br>
+  <br>
+  <section class="banner">
+    <div class="slide">
+      <div class="description">
+        <h1>Fabrics</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deleniti similique fugit expedita commodi, consectetur, eligendi.</p>
+
+
+
+      </div>
+      <div class="fabric-shop">
+        <!--shop-->
+        <section class="shop container">
+          <!--Content-->
+          <div class="shop-content">
+              <img src="/img/perla-fr.jpeg" alt="" class="product-img">
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+  <!-- / .banner -->
+</div>
+
+<br>
+<br>
+<br>
+ <!-- FOOTER START -->
+ <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <div class="heading-footer">
+              English
+              <br>
+               Awnings Direct
+          </div>
+          <ul class="list-unstyled">
+            <li>EnglishAwningsDirect.com</a></li>
+            <li>United Kingdom, Dorset</a></li>
+            <li>Unit 6 West Howe Industrial Estate</a></li>
+            <li>Elliot road</a></li>
+            <li>BH11 8JX</li> 
+          </ul>
+        </div>
+      </div>
+      <!--Column2-->
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-pad">
+          <h8>Awnings</h8>
+          <ul class="list-unstyled">
+            <li><a href="/casablanca/">Casablanca full cassette</a></li>
+            <li><a href="/corsica/">Corsica full cassette</a></li>
+            <li><a href="/palladio/">Palladio full cassette</a></li>
+            <li><a href="/silverplus/">Silver plus</a></li>
+            <li><a href="/boxitalia/">Italia sun blind</a></li>
+            <li><a href="/bora/">Bora side screen</a></li>
+          </ul> 
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column3-->
+        <div class="footer-pad">
+          <h8>Features</h8>
+          <ul class="list-unstyled">
+            <li><a href="/color-pallet/">Fabric Colours</a></li>
+            <li><a href="/about/">Quality</a></li>
+            <li><a href="/about/#demo">Style</a></li>
+            <li><a href="/about/#ease">Ease</a></li>
+            <li><a href="/about/#features">Adjustment</a></li>
+            <li><a href="/about/#howto">Us</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-3">
+            <h8>Follow Us</h8>
+            <ul class="social-network social-circle">
+              <br>
+              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <br>
+              <br>
+              <br>
+            </ul>	
+            <ul>
+              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+            </ul>
+                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+        </div>
+    </div>
+
+
+  </div>
+  </div>
+</footer>
+
+<!-- FOOTER OVER-->
+    <!--Link to JS CART-->
+    <script src="/js/main.js"></script>
+</body>
+</html>  

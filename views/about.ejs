@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>About us</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+<link rel="stylesheet" href="/public/css/styleabout.css">
+<!--FONT-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="/css/style.css" />
+
+<link rel="stylesheet" href="/css/style1.css"> 
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body>
+  
+  <style>
+            @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+/* MAIN STYLE */ 
+a{
+  text-decoration: none;
+    background-color: transparent;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+header nav {
+  text-align: right;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 1em;
+  position: fixed;
+  width: 10%;
+}
+header nav a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2em 1em .5em;
+  -webkit-transition: all .3s ease-in;
+}
+.small {
+  padding: .5em 1em;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  background: rgba(255,255,255,0.3);
+}
+
+.section {
+  background-image:  url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.section.two {
+  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg");
+}
+.section h2 {
+  min-height: 700px;
+  color: white;
+  padding: 2em 0;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+}
+
+.info {
+  background: white;
+  color: black;
+  padding: 3em 20%;
+}
+
+.button {
+  text-align: center;
+}
+.button a {
+  display: inline-block;
+  border: 2px solid #7e1b97;
+  padding: .75em 1.5em;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+.button a:hover {
+  color: #FFFAF0;
+  background: #a46497;
+}
+
+
+#toTop img {
+  width: 50px;
+}
+#toTop img:hover {
+  cursor: pointer;
+}
+nav img {
+  z-index: 1;
+  height: 2.5em;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  transition: all 0.5s linear;
+}
+
+.move {
+  top: -60px;
+}
+
+nav span {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  transition: all 0.5s ease-in;
+}
+
+.movetext {
+  top: -30px;
+}
+/* OVER */
+
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+h2{
+  font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+    
+}
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  letter-spacing: 18px;
+  text-align: center;
+  font-weight: 400;
+  z-index: 10;
+  opacity: 1;
+  text-transform: uppercase;
+
+}
+  
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+
+    /*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+  </style>
+<!-- partial:index.partial.html -->
+<body>
+<%- include('partials/navbar'); -%>
+  
+<%- include('partials/cookies'); -%>
+
+  
+<%- include('partials/sidebar'); -%>
+<div class="section">
+  <h2>English Awnings Direct</h2>
+</div>
+<div id="section1" class="info">
+
+  <h3>About us</h3>
+  <br>
+  <br>
+  <p>We are a team of awning specialists offering a made to measure DIY options as well as fitting option.</p>
+  <p>Whether you require a full set of awnings, or a a single awning for your garden or patio.</p>
+  <p>Our team offers products and services to suit your specific requirements and budget.</p>
+  <p>As a leading seller of top quality awning fabrics with more than 28 years of experience in textiles,</p>
+  <p>We are proud to serve our costumers with our high quality finish.</p>
+  <p>Want to find out more about our blinds and awnings?</p> 
+  <br>
+  <p>Please message us or give us a call today!</p>
+  <br>
+  <br>
+  <div class="button">
+    <a href="/contact-us/">Message us !</a>
+  </div>
+</div>
+
+<div class="section two">
+  <h2>Style</h2>
+</div>
+
+<div id="section2" class="info">
+  <p>Reason that style matters is for consistency, that's how we provide our 28 year experience.</p>
+  <p>Variations in awning type, huge colour pallet or our openness to special queries.</p>
+  <p>Check our colour pallet and get your Free samples!</p>
+  <br>
+  <br>
+  <div class="button">
+    <a href="/color-pallet/">Free samples</a>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Ease</h2>
+</div>
+
+<div id="section3" class="info">
+  <p>Ease of use will help you relax....</p>
+  <p>Much easier than winding a crank handle, electric control makes opening and closing your awning simple, no matter your strength.</p>
+  <p>Just press a button on a remote control and the awning will open or close gently, quietly and efficiently.</p>
+  <p>Furthermore, you don’t even have to get up from reading your book or relaxing on a sun lounger to operate the awning,</p>
+  <p>simply relax and let the motorised system do all of the hard work!</p>
+
+  <p>See link below to see our variety of electronics to provide you more relax.</p>
+  <br>
+  <br>
+  <div class="button">
+    <a href="/accessories/">Accessories</a>
+  </div>
+</div>
+
+<div class="section two">
+  <h2>Adjustment</h2>
+</div>
+
+<div id="section4" class="info">
+  <p>Successful adjustment is crucial to having a high quality of life.</p>
+  <p>That's why our team is always happy to help You to choose the right product</p>
+  <p>and explain you proccess of fitting if you'd like to apply awning on your own.</p>
+  <p>See our advices on brack types and fitting down below.</p>
+  <br>
+  <br>
+  <div class="button">
+    <a href="/brackets/">Fitting styles</a>
+  </div>
+</div>
+
+        <!-- FOOTER START -->
+        <footer class="mainfooter" role="contentinfo">
+          <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <div class="heading-footer">
+                      English
+                      <br>
+                       Awnings Direct
+                  </div>
+                  <ul class="list-unstyled">
+                    <li>EnglishAwningsDirect.com</a></li>
+                    <li>United Kingdom, Dorset</a></li>
+                    <li>Unit 6 West Howe Industrial Estate</a></li>
+                    <li>Elliot road</a></li>
+                    <li>BH11 8JX</li> 
+                  </ul>
+                </div>
+              </div>
+              <!--Column2-->
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-pad">
+                  <h8>Awnings</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/casablanca/">Casablanca cassette</a></li>
+                    <li><a href="/corcisa/">Corsica cassette</a></li>
+                    <li><a href="/palladio/">Palladio cassette</a></li>
+                    <li><a href="/silverplus/">Silver plus</a></li>
+                    <li><a href="/boxitalia/">Italia sun blind</a></li>
+                    <li><a href="/bora/">Bora</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <!--Column3-->
+                <div class="footer-pad">
+                  <h8>Features</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/color-pallet/">Fabric colours</a></li>
+                    <li><a href="/about/">Quality</a></li>
+                    <li><a href="/about/#demo">Style</a></li>
+                    <li><a href="/about/#ease">Ease</a></li>
+                    <li><a href="/about/#features">Adjustment</a></li>
+                    <li><a href="/about/#howto">Us</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="col-md-3">
+                    <h8>Follow Us</h8>
+                    <ul class="social-network social-circle">
+                      <br>
+                      <li><a href="https://www.facebook.com/InsigniaBlindsPoole/" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <br>
+                      <br>
+                      <br>
+                    </ul>	
+                    <ul>
+                      <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+                      <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+                    </ul>
+                          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+                </div>
+            </div>
+          </div>
+          </div>
+        </footer>
+        
+<!-- FOOTER OVER-->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'>
+  
+</script><script  src="/scriptabout.js"></script>
+<script>
+  // Smooth Scroll on clicking nav items
+$('nav a').click(function () {
+  var $href = $(this).attr('href');
+  $('body').stop().animate({
+    scrollTop: $($href).offset().top
+  }, 1000);
+  return false;
+});
+
+// back to top
+$('#toTop a').click(function () {
+  $('body').animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
+
+// Parallaxing + add class active on scroll
+$(document).scroll(function () {
+  
+  // parallaxing
+  var $movebg = $(window).scrollTop() * -0.3;
+  $('.secton').css('background-positionY', ($movebg) + 'px');
+
+  // add class active to nav a on scroll
+  var scrollPos = $(document).scrollTop() + 100;
+  $('nav a').each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('nav a').removeClass();
+      currLink.addClass("active");
+    }
+  });
+  
+  // changing padding of nav a on scroll
+    if (scrollPos > 250) {
+      $('nav a').addClass('small');
+      $('nav img').addClass('move');
+      $('nav span').removeClass('movetext');
+    } else {
+      $('nav a').removeClass('small');
+      $('nav img').removeClass('move');
+      $('nav span').addClass('movetext');
+    }
+  
+});
+</script>
+</body>
+</html>

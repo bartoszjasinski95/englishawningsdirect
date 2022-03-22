@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" > 
+
+<!-- Link to CSS CART-->
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/style1.css" />
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+.titlesawnings{
+  font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.columninfopro1 {
+  float: left;
+  width: 33.33%;
+  padding-left: 10%;
+}
+.columninfopro2 {
+  float: left;
+  width: 33.33%;
+}
+.columninfopro3 {
+  float: left;
+  width: 33.33%;
+  padding-right: 10%;
+}
+
+/* Clear floats after the columns */
+.rowinfopro:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+h2{
+  font-family: 'Oswald', sans-serif;
+    font-size: 45px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+h9{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* AWNING MENU */
+a{color: black;
+
+}
+
+/* OVER */
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+/* PICTURE SLIDE NUMBERS*/
+.ms--images {
+  position: relative;
+  overflow: hidden;
+}
+.ms--images.ms-container--horizontal {
+  width: 100%;
+  height: 400px;
+  max-width: 100%;
+}
+.ms--images.ms-container--horizontal .ms-track {
+  left: calc(50% - 350px);
+}
+.ms--images.ms-container--horizontal .ms-slide {
+  display: inline-flex;
+}
+.ms--images .ms-track {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ms--images .ms-slide {
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 400px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--images {
+  left: calc(50% - 280px);
+}
+.ms--images.ms-container--horizontal .ms-track {
+  left: -70px;
+}
+.ms--images .ms-slide:nth-child(1) .ms-slide__image {
+  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/02_Casablanca_wiz/wizualizacja_casablanca.jpg");
+}
+.ms--images .ms-slide:nth-child(2) .ms-slide__image {
+  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg");
+}
+.ms--images .ms-slide:nth-child(3) .ms-slide__image {
+  background-image: url("https://www.selt.com/images/galeria/02_markizy/2_Balkonowe/02_dom_mieszkalny_opole/2006_06_Italia_Kasetowa_Dom_Opole_03.jpg");
+}
+.ms--images .ms-slide:nth-child(4) .ms-slide__image {
+  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg");
+}
+.ms--images .ms-slide__image-container {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(208, 59, 228, 0.3);
+  overflow: hidden;
+}
+.ms--images .ms-slide__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.ms--numbers {
+  position: relative;
+  overflow: hidden;
+}
+.ms--numbers.ms-container--horizontal {
+  width: 180px;
+  height: 240px;
+  max-width: 100%;
+ 
+}
+.ms--numbers.ms-container--horizontal .ms-track {
+  left: calc(60% - 120px);
+  top: calc(-20%);
+}
+.ms--numbers.ms-container--horizontal .ms-slide {
+  display: inline-flex;
+}
+.ms--numbers .ms-track {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* width byl 240px */
+.ms--numbers .ms-slide {
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 240px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--numbers {
+  position: absolute;
+  left: calc(50% - 380px);
+  top: calc(50% - 300px);
+  z-index: -1;
+  pointer-events: none;
+}
+.ms--numbers .ms-slide {
+  font-size: 9em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.ms--titles {
+  position: relative;
+  overflow: hidden;
+}
+.ms--titles.ms-container--vertical {
+  width: 400px;
+  height: 170px;
+  max-height: 100%;
+}
+.ms--titles.ms-container--vertical .ms-track {
+  flex-direction: column;
+  top: calc(50% - 85px);
+}
+.ms--titles.ms-container--vertical.ms-container--reverse .ms-track {
+  flex-direction: column-reverse;
+  top: auto;
+  bottom: calc(50% - 85px);
+}
+.ms--titles.ms-container--vertical .ms-slide {
+  display: flex;
+}
+.ms--titles .ms-track {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ms--titles .ms-slide {
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 170px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--titles {
+  position: absolute;
+  left: calc(50% - 420px);
+  top: calc(50% - 85px);
+  z-index: 1;
+  pointer-events: none;
+}
+.ms--titles .ms-track {
+  white-space: normal;
+}
+.ms--titles .ms-slide {
+  font-size: 3.3em;
+  font-weight: 600;
+}
+.ms--titles .ms-slide h3 {
+  margin: 0;
+  text-shadow: 1px 1px 2px black;
+}
+
+.ms--links {
+  position: relative;
+  overflow: hidden;
+}
+.ms--links.ms-container--vertical {
+  width: 120px;
+  height: 60px;
+  max-height: 100%;
+}
+.ms--links.ms-container--vertical .ms-track {
+  flex-direction: column;
+  top: calc(50% - 30px);
+}
+.ms--links.ms-container--vertical .ms-slide {
+  display: flex;
+}
+.ms--links .ms-track {
+  display: flex;
+  position: absolute;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.ms--links .ms-slide {
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 60px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.ms--links {
+  position: absolute;
+  left: calc(50% - 420px);
+  top: calc(50% + 105px);
+  z-index: 1;
+}
+.ms--links .ms-track {
+  white-space: normal;
+}
+.ms--links .ms-slide__link {
+  font-weight: 600;
+  padding: 5px 0 8px;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 420px);
+  top: calc(100%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.pagination__button {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination__button:before, .pagination__button:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50% - 10px);
+  width: 100%;
+  box-shadow: 0px 3px 3px #0B0D14;
+}
+.pagination__button:before {
+  height: 5px;
+  background-color: #a46497;
+}
+.pagination__button:after {
+  height: 7px;
+  background-color: #7e1b97;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+.pagination__item--active .pagination__button:after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 860px) {
+  .ms--numbers {
+    left: calc(50% - 120px);
+  }
+
+  .ms--titles {
+    left: calc(50% - 200px);
+    top: calc(50% - 135px);
+    text-align: center;
+  }
+
+  .ms--links {
+    left: calc(50% - 60px);
+    top: calc(50% + 80px);
+  }
+
+  .pagination {
+    left: 50%;
+    top: calc(100% - 50px);
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .ms--images {
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ms--titles .ms-slide {
+    transform: scale(0.8);
+  }
+}
+
+
+.containerslideimages1 {
+  overflow: hidden;
+}
+
+.containerslideimages1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: white(0, 0, 0, 0.1);
+}
+/* zmienianie paska tla */
+.containerslideimages1:before {
+  content: "";
+  position: absolute;
+  right: -116%;
+  top: 0;
+  width: 260%;
+  height: 125%;
+  background-color: rgb(180, 180, 180);
+  transform: rotate(50deg);
+  z-index: -1;
+}
+/* koniec*/
+
+.slideimages1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+}
+
+
+.sliders-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+@media screen and (max-width: 860px) {
+  .header__menu, .slideimages1 {
+    display: none;
+  }
+}
+/* PICTURE SLIDE NUMBERS OVER */
+
+.navibarmenu{
+  z-index: 1000;
+}
+
+.column1{
+  z-index: 10;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 3px;
+  margin-top: 0%;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+
+
+</style>
+    <title>Awnings</title>
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+  <%- include('partials/cookies'); -%> 
+  <%- include('partials/sidebar'); -%>
+  <br>
+  <br>
+  <br>
+  <div class="rowawningmenu">
+    <div class="column1" style="background-color:white;">
+      <a href="/casablanca/">/ Casablanca <br> full cassette</a>
+      <br>
+      <br>
+      <a href="/corsica/">/ corsica <br> full cassette</a>
+      <br>
+      <br>
+      <a href="/palladio/">/ Palladio <br> semi cassette</a>
+      <br>
+      <br>
+      <a href="/Silverplus/">/ Silver plus <br> no cassette</a>
+      <br>
+      <br>
+      <a href="/boxitalia/">/ Italia <br> sun blind</a>
+      <br>
+      <br>
+      <a href="/bora/">/ Bora <br> side screen</a>       
+    </div>
+<br>
+<br>
+<div class="titlesawnings">
+<h9>English awnings direct <br> quality we are proud of.</h9>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+ <p>When it comes to our garden awnings, we offer a range of fabrics and colours to choose from! 
+<br>
+<br>
+Made of the highest quality components, Our 28 years experience lead us to perfection
+and happy costumers.
+<br>
+<br>
+Because of this, we are certain to supply you with some of the best awnings Dorset has to offer!
+<br>
+<br>
+ With minimal maintenance and electric open and close functions, our garden awnings and other residential canopies are 
+ <br>
+ <br>
+ guaranteed to provide you with the most efficient outdoor experience for your property!
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- PICTURES SLIDESHOW -->
+<div class="containerslideimages1">
+
+  <main class="sliders-container">
+
+
+
+      <ul class="pagination">
+          <li class="pagination__item"><a class="pagination__button"></a></li>
+          <li class="pagination__item"><a class="pagination__button"></a></li>
+          <li class="pagination__item"><a class="pagination__button"></a></li>
+          <li class="pagination__item"><a class="pagination__button"></a></li>
+          
+      </ul>
+  </main>
+  <div class="slideimages1">
+  </div>
+</div>
+<!-- partial -->
+<script src='https://rawgit.com/lmgonzalves/momentum-slider/master/dist/momentum-slider.min.js'></script>
+<script  src="./script.js"></script>
+
+
+<!--PICTURE SLIDES OVER-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>We have a fantastic range of residential canopies for customers in a UK.
+  <br>
+  <br>
+   We cater to all requirements and budgets so whatever kind of patio or garden awning you require.
+   <br>
+   <br>
+   We guarantee to have the perfect solution for you!</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ <!-- FOOTER START -->
+ <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <div class="heading-footer">
+              English
+              <br>
+               Awnings Direct
+          </div>
+          <ul class="list-unstyled">
+            <li>EnglishAwningsDirect.com</a></li>
+            <li>United Kingdom, Dorset</a></li>
+            <li>Unit 6 West Howe Industrial Estate</a></li>
+            <li>Elliot road</a></li>
+            <li>BH11 8JX</li> 
+          </ul>
+        </div>
+      </div>
+      <!--Column2-->
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-pad">
+          <h8>Awnings</h8>
+          <ul class="list-unstyled">
+            <li><a href="/casablanca/">Casablanca full cassette</a></li>
+            <li><a href="/corsica/">Corsica full cassette</a></li>
+            <li><a href="/palladio/">Palladio full cassette</a></li>
+            <li><a href="/silverplus/">Silver plus</a></li>
+            <li><a href="/boxitalia/">Italia sunblind</a></li>
+            <li><a href="/bora/">Bora side screen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column3-->
+        <div class="footer-pad">
+          <h8>Features</h8>
+          <ul class="list-unstyled">
+            <li><a href="/color-pallet/">Fabric Colours</a></li>
+            <li><a href="/about/">Quality</a></li>
+            <li><a href="/about/#demo">Style</a></li>
+            <li><a href="/about/#ease">Ease</a></li>
+            <li><a href="/about/#features">Adjustment</a></li>
+            <li><a href="/about/#howto">Us</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-3">
+            <h8>Follow Us</h8>
+            <ul class="social-network social-circle">
+              <br>
+              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <br>
+              <br>
+              <br>
+            </ul>	
+            <ul>
+              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+            </ul>
+                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+        </div>
+    </div>
+
+
+  </div>
+  </div>
+</footer>
+
+<!-- FOOTER OVER-->
+<!--SCRIPT SLIDE IMAGES NUMBERS START-->
+
+
+              <script>
+(function() {
+
+var slidersContainer = document.querySelector('.sliders-container');
+
+// Initializing the numbers slider
+var msNumbers = new MomentumSlider({
+    el: slidersContainer,
+    cssClass: 'ms--numbers',
+    range: [1, 4],
+    rangeContent: function (i) {
+        return '0' + i;
+    },
+    style: {
+        transform: [{scale: [0.4, 1]}],
+        opacity: [0, 1]
+    },
+    interactive: false
+});
+
+// Initializing the titles slider
+var titles = [
+    '01 <br> Bournemouth',
+    '02 <br> Poole',
+    '03 <br> Christchurch',
+    '04 <br> Southampton'
+];
+var msTitles = new MomentumSlider({
+    el: slidersContainer,
+    cssClass: 'ms--titles',
+    range: [0, 3],
+    rangeContent: function (i) {
+        return '<h3>'+ titles[i] +'</h3>';
+    },
+    vertical: true,
+    reverse: true,
+    style: {
+        opacity: [0, 1]
+    },
+    interactive: false
+});
+
+// Initializing the links slider
+var msLinks = new MomentumSlider({
+    el: slidersContainer,
+    cssClass: 'ms--links',
+    range: [0, 4],
+    rangeContent: function () {
+        return '<a class="ms-slide__link"></a>';
+    },
+    vertical: true,
+    interactive: false
+});
+
+// Get pagination items
+var pagination = document.querySelector('.pagination');
+var paginationItems = [].slice.call(pagination.children);
+
+// Initializing the images slider
+var msImages = new MomentumSlider({
+    // Element to append the slider
+    el: slidersContainer,
+    // CSS class to reference the slider
+    cssClass: 'ms--images',
+    // Generate the 4 slides required
+    range: [0, 3],
+    rangeContent: function () {
+        return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
+    },
+    // Syncronize the other sliders
+    sync: [msNumbers, msTitles, msLinks],
+    // Styles to interpolate as we move the slider
+    style: {
+        '.ms-slide__image': {
+            transform: [{scale: [1.5, 1]}]
+        }
+    },
+    // Update pagination if slider change
+    change: function(newIndex, oldIndex) {
+        if (typeof oldIndex !== 'undefined') {
+            paginationItems[oldIndex].classList.remove('pagination__item--active');
+        }
+        paginationItems[newIndex].classList.add('pagination__item--active');
+    }
+});
+
+// Select corresponding slider item when a pagination button is clicked
+pagination.addEventListener('click', function(e) {
+    if (e.target.matches('.pagination__button')) {
+        var index = paginationItems.indexOf(e.target.parentNode);
+        msImages.select(index);
+    }
+});
+
+})();
+              </script>
+              <!--SCRIPT SLIDE IMAGES NUMBERS OVER-->
+
+    <!--Link to JS CART-->
+    <script src="/js/main.js"></script>
+</body>
+</html>

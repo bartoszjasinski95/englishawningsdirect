@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
+    <style>
+                @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+  /*
+Basic input element using psuedo classes
+*/
+
+
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: #a46497(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 5px;
+  margin: 0;
+  width: 20%;
+  border-top: 1.5px solid #a46497;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 60%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #7e1b97;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin-left: -480px;
+  position: absolute;
+  color: #a46497;
+  font-size: 30px;
+  top: -100px;
+  left: 450px;
+  z-index: 0;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+input,
+span,
+label,
+textarea {
+  font-family: 'Lora', sans-serif;
+  display: block;
+  padding: 15px;
+  border: none;
+  font-size: 25px;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+        
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+/* BUTTON SEND EMAIL */
+.emailbutton{
+  border: none;
+  margin-left: 650px;
+}
+.emailbutton:focus {
+    border: none;
+    outline: none;
+}
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+.termsheading{
+    color: black;
+  list-style: none;
+  position: relative;
+  line-height: 2;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0px;
+  font-weight: 400;
+  z-index: 10;
+  opacity: 1;
+  margin: 50px;
+  text-align: left;
+}
+
+
+
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 1rem 2rem;
+  background: rgb(206, 206, 206);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.cookie-box--hide {
+  opacity: 0;
+ 
+}
+
+.cookie-button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.65rem 0.85rem;
+  margin-left: 0.45rem;
+  color: rgb(31, 29, 29);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  background-image: linear-gradient(62deg, #e277cb 0%, #f3b5f0 100%);
+}
+
+
+        </style>
+    <title>Document</title>
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%> 
+<%- include('partials/sidebar'); -%>
+<br>
+<br>
+<br>
+<div class="Headingcookie">
+    <h2>This policy sets out our policy on the privacy of the individual.</h2>
+
+<h2>We take your privacy seriously. Information will be used in accordance with the Data Protection Act 1998.</h2>
+<br>
+<br>
+<br>
+<br>
+<p>
+    1.Your Consent
+    Your use of this website signifies your consent to us collecting and using personal data about you. As specified below. In accordance with this policy statement. Should we choose to change these terms for any reason. The changes will be posted here. You are always kept informed about the collection and use of your personal information. And when we disclose it.
+</p>
+<p>
+    2.How do we collect personal information about you? How is it used?
+</p>
+<p>
+    1.You may provide personal information when communicating with us.
+</p>
+<p>
+    2.You may use our services and give your name and e-mail address. To make a comment about our services or Web site.
+</p>
+<p>
+    3.If you enter a competition or promotion we will ask your name, address and e-mail address.
+</p>
+<p>
+    4.We will collect information about your tastes and preferences. Both when you tell us and by analysis of customer traffic. Including using “cookies”.
+</p>
+<p>
+    5.It may be that some of the personal information you give us (for example, about your health and age) is sensitive personal data. Within the meaning of the Data Protection Act 1998. Such information (“sensitive information”) will only be disclosed with your express consent.
+</p>
+<p>
+    6.It may be that you provide details of credit or debit cards or bank accounts in making payment to us. Any such information (confidential financial information) will be disclosed only in accordance with the disclosure policy below.
+</p>
+<p>
+    7.We may use personal information collected about you to help us develop the layout of our website. To ensure that our site is as useful and enjoyable as possible.
+</p>
+<p>
+    8.We may use personal information collected about you to let you know about functions on our Web site. Or changes to our terms and conditions of use.
+</p>
+<p>
+    3.Traffic Data
+    We may provide aggregate statistics about sales. Customers, traffic patterns and information to third parties. But these statistics will not include any information that identifies you.
+</p>
+<p>
+    4.Disclosure Policy
+    We reserve the right to access and disclose individually identifiable information. To enable us to comply with applicable laws and lawful government requests. To operate its systems and to protect itself or its users.
+</p>
+<p>
+    5.How do we protect your information?
+    We have strict security procedures covering the storage of your information. In order to prevent unauthorised access and to comply with the terms of the Data Protection Act 1998. This means that sometimes we may ask you for proof of identity or for other personal information. Before we can process your call or enquiry further.
+All data stored is in compliance with the GDPR rules. Please see our GDPR page for further information
+</p>
+<p>
+    6.What are cookies and how do we deal with them?
+    When someone visits our site we collect standard internet log information. And details of visitor behaviour patterns. We do this to find out things. Such as the number of visitors to the various parts of the site. We collect this information in a way which does not identify anyone. We do not make any attempt to find out the identities of those visiting our website. We will not associate any data gathered from this site with any personally identifying information from any source. If we do want to collect personally identifiable information through our website. We will be upfront about this. We will make it clear when we collect personal information. And will explain what we intend to do with it. Use of Cookies by this Web Site
+    Cookies are small amounts of data that are placed on your computer by websites that you visit. They are widely used in order to make websites work. Or work more efficiently. As well as to provide information to the owners of the site.
+</p>
+<br>
+<br>
+<br>
+<br>
+<p>
+    Most web browsers allow some control of cookies through the browser settings. To find out more about cookies like how to see what cookies have been set. And how to manage and delete them. Visit www.allaboutcookies.org.
+
+To opt-out of being tracked by Google Analytics across all websites visit http://tools.google.com/dlpage/gaoptout.
+</p>
+<br>
+<br>
+<h2>
+    Embedded Cookies
+</h2>
+<p>
+    We may embed content such as YouTube videos. Embedded content may set cookies which are completely outside of our control.
+</p>
+<br>
+<br>
+<h2>
+    How to contact us
+</h2>
+<p>
+    If you have any questions or concerns about this policy. Call us on +44 (0)345 500 4600 or email via our contact section.
+</p>
+</div>
+<br>
+<br>
+ <!-- FOOTER START -->
+ <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <div class="heading-footer">
+              English
+              <br>
+               Awnings Direct
+          </div>
+          <ul class="list-unstyled">
+            <li>EnglishAwningsDirect.com</a></li>
+            <li>United Kingdom, Dorset</a></li>
+            <li>Unit 6 West Howe Industrial Estate</a></li>
+            <li>Elliot road</a></li>
+            <li>BH11 8JX</li> 
+          </ul>
+        </div>
+      </div>
+      <!--Column2-->
+      <div class="col-md-3 col-sm-6">
+        <div class="footer-pad">
+          <h8>Awnings</h8>
+          <ul class="list-unstyled">
+            <li><a href="/casablanca/">Casablanca full cassette</a></li>
+            <li><a href="/corsica/">Corsica full cassette</a></li>
+            <li><a href="/palladio/">Palladio full cassette</a></li>
+            <li><a href="/silverplus/">Silver plus</a></li>
+            <li><a href="/boxitalia/">Italia sun blind</a></li>
+            <li><a href="/bora/">Bora side screen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column3-->
+        <div class="footer-pad">
+          <h8>Features</h8>
+          <ul class="list-unstyled">
+            <li><a href="/color-pallet/">Fabric Colours</a></li>
+            <li><a href="/about/">Quality</a></li>
+            <li><a href="/about/#demo">Style</a></li>
+            <li><a href="/about/#ease">Ease</a></li>
+            <li><a href="/about/#features">Adjustment</a></li>
+            <li><a href="/about/#howto">Us</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-3">
+            <h8>Follow Us</h8>
+            <ul class="social-network social-circle">
+              <br>
+              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <br>
+              <br>
+              <br>
+            </ul>	
+            <ul>
+              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+            </ul>
+                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 copy">
+          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+        </div>
+    </div>
+
+
+  </div>
+  </div>
+</footer>
+
+<!-- FOOTER OVER-->
+</body>
+</html>

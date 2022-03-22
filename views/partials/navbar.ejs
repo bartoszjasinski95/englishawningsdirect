@@ -1,0 +1,92 @@
+<div id="mobile" class="topnav">
+	<a class="active"> 
+		<li class="m-hidden card-right"> <!--Cart icon-->
+			<i class="bx bx-shopping-bag cart-icon"></i>
+			<!--Cart-->
+		</li>
+	</a>
+	
+	<div id="myLinks">
+	  <a href="/">Home</a>
+	  <a href="/about">About</a>
+	  <a href="/awnings">Products</a>
+	  <a href="/color-pallet">Fabric colours</a>
+	  <a href="/contact-us">Contact Us</a>
+	</div>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	  <i class="fa fa-bars"></i>
+	</a>
+  </div>
+<div class="containertopmenu">
+    <section class="top-menu-cont">
+      <nav id="pc" class="top-menu left">
+        <ul class="nav-top">
+
+          <li class="t-hidden m-hidden">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="t-hidden m-hidden"><a href="/about">About</a>
+          </li>
+
+          <li class="t-hidden m-hidden l-hidden" id="menu-article2"><a href="/awnings">
+              Products</a>
+            <ul class="menu-article2">
+              <li>
+                <a href="/awnings/">
+                  Awnings
+                </a>
+              </li>
+              <li>
+                <a href="/accessories/">
+                  Accessories
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="t-hidden m-hidden l-hidden"><a href="/color-pallet/">Fabric colours</a></li>
+
+          
+          <li class="t-hidden m-hidden"><a href="/ultimateguide/">Ultimate Guide</a></li>
+          <li class="t-hidden m-hidden"><a href="/contact-us/">Contact</a></li>
+          <li class="m-hidden"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank"><i
+                class="fa fa-facebook"></i></a></li>
+				<li class="m-hidden card-right"> <!--Cart icon-->
+					<i class="bx bx-shopping-bag cart-icon"></i>
+					<!--Cart-->
+				</li>
+
+          <!--CART -->
+		  
+          
+  </div>
+  <form action="/payment/" method="get">
+	<div class="cart">
+		<h2 class="cart-title">Your cart</h2>
+		<!--Content -->
+		<div class="cart-content">
+
+		</div>
+		<!--Total-->
+		<div class="total">
+		  <div class="total-title">Total</div>
+		  <input style="display:none" id="price" name="price" class="total-price"/>
+		</div>
+		<!--But button-->
+		<button type="submit" class="btn-buy">Buy now</button>
+		<i class='bx bx-x' id="close-cart"></i>
+	  </div>
+	</form>
+
+  <script>
+	function myFunction() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+	</script>

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+
+     <link rel="stylesheet" href="/css/stylelogin.css"> 
+     <link rel="stylesheet" href="/css/style1.css"> 
+          <!-- link ro interactive shop-->
+          <link rel="stylesheet" href="/css/style.css" />
+
+      <!--Usage as font-->
+      <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+
+        /* TICKIS */
+        .rowhome{
+          padding-left: 34%;
+        
+        }
+
+
+
+h1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+        li.bullethome1 {
+  list-style:none;
+  position: relative;
+  padding-left:50px;
+  line-height: 2;
+  font-size:20px;
+  font-family:sans-serif;
+          
+        }
+        li.bullethome1:before {
+           content:"\f00c";
+        }
+        li.bullethome1:hover:before {
+          color:#7e1b97;
+        }
+        li.bullethome1:before {
+          font-family:FontAwesome;
+          position: absolute;
+          left: 0;
+          color:#ce7bbd;
+          font-size:32px;
+        }
+        
+
+
+h4{
+  font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+h5{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+h6{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+h8{
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+
+h9{
+  font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:94px; font-weight:400; text-transform: uppercase; color:black; margin-top:40px; padding:0px;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:24px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz/wizualizacja_corsica_2.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+  z-index: 1000;
+  
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+.checkatradehome{
+  position:relative;
+  height:160px;
+  width:100%;
+  display:block;
+  width:150px;
+  margin:0;
+  padding:0;
+  position:absolute;
+  bottom: -220%;
+  padding-left: 5%;
+}
+
+.bullethome1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+.images-home-sponsors-raw{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+.column-images-home-sponsors {
+  float: left;
+  width: 250px;
+  padding: 0px;
+  margin: 0;
+}
+
+/* Clearfix (clear floats) */
+.column-images-home-sponsors:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* OVER SPONSORS BOTTOM IMAGES */
+
+    </style>
+    <title>Home</title>
+<body>
+<%- include('partials/navbar'); -%>
+  
+  <%- include('partials/cookies'); -%>
+
+  
+  <%- include('partials/sidebar'); -%>
+    
+    <div id="parallax-world-of-ugg">
+  
+        <section>
+          <div class="title">
+            <h1>English</h1>
+            <h1>Awnings direct</h1>
+            <br>
+            <br>
+            <h3>Relax with us</h3>
+          </div>
+        </section>
+        
+        <section>
+            <div class="parallax-one">
+              <h2>Awnings direct <br>
+
+                awnings for your garden and patio.</h2>
+            </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p class="line-break margin-top-10"></p>
+            <h4>WHO WE ARE 
+              <br>
+              ?</h4>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h5>
+              We are a awning company located in Bournemouth, England and have been supplying the local area for over 28 years.
+              <br>
+              <br>
+              Our timeline has led us to many connections and huge gained experience.
+              <br>
+              With our accountability and passion we are happy to provide the best quality european products with the lowest prices available.
+              <br>
+              <br>
+              When it comes to our awnings, we make sure that all our costumers receive honest advice, possibility of fitting and our 5-year guarantee!
+              <br>
+              <br>
+
+            </h5>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-two">
+            <h2>UPGRADE YOUR LIVING SPACE.</h2>
+
+          </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+      <div class="upgradetext">
+        <h4>Always prepared</h4>
+        <br>
+        <br>
+        <br>
+        <h5>Installing awning originally called air conditioner in a stategic place can help you save your energy up to 25 %.
+          <br>
+          <br>
+          When hottest days come drop your temperature by as much as 20 degrees so you can relax comfortably. 
+          <br>
+          <br>
+          Enjoy more sunshine with the fabrics we use and reduce the harmlful UV rays by 98 %,
+          <br>
+          <br>
+          also remaining dyes of your garden furniture at their best.
+          <br>
+          <br>
+          A little shelter from the rain is always welcomed in the UK.
+          <br>
+          <br>
+          In worse conditions, by installing weather sensor can help you relax and keep your awning to last even longer.
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+        </h5>
+          <h4>
+          Maintening was never that easy 
+          <br>
+           self-cleaning effect. 
+          </h4>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h5>
+          Water droplets pick up dirt particles and run off the awning cover
+          <br>
+          <br>
+          taking the dirt with them ensuring you can enjoy your beautiful fabric
+          <br>
+          <br>
+          </h5>
+          <br>
+          <h4>
+           for a long time to come.
+          </h4>
+      </div>
+        <section>
+          <div class="block">
+
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-three">
+            <h2>Extend your space <br>
+               English awnings direct <br> 
+              Protect yourself and family from sun and rain.</h2>
+          </div>
+        </section>
+            <br>
+            <br>
+            <br>
+            <h4>
+              English awnings direct <br>
+               provide optical and thermal comfort.
+            </h4>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <h6>
+              Here at English awnings direct
+              <br>
+              <br>
+                Terrace awnings serve not only as protection but also as a unique decoration with the gighest quality components.
+                <br>
+                <br>
+                Perfect for both residential and commercial use, our awnings come with a variety of benefits.
+                <br>
+                <br>
+            </h6>
+            <div class="rowhome";>
+              <div class="columnhomebullet" style="background-color:white;">
+                <ul>
+                  <li class="bullethome1">
+                  
+                    Expanded living space
+
+                  </li>
+                  
+                  <br>
+                  <li class="bullethome1">
+                    Protection from all-weather types
+                  </li>
+
+                  <br>
+                  <li class="bullethome1">
+                    
+                    Range of colours and fabrics available to suit your property
+                  </li>
+                 
+                  <br>
+                  <li class="bullethome1">
+                    Reduces the need for fans or cooling equipment
+                  </li>
+
+                  <br>
+                  <li class="bullethome1">
+                    Low maintenance
+                  </li>
+  
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h4>         
+               All of our awnings are made to measure.
+          </h4>     
+          <h2>
+               Because of this, you can trust that our team will provide you with a shading solution that perfectly fits your property!
+          </h2>
+            <br>
+            <br>
+                                               <!-- 3D jobdoneslideshow Section --> 
+                                               <section id="jobdoneslideshow">
+                                                <div class="jobdoneslideshowclass">
+                                                    <div class="content-carrousel">
+                                                        <figure class="shadow"><img src="/img/dorsetjob/awnings1-480x480.jpg"></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/awnings2-1-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/commercial-awnings1-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/casablanca-awning-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/Innervision-Awning-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/insignia-awning-2-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/insignia-awning-3-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/insignia-awning-480x480.jpg"/></figure>
+                                                        <figure class="shadow"><img src="/img/dorsetjob/Patio-Awning-480x480.jpg"/></figure>
+                                              </div>
+                                              </div>
+                                              </section>
+                                        </div>
+<br>
+<br>
+<div class="images-home-sponsors-raw">
+
+  <div class="column-images-home-sponsors">
+    <img src="/img/RTS logo.jpg" alt="" >
+  </div>
+  <div class="column-images-home-sponsors">
+    <img src="/img/DICKSON.png" alt="">
+  </div>
+  <div class="column-images-home-sponsors">
+    <img src="/img/somfy-logo.png" alt="">
+  </div>
+  <div class="column-images-home-sponsors">
+    <img src="/img/NIceMotors-Logo-small.png" alt="">
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+        <!-- FOOTER START -->
+        <footer class="mainfooter" role="contentinfo">
+          <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <div class="heading-footer">
+                      English
+                      <br>
+                       Awnings Direct
+                  </div>
+                  <ul class="list-unstyled">
+                    <li>EnglishAwningsDirect.com</a></li>
+                    <li>United Kingdom, Dorset</a></li>
+                    <li>Unit 6 West Howe Industrial Estate</a></li>
+                    <li>Elliot road</a></li>
+                    <li>BH11 8JX</li> 
+                  </ul>
+                </div>
+              </div>
+              <!--Column2-->
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-pad">
+                  <h8>Awnings</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/casablanca/">Casablanca cassette</a></li>
+                    <li><a href="/corsica/">corsica cassette</a></li>
+                    <li><a href="/palladio/">Palladio cassette</a></li>
+                    <li><a href="/silverplus/">Silver plus</a></li>
+                    <li><a href="/boxitalia/">Italia sun blind</a></li>
+                    <li><a href="/bora/">Bora</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <!--Column3-->
+                <div class="footer-pad">
+                  <h8>Features</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/color-pallet/">Collor sample pallet</a></li>
+                    <li><a href="/about/">Quality</a></li>
+                    <li><a href="/about/#demo">Style</a></li>
+                    <li><a href="/about/#ease">Ease</a></li>
+                    <li><a href="/about/#features">Adjustment</a></li>
+                    <li><a href="/about/#howto">Us</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="col-md-3">
+                    <h8>Follow Us</h8>
+                    <ul class="social-network social-circle">
+                      <br>
+                      <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <br>
+                      <br>
+                      <br>
+                    </ul>	
+                    <ul>
+                      <li><a href="/cookiepolicy/">Privacy Policy</a></li>
+                      <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+                    </ul>
+                          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+                </div>
+            </div>
+        
+        
+          </div>
+          </div>
+        </footer>
+        
+<!-- FOOTER OVER-->
+            <script>
+                var closebtns = document.getElementsByClassName("close");
+                var i;
+                
+                for (i = 0; i < closebtns.length; i++) {
+                  closebtns[i].addEventListener("click", function() {
+                    this.parentElement.style.display = 'none';
+                  });
+                }
+                </script>
+                <script>
+                  const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container1 = document.getElementById('container1');
+        
+        signUpButton.addEventListener('click', () => {
+            container1.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+            container1.classList.remove("right-panel-active");
+        });
+                </script>
+
+
+    <!--Link to JS-->
+    <script src="/js/main.js"></script>
+</body>
+</html>

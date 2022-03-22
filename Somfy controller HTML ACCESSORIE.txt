@@ -1,0 +1,11 @@
+    <div class="shop-item">
+      <a href="/somfycontroller/" class="shop-item--container">
+        <div class="images-accessories">
+          <img src="/img/somfy controller.png">
+        </div>
+      </a>
+      <div class="title">
+        <h3><a href="/somfycontroller/">Somfy Controller</a></h3>
+      </div>
+      <div class="price"><span>£48</span></div>
+    </div>

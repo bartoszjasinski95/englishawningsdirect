@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+<link rel="stylesheet" href="/css/styles.css">
+
+<!-- Link to CSS CART-->
+<link rel="stylesheet" href="/css/style.css" />
+<link rel="stylesheet" href="/css/style1.css">
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  
+
+
+
+    <style>
+                @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+  /*
+Basic input element using psuedo classes
+*/
+
+
+h1{
+  font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+h2{
+  font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+h3{
+  font-family: 'Oswald', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+}
+.advantages{
+  text-decoration: underline violet;
+}
+
+
+.Steve-Maraboli{
+  font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    letter-spacing: 10px;
+    text-align: right;
+    font-weight: 500;
+    text-transform: uppercase;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 80%;
+  background: #a46497(0, 0, 0, 0);
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
+  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 5px;
+  margin: 0;
+  width: 20%;
+  border-top: 1.5px solid #a46497;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+  height: 0px;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 60%;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 35px;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 35px;
+}
+
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -100px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -150px;
+  font-size: 22px;
+  color: #a46497;
+}
+
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: #7e1b97;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin-left: -480px;
+  position: absolute;
+  color: #a46497;
+  font-size: 30px;
+  top: -100px;
+  left: 450px;
+  z-index: 0;
+  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
+}
+
+
+input,
+span,
+label,
+textarea {
+  font-family: 'Lora', sans-serif;
+  display: block;
+  padding: 15px;
+  border: none;
+  font-size: 25px;
+}
+
+input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
+  -webkit-animation: appear 1s forwards;
+  animation: appear 1s forwards;
+}
+
+input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
+  display: none;
+}
+
+@-webkit-keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.emailusform{
+  padding-left: 29%;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #7e1b97;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #a46497;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+/*navigation bar */
+
+.navibarmenu {
+  width: 75px;
+  right: 1%;
+  cursor: pointer;
+  margin-top: 21.3%;
+  z-index: 10000;
+}
+img{
+  position: static;
+  z-index: 10;
+}
+
+        </style>
+</head>
+<%- include('partials/navbar'); -%>
+<body>
+<%- include('partials/cookies'); -%> 
+<%- include('partials/sidebar'); -%>
+<h1>Ultimate Guide</h1>
+
+<!--WHAT ARE AWNINGS FOR ?>-->
+<h2>1. What are awnings for ?</h2>
+<br>
+<p>An awning by it's roof like cover will extend your roof extension to offer shade and shelter from sun, rain, wind or snow.</p>
+<p>A custom retractable awning will block the sun's hear and harmful UV rays before they enter your house,</p>
+<p>cooling your home more efficiently than blinds or drapes or any other indoor or outdoor decoraction.</p>
+<br>
+<br>
+<h2>2. Why choose awnings?</h2>
+<h2>Five huge advantages!</h2>
+<br>
+<br>
+<!--REDUCE YOUR ENERGY COSTS-->
+<h3 class="advantages">Reduce your Energy Costs</h3>
+<br>
+<p>A strategically mounted awning will help you save money and reduce your carbon footprint!</p>
+<p>Frequently known as the unique air conditioner, an awning can decrease your electricity charges through up to 25%.</p>
+<p>In iciness, close your retractable awning to allow the sun in so you can</p>
+<p>enjoy the extra warm temperature and mild the sun offers.</p>
+<br>
+<!--LOW MAINTENANCE AND EASY CARE>-->
+<h3 class="advantages">Low Maintenance and Easy Care</h3>
+<p>English Awnings Direct offers the highest level of design and performance.</p>
+<p>Featuring 100% acrylic fabrics, our awnings are mildew resistant and water repellent.</p>
+<p>Your retractable awning is available in a wide range of colours and patterns,</p>
+<p>so it will remain bright and beatiful for many years to come!</p>
+<br>
+<!-- YOU CAN ENHANCE THE LOOK AND FEEL OF YOUR HOME-->
+<h3 class="advantages">You can enhance the look and feel of your home</h3>
+<br>
+<p>Retractable awnings are a great way to expand your seasonal living space while adding value to your home</p>
+<p>without requiring expensive and inconvenient renovations.</p>
+<p>Choosing the right location, style, fabric and colours is important to English Awnings Direct.</p>
+<p>Every awning is costum designed and fabricated to order.</p>
+<br>
+<!--EVENING ENTERTAINING-->
+<h3 class="advantages">Evening entertaining</h3>
+<br>
+<p>We all like savouring the long summer evenings during he summer.</p>
+<p>So, even if the weather isn't scorching, a BBQ or a few drinks in the backyard with family and friends</p>
+<p>is the ideal way to conclude a summer day.</p>
+<p>Awnings give cover, allowing you to spend more time in the garden without being interrupted by the wind or a light shower.</p>
+<br>
+<!--PROTECT FURNISHING-->
+<h3 class="advantages">Protect Furnishings</h3>
+<br>
+<p>For those of you who are fortunate enough to have a south-facing garden, the sun will shine for the most of the day.</p>
+<p>However, furniture near south-facing indows may suffer from sun damage as a result of this.</p>
+<p>An awning may provide shade for your-facing rooms, reducing the fading of your furnishings.</p>
+<p>Awnings are especially popular with wide bilfold or patio doors that let a lot of light into the area.</p>
+<br>
+<!-- WHAT IS THE BEST WAY TO MEASURE AN AWNING? -->
+<h2>3. What is the best way to measure an awning?</h2>
+<br>
+<p>You'll need to acquire the 'A' measurement to make sure you can purchase an awning that fits your house properly.</p>
+<p>The A measurement is the distance from the ground to the awning ralk of your house and black down to the ground.</p>
+<br>
+<br>
+<!-- FILL UP MEASURING TIPS ADVICES-->
+
+
+
+
+<!-- HOW TO CLEAN AN AWNING?-->
+<h2>4. How to clean an Awning?</h2>
+<br>
+<h3>Follow these steps to mantain your canopy fabric:</h3>
+<br>
+
+    <p>1.Remove loose dirt with a brush</p>
+    <p>2.Apply a cleaning solution of water and mild soap</p>
+    <p>3.To clean, use a soft bristle brush</p>
+    <p>4.Soak the fabric in the cleaning solution</p>
+    <p>5.Make sure all soap residue is removed by throughly rinsing.</p>
+    <p>6.Let it air dry</p>
+<br>
+<!--CAN AWNINGS BE POWER WASHED ?-->
+<h2>5. Can awnings be power washed ?</h2>
+<br>
+<p>We strongly warns against washing your awning with a high-pressure cleaner.</p>
+<p>Our recommendation is to use a mild soap or 303 fabric cleaner diluted in warm water.</p>
+<br>
+<!--CAN AWNINGS BE USED IN A RAIN?-->
+<h2>6. Can awnings be used in a rain?</h2>
+<br>
+<p>Most awnings provide some kind of water protection, yet they aren't considered waterproof because</p>
+<p>they can only withstand light rain. If your awning isn't constructed to withstand strong rains, it might be destroyed.</p>
+<p>But don't worry, if you currently have an awning that isn't giving appropriate weather protection,</p>
+<p>there are many of solutions like weather sensors.</p>
+<p>Take a look at the many varietes of awnings on our site <a href="http://www.englishawningsdirect.com/">English Awnings Direct</a>.</p>
+<p>We can also advise you on the finest materials for your needs also via our help line or online chat.</p>
+<br>
+<!--CAN AWNINGS WITHSTAND WIND ?-->
+<h2>7. Can awnings withstand wind ?</h2>
+<br>
+<p>Most self-supported awnings are tested at wind of 20 to 25 miles per hour,</p>
+<p>however this assumes a constant wind rather than a buffeting irregular wind, which is significantly more dangerous.</p>
+<br>
+<!--HOW DO YOU SECURE AWNING FROM STRONG WIND?-->
+<h2>8. How do you secure awning from strong wind ?</h2>
+<br>
+<p>The best solution for strong wind protection is to install one of our wind sensor which automatically extends/retracts</p>
+<p>a motorized awning based on wind and sunlight.</p>
+<p>If winds are moderate you could consider an awning storm strap which hooks over the awning</p>
+<p>and is pegged in at either side to pin the awning down.</p>
+<br>
+<!--CAN AWNINGS BE USED IN WINTER ?-->
+<h2>9. Can awnings be used in winter ?</h2>
+<br>
+<p>Yes, our awnings can do that ! Retracable awnings provide ourdooor shelter and ultimate protection from winter inclementns.</p>
+<p>They are long-lasting and resilient and may be used all year.</p>
+<p>Our awnings allow you to keep your awing retracted or extanded all year, allowing you to keep your patio or deck free of snow.</p>
+<p>Their sloped roof and solid metal construction are designed to whistand winds and keep snow</p>
+<p>from collecting and weighing down on the canvas.</p>
+<p>They also come with a waterproof vinyl or acrylic fabric canvas that may be used safely in the winter!</p>
+<br>
+<!--SNOW-->
+<h2>Snow problem</h2>
+<br>
+<p>Any awning has the potential to be harmed by snow.</p>
+<p>Snow may be accumulate swiftly throughout the winter months, from small snow showers to blizzards.</p>
+<p>Snow accumulation on your awning may cause rips in the fabric, deform the frame,</p>
+<p>and put a lot of strain on your awning in general.</p>
+<br>
+<!--SUN DAMAGE-->
+<h2>Sun damage problem</h2>
+<br>
+<p>If your fabric has faded due to sun exposure, bursh if off to remove dirt</p>
+<p>and then rinse it down with soap to prevent further fading.</p>
+<br>
+<!--FUNGUS OR MOLD-->
+<h2>Fungus or mold problem</h2>
+<br>
+<p>Due to water and heat exposure, mould might form on your sunshade.</p>
+<p>Spray the shade with a hose and use mildew remover to get rid of the fungus.</p>
+<p>Make sure the shade isn't closed until it's entirely dry.</p>
+<br>
+<!--RIPS OR TEARS-->
+<h2>Rips or tears problem</h2>
+<br>
+<p>If your canopy is ripped or damaged, you may replace the holes using patches or special adhesives.</p>
+<p>To seal the rip, you can use a waterproof glue, but make sure to clip any threads first.</p>
+<br>
+<!--BEES AND PESTS-->
+<h2>Bees and pests problem</h2>
+<br>
+<p>Another concern for your awning is bees and pests of any type.</p>
+<p>They can build a nest in your reractable awning, causing extensive damage</p>
+<p>or providing a safe heven for hazardous special to thrive.</p>
+<p>Limiting food supply is the greatest approach to keep bugs away from your awning.</p>
+<p>Sugary drinks, food and trash should never be left out in the open.</p>
+<p>Use these pointers to keep your outdoor awning in good condition.</p>
+<p>Because of the excellent materials and design, you won't have to worry about many of the frequent concerns </p>
+<p>when you pruchase an English Awnings Direct retractable awning.</p>
+<br>
+<br>
+                                                                        <!--SENSOR PROBLEM-->
+<h2>Sensor problems</h2>
+<br>
+<h3>Problem:</h3>
+<br>
+<p>My sensor is broken and my awning won't automatically retract.</p>
+<br>
+<p>Your awning's sensor is in charge of automatically extending and retracing the awning.</p>
+<p>The snsor, like any other electrical component, might fail, preventing the awning from</p>
+<p>opening normally.</p>
+<br>
+<h3>Cause:</h3>
+<br>
+<p>The sensor may have been destroyed by severe weather, or in the circuitry may have blown out.</p>
+<p>During periods of severe rain, if the components or awnings aren't adequately waterproofed, they might be destroyed.</p>
+<br>
+<h3>Solution:</h3>
+<br>
+<p>A expert can diagnose the issue with your sensor and determine whether or not it needs to be replaced.</p>
+<p>Replacing a sensor is straightforward and does not necessitate tampering with other components.</p>
+<p>To eliminate this problem entiely, use an awning with weatherproofed components.</p>
+<br>
+<br>
+<!--MOTOR PROBLEM-->
+<h2>Motor problem</h2>
+<br>
+<h3>Problem:</h3>
+<br>
+<p>The motor is broken and the awning won't move.</p>
+<p>The actual movement of your awning fabric is controlled by the motor.</p>
+<p>Your awning will not extend or retract when you push the remote control of the motor is faulty.</p>
+<br>
+<h3>Cause:</h3>
+<br>
+<p>The engine may have overheated, or it may have just reached the end of its useful life.</p>
+<br>
+<h3>Solution:</h3>
+<br>
+<p>Have the motor inspected by a professional.</p>
+<p>They'll be able to tell if the motor needs to be repaired or if it has to be replaced totally.</p>
+<br>
+<!--AWNING WILL NOT EXTEND-->
+<h2>Awning will not extend problem</h2>
+<br>
+<p>Awnings that are stuck have two basic issues: they either don't extend or don't retract.</p>
+<p>You won't be able to receive and shade if your awning doesn't stretch. Isn't it a hassle ?</p>
+<p>Check to see whether your awning has been recalled before you start prying around.</p>
+<br>
+<!-- FIVE ADVICES FOR TROUBLESHOOTING-->
+<h3 class="advantages">Check our five advices for troubleshooting:</h3>
+<br>
+    <p>1.First, look for tripped circuit breakers and blown fuses.</p>
+    <p>If you don't hear any motor operation at all, all the awning's fuse might be blown.</p>
+    <p>Examine the electrical components in your RV's motor whether the fuse is stable.</p>
+    <p>2.In and around your awning's motor, look for any obvious rusted wire.</p>
+    <p>If the electrical current that powers your motor isn't transported efficiently, it won't operate.</p>
+    <p>Are there any wires that are frayed or corroded ? If this is the case, your awning's problem might be due faulty wiring.</p>
+    <p>3.Check to verify whether the awning is loaded incorrectly.</p>
+    <p>Awnings that aren't uniformly coiled into their tubes won't be able to fully stretch.</p>
+    <p>As a result, the awning becomes stuck.</p>
+    <p>4.To operate the awning motor, press the awning motor button.</p>
+    <p>Get a buddy to manually roll out the awning from the tube while you hold the extension button if </p>
+    <p>your motor is functioning but not retracing. Rain can damage the awning's components,</p>
+    <p>making it harder for the motor to operate to its full potential.</p>
+    <p>Often, a complete pull is enough to loosen the rust.</p>
+    <p>5.If you hear a faint click while the motor is operating, it might be a stripped screw or a motor problem.</p>
+    <p>Because it involves changing critical motor parts while a high degree of competence and accuracy,</p>
+    <p>this need professional assistance.</p>
+<br>
+<!--TRACKS-->
+<h2>Track problem</h2>
+<br>
+<h3>Awning will not retract problem</h3>
+<h3>Check what to do !</h3>
+<br>
+<p>1.Examine the awning to verify if it is correctly positioned on the rail.</p>
+<p>Awnings, both manual and electric, have trouble retracing if they aren't uniformly spaced on the rail.</p>
+<p>Is the fabric stretched evenly and parallel by the awning arms?</p>
+<p>If this is not the case, you may need to contact a service company or physically relocate the awning.</p>
+<br>
+<br>
+<p>2.Check the awning cordes for screws. Are you able to adjust the chords of the awning?</p>
+<p>If that's the case, it's not a good indicator. This indicates that the screws on your</p>
+<p>cords are loose, which may be interfering with your awning.</p>
+<br>
+<br>
+<p>3.Move the arms of the awning. If the arms of your awning aren't moving parallel to one other and smoothly,</p>
+<p>it's possible that you require awning arm repair. If they're simpply rusted, some WD-40 will help. </p>
+<br>
+<br>
+<p>4.Take a look at the material. If you left your awning open during a particularly severe downpour,</p>
+<p>the water and debris accumulation might have twisted the fabric.</p>
+<p>The only way to correct warped fabric is to replace it on your awning.</p>
+<br>
+<br>
+<p>5.Check the fuses, wiring, and circuit breakers on your awning.</p>
+<p>Electrical faults can cause an awning to be unable to retract, just as an awning that won't stretch.</p>
+<br>
+<br>
+<p>6.If your motor continues to run but no improvement is apparent, get it checked by a specialist.</p>
+<p>It might be a faulty component in your motor, or it could be something completely else. This is, however, quite exceptional.</p>
+<br>
+<br>
+<!--FABRIC PROBLEM-->
+<h2>Fabric problem</h2>
+<br>
+<h3>Problem:</h3>
+<br>
+<p>The awning fabric is torn or mouldy.</p>
+<br>
+<h3>Cause:</h3>
+<br>
+<p>Fabrics that aren't properly weatherproofed might be damaged, spawn mould, or even decompose </p>
+<p>after prolonged exposure to the elements.</p>
+<br>
+<h3>Solution:</h3>
+<br>
+<p>Awning fabric that has become mouldy or rotted must be replaced.</p>
+<p>A expert might be able to repair tiny damages without having to replace the entire fabric.</p>
+<p>If you do decide to replace the fabric, make sure it has a waterproog covering.</p>
+<p>Also, don't settle for low-quality fabric.</p>
+<p>Fabrics of higher quality are more resistant to damage and will save you money in long term.</p>
+<p>Please choose your colour of interest and write a query to us so we can send you a free sample</p>
+<p>as well as sell fabric only according to your specific measurement.</p>
+<br>
+<!--DROP ARM AWNINGS-->
+<h2>Drop arm awnings problem</h2>
+<br>
+<p>It's the most common style of retractable window awning </p>
+<p>it's perfect for swiftly erecting a cover over a small outdoor areas.</p>
+<p>These canopies are ideal for when you need to use outdoor spaces but don't want to be exposed to the weather.</p>
+<p>The difficulty with most drop arm awnings is that hinges degrade quickly if not properly maintained.</p>
+<p>To guarantee optimal performance when retracing, you should inspect and libricate (oil)</p>
+<p>the hinges at least once every few months.</p>
+<p>Otherwise, you'll end up with a static considerably more expensive that it has to be.</p>
+<br>
+<!--AGE-->
+<h2>Age problem</h2>
+<br>
+<p>Our awnings are made of good quality, both manual and retractable, are made to last, but time will wear them down.</p>
+<p>While good awning maintenance can keep its appearance and funcionality, age-related difficulties can and will arise.</p>
+<br>
+<h3>The problem:</h3>
+<br>
+<p>Age-related problems can't be avoided. Electricity may play a role in some age-related issues.</p>
+<p>The issue might be due to awning's construction, implying that the tracks have reached their maximum.</p>
+<p>One of the most prevalent age-related difficulties is aesthetic concerns.</p>
+<p>An awning with rusted components and fading bafric may be functional, but it will detract from the curb appeal of your property.</p>
+<br>
+<h3>The solution:</h3>
+<br>
+<p>Any significant concerns with an awning should be handled by specialists if you're wondering how to reapir an awning.</p>
+<p>If your awning's age-related issues are electrical, you'll almost probably need to replace the troublesome pieces.</p>
+<p>Repairing the motor or sensors on an olrder awning is likely simply postponing the inevitable.</p>
+<p>Those parts will need to be changed at some point, and if you've reached the stage where you'he experiencing rehular problems,</p>
+<p>it's time to upgrade.</p>
+<p>If your awning's tracks have been rusted and are no longer able to permit smoooth movement, they will need to be changed as well.</p>
+<br>
+<!--POOLING WATER-->
+<h2>Pooling water</h2>
+<br>
+<h3>Problem:</h3>
+<br>
+<p>Water is accumulating on the awning's fabric because it isn't draining properly.</p>
+<br>
+<h3>Cause:</h3>
+<br>
+<p>The majority of the time, pooor installation and materials are to fault.</p>
+<p>The awning will not drain adequately if it is not pitched at the proper angle.</p>
+<p>To allow for drainage, the fabric should be water resistant.</p>
+<br>
+<h3>Solution:</h3>
+<br>
+<p>Ensure that you awning is installed by professional installers.</p>
+<p>Your awning's pitch may need to be re-calibrated, or the fabric may need to be replaced.</p>
+<br>
+<!--Can awnings be repaired ?-->
+<h2>10. Can awnings be repaired ?</h2>
+<br>
+<p>Even significant damage may be repaired for a fraction of the cost of a new awning.</p>
+<p>You won't have to affect the appearance of your home in any way if you repair your awning.</p>
+<p>It's far easier to repair and outdated awning than to arrange for a complete replacement.</p>
+<p>However we always suggest to speak to our friendly team so you receive the best advice possible.</p>
+<br>
+<!-- HOW TO DISPOSE OF USED AWNINGS?-->
+<br>
+<h2>11. How to dispose of used awnings ?</h2>
+<p>After the end of product lifetime it must be disassembled and separate material must be segregated</p>
+<p>according to Regulation of the Minister of Environment of 27 September 2001 on waste catalogue </p>
+<p>– Dz. U. [Journal of Laws] no. 112 item 1206</p>
+<br>
+<!--IMPORTANT INFORMATION ONCERNING UTILISATION-->
+<br>
+<h2>12. Important information concerning utilisation:</h2>
+<br>
+<p>Pursuant to the regulations of the Act dated of 29 July 2005 about waste electrical or</p>
+<p>electronic equipment, it is forbidden to place used appliances marked with a crossed</p>
+<p>out waste bin symbol jointly with other waste. The User wishing to dispose of </p>
+<p>electronic or electrical equipment is obliged to take it to the used equipment</p>
+<p>collection spot.</p>
+<p>The above legal obligations were introduced in order to reduce the amount of waste</p>
+<p>due to used electrical and electronic equipment and to assure a proper level of</p>
+<p>collection, recovery and recycling. There are no dangerous elements in the</p>
+<p>equipment which are of particularly adverse effect on the environment and human health.</p>
+<br>
+<br>
+<br>
+<br>
+
+        <!-- FOOTER START -->
+        <footer class="mainfooter" role="contentinfo">
+          <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <div class="heading-footer">
+                      English
+                      <br>
+                       Awnings Direct
+                  </div>
+                  <ul class="list-unstyled">
+                    <li>EnglishAwningsDirect.com</a></li>
+                    <li>United Kingdom, Dorset</a></li>
+                    <li>Unit 6 West Howe Industrial Estate</a></li>
+                    <li>Elliot road</a></li>
+                    <li>BH11 8JX</li> 
+                  </ul>
+                </div>
+              </div>
+              <!--Column2-->
+              <div class="col-md-3 col-sm-6">
+                <div class="footer-pad">
+                  <h8>Awnings</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/casablanca.html">Casablanca full cassette</a></li>
+                    <li><a href="/corsica.html">Corsica full cassette</a></li>
+                    <li><a href="/palladio.html">Palladio full cassette</a></li>
+                    <li><a href="/silverplus.html">Silver plus</a></li>
+                    <li><a href="/boxitalia.html">Italia sun blind</a></li>
+                    <li><a href="/bora.html">Bora side screen</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <!--Column3-->
+                <div class="footer-pad">
+                  <h8>Features</h8>
+                  <ul class="list-unstyled">
+                    <li><a href="/color-pallet.html">Fabric Colours</a></li>
+                    <li><a href="/about.html">Quality</a></li>
+                    <li><a href="/about.html#demo">Style</a></li>
+                    <li><a href="/about.html#ease">Ease</a></li>
+                    <li><a href="/about.html#features">Adjustment</a></li>
+                    <li><a href="/about.html#howto">Us</a></li>
+                  </ul>
+                </div>
+              </div>
+                <div class="col-md-3">
+                    <h8>Follow Us</h8>
+                    <ul class="social-network social-circle">
+                      <br>
+                      <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                      <br>
+                      <br>
+                      <br>
+                    </ul>	
+                    <ul>
+                      <li><a href="/cookiepolicy.html">Privacy Policy</a></li>
+                      <li><a href="/terms&conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                          
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 copy">
+                  <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+                </div>
+            </div>
+        
+        
+          </div>
+          </div>
+        </footer>
+        
+<!-- FOOTER OVER-->
+    <!--Link to JS CART-->
+    <script src="js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+
+</body>
+</html>  
