@@ -1,0 +1,369 @@
+.responsiveimg {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  .imgsomfyindex{
+    margin-left: 15%;
+    margin-top: -15%;
+    display: flex;
+    width: 100%;
+    max-width: 10vw;
+    max-height: 30vw;
+    height: auto;
+    width: auto;
+  }
+  @media screen and (min-width:1920px){
+    .imgsomfyindex{
+      margin-left: 15%;
+      margin-top: -12%;
+      display: flex;
+      width: 100%;
+      max-width: 10vw;
+      max-height: 30vw;
+      height: auto;
+      width: auto;
+    }
+  }
+
+
+  .imgwaterproof{
+    margin-left: 70%;
+    margin-top: -20%;
+    display: flex;
+    width: 100%;
+    max-width: 20vw;
+    max-height: 60vw;
+    height: auto;
+    width: auto;
+  }
+
+  .happytohelpimg{
+    margin-left: 80%;
+    display: flex;
+    width: 100%;
+    max-width: 10vw;
+    max-height: 30vw;
+    height: auto;
+    width: auto;
+  }
+
+  .rtslogoimg{
+    display: flex;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 40vw;
+    height: auto;
+    width: auto;
+  }
+
+  .dicksonlogoimg{
+    display: flex;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 40vw;
+    height: auto;
+    width: auto;
+  }
+
+  .somfylogoimg{
+    display: flex;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 40vw;
+    height: auto;
+    width: auto;
+  }
+
+  .nicemotorslogoimg{
+    display: flex;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 40vw;
+    height: auto;
+    width: auto;
+    margin-top: 40px;
+  }
+
+  .vanfreeimg{
+    display: flex;
+    width: 100%;
+    max-width: 15vw;
+    max-height: 40vw;
+    height: auto;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 43.5%;
+  }
+/* SELECT COLOR */
+.desc { color:#7e1b97;}
+        
+        .dropdown dd, .dropdown dt, .dropdown ul {
+           font-size: 1.3vw;
+          display: flex;
+    width: 100%;
+    max-width: 28vw;
+    max-height: 500vw;
+    height: auto;
+    width: auto;  }
+        .dropdown dd { position:relative; }
+        .dropdown a, .dropdown a:visited { color:black; text-decoration:none; outline:none;}
+        .dropdown a:hover { color:black;}
+        .dropdown dt a:hover { color:grey; border: 1px solid grey;}
+        .dropdown dt a {background:white url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block;
+                        border:1px solid #7e1b97; width:20vw;}
+        .dropdown dt a span {cursor:pointer; display:block; padding:1.5vw;}
+        .dropdown dd ul { background:white none repeat scroll 0 0; border:1px solid #7e1b97; color:#7e1b97; display:none;
+                           padding:5px 0px; position:absolute; width:auto; min-width:20vw; list-style:none;}
+        .dropdown span.value { display:none;}
+        .dropcolor a { padding:5px; display:block;}
+        .dropcolor a:hover { background-color:rgb(204, 202, 202);}
+        
+        .dropdown img.flag { border:none; vertical-align:middle; margin-left:1vw; }
+        .flagvisibility { display:none;}
+
+        .flag{
+            display: flex;
+            width: 100%;
+            max-width: 25vw;
+            max-height: 10vw;
+            height: auto;
+            width: auto;
+        }
+
+        .dropdown{
+          margin-left: 40vw;
+          display: block;
+          z-index: 1000;
+          bottom: 10%;
+          list-style: none;
+          overflow-y: auto;
+          min-height: 350px;
+        }
+        .dropcolors{
+          float: none;
+          display: block;
+        }
+
+        .dropcolorfabric{
+          text-align: center;
+        }
+
+        /* SELECT COLOR OVER */
+
+
+        /* Radio buttons select choice awnings */
+        .radioselectawnings{
+          font-size: 1.3vw;
+        }
+
+        /* CHOOSE MOTOR CHOOSE SENSOR */
+        .choosemotorsensor{
+          display: flex;
+          width: 100%;
+          font-size: 1.3vw;
+          height: auto;
+          width: auto;
+        }
+
+        .addwarrantycheck{
+          display: flex;
+          width: 100%;
+          max-width: 10vw;
+          max-height: 30vw;
+          height: auto;
+          width: auto;
+          margin-left: 49vw;
+        }
+
+.inputchecks{
+  font-size: 1.4vw;
+  width: 100%;
+  max-width: 10vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+  text-align: center;
+
+}
+
+
+/* IMAGES OF AWNINGS INSIDE INDIVIDUAL SITES */
+
+/* HEADINGS FOR ALL AWNINGS */
+.Info-cassette{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+  padding-left: 20vw;
+}
+/* OVER OF HEADING FOR ALL AWNINGS */
+
+/* SILVER PLUS */
+
+.silverplus-img-front{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 60vw;
+  height: auto;
+  width: auto;
+}
+.silverplus-img-side{
+  display: flex;
+  width: 100%;
+  max-width: 60vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+  margin-left: 61.25vw;
+}
+/* CASABLANCA */
+.casablanca-img-front{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 60vw;
+  height: auto;
+  width: auto;
+}
+.casablanca-img-side{
+  display: flex;
+  width: 100%;
+  max-width: 60vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+  margin-left: 54.6vw;
+}
+/*CORSICA*/
+.corsica-img-front{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 60vw;
+  height: auto;
+  width: auto;
+}
+.corsica-img-side{
+  display: flex;
+  width: 100%;
+  max-width: 60vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+  margin-left: 51.6vw;
+}
+/*PALLADIO*/
+.palladio-img-front{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 60vw;
+  height: auto;
+  width: auto;
+}
+.palladio-img-side{
+  display: flex;
+  width: 100%;
+  max-width: 60vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+  margin-left: 62vw;
+}
+/*ITALIA*/
+.boxitalia-img-main{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 40vw;
+  height: auto;
+  width: auto;
+  margin-left: 35vw;
+}
+/* BORA */
+.bora-img-main{
+  display: flex;
+  width: 100%;
+  margin-left: 20vw;
+  max-width: 25vw;
+  height: auto;
+  width: auto;
+  margin-left: 45vw;
+}
+
+
+/* START BRACKET TYPES */
+
+.bracketitle{
+  display: flex;
+  width: 100%;
+  height: auto;
+  width: auto;
+  font-size: 2vw;
+}
+/*BRACKETS IMAGES*/
+.bracketsimagestypes{
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  max-width: 30vw;
+  width: auto;
+  z-index: 1;
+  margin-left: 39%;
+}
+
+
+/* COLOUR PALLET */
+.samplenumberemail{
+  display: flex;
+  width: 100%;
+  font-size: 1.3vw;
+  height: auto;
+  width: auto;
+}
+
+.usernum{
+  display: flex;
+  width: 100%;
+  font-size: 1.3vw;
+  height: auto;
+  width: auto;
+}
+
+
+/* ACCESSORIES PAGE */
+.somfycontroller-img-accessories-head{
+  display: flex;
+  width: 100%;
+  max-height: 27vw;
+  height: auto;
+  width: auto;
+}
+
+/*INDIVIDUAL ACCESSORIES*/
+
+
+
+
+                                                                        /* CONTACT US */
+/* BUTTON SEND EMAIL */
+.emailbutton{
+  border: none;
+  display: flex;
+  position: relative;
+  width: auto;
+  margin-left: 40vw;
+  max-width: 15vw;
+}
+.emailbutton:focus {
+    border: none;
+    outline: none;
+}
+/* button over */

@@ -1,66 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-     <link rel="stylesheet" href="/css/styleaccessoriess.css">
-    <!-- Link to CSS CART-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!--Usage as font-->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!-- link ro interactive shop-->
+<link rel="stylesheet" href="/css/style.css" />
+<!---->
+<link rel="stylesheet" href="/css/style1.css"> 
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+<!--SLIDE SHOW INDEX-->
+<link rel="stylesheet" href="css/slideshowindex.css">
+
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
+<!--ACCESSORIES-->
+<link rel="stylesheet" href="/css/newaccess.css">
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
 
     <style>
                 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-
   /*
 Basic input element using psuedo classes
 */
-
-h1{
-  font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-h3{
-  font-family: 'Oswald', sans-serif;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-p{
-  font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    letter-spacing: 7px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
 .active {
   background: rgba(255, 255, 255, 0.9);
 }
 /* Question */
-
 input.question,
 textarea.question {
   font-size: 30px;
@@ -73,9 +54,7 @@ textarea.question {
   transition: padding-top 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
 }
-
 /* Underline and Placeholder */
-
 input.question + label,
 textarea.question + label {
   display: block;
@@ -89,46 +68,38 @@ textarea.question + label {
   transition: width 0.4s ease;
   height: 0px;
 }
-
 input.question:focus + label,
 textarea.question:focus + label {
   width: 60%;
 }
-
 input.question:focus,
 input.question:valid {
   padding-top: 35px;
 }
-
 textarea.question:valid,
 textarea.question:focus {
   margin-top: 35px;
 }
-
 input.question:focus + label > span,
 input.question:valid + label > span {
   top: -100px;
   font-size: 22px;
   color: #a46497;
 }
-
 textarea.question:focus + label > span,
 textarea.question:valid + label > span {
   top: -150px;
   font-size: 22px;
   color: #a46497;
 }
-
 input.question:valid + label,
 textarea.question:valid + label {
   border-color: #7e1b97;
 }
-
 input.question:invalid,
 textarea.question:invalid {
   box-shadow: none;
 }
-
 input.question + label > span,
 textarea.question + label > span {
   font-weight: 300;
@@ -143,409 +114,305 @@ textarea.question + label > span {
   transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
 }
 
-
-input,
-span,
-label,
-textarea {
-  font-family: 'Lora', sans-serif;
-  display: block;
-  padding: 15px;
-  border: none;
-  font-size: 25px;
-}
-
 input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
   -webkit-animation: appear 1s forwards;
   animation: appear 1s forwards;
 }
-
 input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
   display: none;
 }
-
 @-webkit-keyframes appear {
   100% {
     opacity: 1;
   }
 }
-
 @keyframes appear {
   100% {
     opacity: 1;
   }
 }
-
-
 .emailusform{
   padding-left: 29%;
 }
-
-
-
-
-
-        
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-
-
-/* BUTTON SEND EMAIL */
-.emailbutton{
-  border: none;
-  margin-left: 650px;
-}
-.emailbutton:focus {
-    border: none;
-    outline: none;
-}
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-
-        </style>
-    <title>Document</title>
-</head>
-<%- include('partials/navbar'); -%>
-<body>
-<%- include('partials/cookies'); -%> 
-<%- include('partials/sidebar'); -%>
-
-<div class="containeraccessories">
-  <!-- / .topnav -->
-  <br>
-  <br>
-  <br>
-  <section class="banner">
-    <div class="slide">
-      <div class="description">
-        <h1>Premium comfort</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deleniti similique fugit expedita commodi, consectetur, eligendi.</p>
-      <div class="shock-shop">
-        <!--shop-->
-        <section class="shop container">
-          <!--Content-->
-          <div class="shop-content">
-            <!--Box 1-->
-            <div class="product-box">
-              <img src="/img/accessories/Shock.jpeg" alt="" class="product-img">
-              <h2 class="product-title">Shock</h2>
-              <span class="price">£69</span>
-              <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-          </div>
-        </section>
-      </div>
-  </section>
-  <!-- / .banner -->
-</div>
-<br>
-<br>
-<br>
- <!-- FOOTER START -->
- <footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <div class="heading-footer">
-              English
-              <br>
-               Awnings Direct
-          </div>
-          <ul class="list-unstyled">
-            <li>EnglishAwningsDirect.com</a></li>
-            <li>United Kingdom, Dorset</a></li>
-            <li>Unit 6 West Howe Industrial Estate</a></li>
-            <li>Elliot road</a></li>
-            <li>BH11 8JX</li> 
-          </ul>
-        </div>
-      </div>
-      <!--Column2-->
-      <div class="col-md-3 col-sm-6">
-        <div class="footer-pad">
-          <h8>Awnings</h8>
-          <ul class="list-unstyled">
-            <li><a href="/casablanca/">Casablanca full cassette</a></li>
-            <li><a href="/corsica/">Corsica full cassette</a></li>
-            <li><a href="/palladio/">Palladio full cassette</a></li>
-            <li><a href="/silverplus/">Silver plus</a></li>
-            <li><a href="/boxitalia/">Italia sun blind</a></li>
-            <li><a href="/bora/">Bora side screen</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column3-->
-        <div class="footer-pad">
-          <h8>Features</h8>
-          <ul class="list-unstyled">
-            <li><a href="/color-pallet/">Fabric Colours</a></li>
-            <li><a href="/about/">Quality</a></li>
-            <li><a href="/about/#demo">Style</a></li>
-            <li><a href="/about/#ease">Ease</a></li>
-            <li><a href="/about/#features">Adjustment</a></li>
-            <li><a href="/about/#howto">Us</a></li>
-          </ul>
-        </div>
-      </div>
-        <div class="col-md-3">
-            <h8>Follow Us</h8>
-            <ul class="social-network social-circle">
-              <br>
-              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <br>
-              <br>
-              <br>
-            </ul>	
-            <ul>
-              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
-              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
+     
+</style>
+<title>English Awnings Direct - Shock & wind sensor</title>
+<head>
+  <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+  <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+  <nav class="nav containermenutopfresh" id="nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="/">home</a></li>
+      <li class="menu-item"><a href="/about">about</a></li>
+      <li class="menu-item"><a href="#">Products</a>
+        <ul class="sub-menu">
+          <li class="biggersub"><a href="/awnings">Awnings</a>
+            <ul class="sub-menu">
+              <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+              <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+              <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+              <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+              <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+              <li><a href="/bora/" class="alinkmenu">Bora</a></li>
             </ul>
-                  
+          </li>
+          <li class="biggersub"><a href="/accessories">Accessories</a>
+            <ul class="sub-menu">
+              <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+              <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+              <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+              <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+              <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+              <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+              <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+              <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+      <li class="menu-item"><a href="">Guide</a>
+        <ul class="sub-menu">
+          <li><a href="/brackets/">Bracket types</a>
+          </li>
+          <li><a href="/ultimateguide/">Ultimate guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/contact-us">Contact</a>
+      </li>
+      <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+      <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+        <!--Cart icon-->
+        <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+  </head>
+      
+  <body>
+    <form action="/payment/" method="get">
+      <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <!--Content -->
+        <div class="cart-content">
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 copy">
-          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <input style="display:none" id="price" name="price" class="total-price"/>
         </div>
-    </div>
-
-
+        <!--But button-->
+        <button type="submit" class="btn-buy">Buy now</button>
+        <i class='bx bx-x' id="close-cart"></i>
+        </div>
+      </form>
   </div>
+
+  <div class="containeraccessories">
+    <!-- / .topnav -->
+    <br>
+    <br>
+    <br>
+    <section class="banner">
+      <div class="slide">
+        <div class="descriptionaccessories">
+          <div class="nameaccessorie">
+            <h9>Wind & Shock sensor</h9>
+          </div>
+          <div class="descriptionsensor">
+            <p>Sensor to extend or retract awnings as the sun come</p>
+            <p>out or goes in, with priority to retracting them when</p>
+            <p>wind speeds exceed a preset value(from 10 to 50 kph).</p>
+            <p>Prevents fabric from being torn and prolongs the life</p>
+            <p>of the awning. Mains powered.</p>
+            <br>
+            <br>
+            <div class="accordion_wrap" id="accordion-details">
+              <h2>Details & specifications</h2>
+                  <div class="accordion-content-block">
+                    
+                      <button class="d-flex align-items-center accordion-item-title subtitle_2" role="link" data-toggle="collapse" href="#detailsCollapse" aria-expanded="false" aria-controls="detailsCollapse">
+                        
+                        Technical characteristics :
+                        <span class="arrow-icon"></span>
+                      </button>
+                    
+                    <div data-parent="#accordion-details" class="accordion-item-content collapse show" id="detailsCollapse" style="">
+                      <br>
+                      <ul>
+                        <br>
+                        <li>Consumption in standby mode ~ 1.374 W</li>
+                        <li>Protection Index ~ IP 34</li> 
+                        <li>Radio Frequency ~ 	RTS 433.42 MHz</li> 
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="accordion_wrap" id="accordion-details">
+                  <div class="accordion-content-block">
+                    
+                      <button class="d-flex align-items-center accordion-item-title subtitle_2" role="link" data-toggle="collapse" href="#detailsCollapse" aria-expanded="false" aria-controls="detailsCollapse">
+                        
+                        Warranty
+                        <span class="arrow-icon"></span>
+                      </button>
+                    
+                    <div data-parent="#accordion-details" class="accordion-item-content collapse show" id="detailsCollapse" style="">
+                      <br>
+                      <ul>
+                        <br>
+                        <li>3 years</li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="nemored-shop">
+          <!--shop-->
+          <section class="shop container">
+            <!--Content-->
+            <div class="shop-content">
+              <!--Box 1-->
+              <div class="product-box">
+                <div class="img-accesorrie-buy">
+                  <img src="/img/accessories/Shock.jpeg" alt="" class="product-img">
+                </div>  
+                <h2 class="product-title">Wind & Shock sensor</h2>
+                <span class="price">£69</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- / .banner -->
+  </div>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+  <div class="myrowfooter">
+    <div class="columnfooter left1">
+      <div class="footerheader">
+          <h8>English Awnings Direct</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1">www.EnglishAwningsDirect.com</li>
+        <li class="listyle1">United Kingdom, Dorset</li>
+        <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+        <li class="listyle1">Elliot road</li>
+        <li class="listyle1">BH11 8JX</li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left2">
+      <div class="footerheader">
+          <h8>Awnings</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+        <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+        <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+        <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+        <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+        <li class="listyle1"><a href="/bora/">Bora</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left3">
+      <div class="footerheader">
+          <h8>Features</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+        <li class="listyle1"><a href="/about/">Quality</a></li>
+        <li class="listyle1"><a href="/about/#demo">Style</a></li>
+        <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+        <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+        <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left4">
+      <div class="footerheader">
+          <h8>Follow us</h8>
+      </div>
+          <ul class="liststyle">
+            <div class="social-network social-circle">
+              <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            </div>
+            <br>
+            <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+            <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columnfooter-bottomfooter">
+    <div class="col-md-12 copy">
+        <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+    </div>
   </div>
 </footer>
-
 <!-- FOOTER OVER-->
-    <!--Link to JS CART-->
-    <script src="/js/main.js"></script>
+                <!--FACEBOOK CHAT START-->
+                <div id="fb-root"></div>
+                <!-- Your Chat plugin code -->
+                <div id="fb-customer-chat" class="fb-customerchat">
+                </div>
+                
+                <script>
+                  var chatbox = document.getElementById('fb-customer-chat');
+                  chatbox.setAttribute("page_id", "101963445787288");
+                  chatbox.setAttribute("attribution", "biz_inbox");
+                </script>
+                
+                <!-- Your SDK code -->
+                <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      xfbml            : true,
+                      version          : 'v13.0'
+                    });
+                  };
+                
+                  (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+<!--Link to JS CART-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+<script src="/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+<!--BEST SELLERS-->
+<script src="/js/bestsells.json"></script>
+<!--SCRIPT FOR LETTER SUBSCRIBE -->
+<script src="https://kit.fontawesome.com/0e66a92efa.js" crossorigin="anonymous"></script>
+<!-- SCRIPT SLIDESHOW INDEX-->
+<script src="/js/slideshowindex.js"></script>
+<!-- START JS TOP MENU-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="/js/topmenuscript.js"></script>
+<!-- OVER JS TOP MENU-->
+<script src="/order.js"></script>
+<script  src="/js/topmenurespo.js"></script>
+
 </body>
 </html>  

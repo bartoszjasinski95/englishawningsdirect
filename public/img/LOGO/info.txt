@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: berkshireswash-regular
+font link: https://fonts.google.com/specimen/Berkshire+Swash
+font author: Astigmatic
+font author site: http://www.astigmatic.com/
+Slogan Font: KaushanScript-Regular.ttf
+
+icon designer: Blair Adams
+icon designer link: /blairwolf
+        
+{"bg":"#591F82","icon":"#F9B200","font":"#FFFFFF","slogan":"#ffffff"}
+      

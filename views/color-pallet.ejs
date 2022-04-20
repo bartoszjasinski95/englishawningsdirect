@@ -1,424 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script src="store.js" async></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-
-
-<!-- Link to CSS CART-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!-- link ro interactive shop-->
 <link rel="stylesheet" href="/css/style.css" />
+<!---->
+<link rel="stylesheet" href="/css/style1.css"> 
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
 <!--Usage as font-->
 <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
 
 
-     
-        <style>
+<!--SLIDE SHOW INDEX-->
+<link rel="stylesheet" href="css/slideshowindex.css">
+
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
+
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
+<style>
         @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 
-            /*BUTTONS ADD to */
-
-h1{
-    font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
+        
+/* SPECIAL IMAGES / TITLES / PRICES / CARTS */
+.product-title{
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
 }
-h4{
-    font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
+.add-cart{
+    padding: 8px;
 }
-h5{
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-h8{
-  font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
-.active {
-  background: rgba(255, 255, 255, 0.9);
-}
-.btn-primary {
-    color: white;
-    background-color: #be18ff;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-
-.tour-btn {
-    max-width: 19%;
-}
-
-.shop-item {
-    margin: 5px;
-    margin-right: 55px;
-}
-
-.shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    color: rgb(155, 65, 65);
-    margin-bottom: 15px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 5px;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-
-.shop-item-image {
-    height: 100px;
-    width: 650px;
-}
-
-.shop-item-details {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-}
-
-.shop-item-price {
-    flex-grow: 1;
-    color: #333;
-}
-
-.shop-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
-}
-
-.cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    font-family: 'Oswald', sans-serif;
-    font-size: 40px;
-    letter-spacing: 5px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-.cart-row {
-    display: flex;
-}
-
-.cart-item {
-    width: 45%;
-}
-
-.cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.cart-quantity {
-    width: 35%;
-}
-
-.cart-item-title {
-    color: #333;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.btn-danger {
-    color: white;
-    background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-
-.btn-danger:hover {
-    background-color: #CC4C4C;
-}
-
-.cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #56CCF2;
-    background-color: #eee;
-    color: #333;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
-}
-
-.cart-row:last-child {
-    border-bottom: 1px solid black;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-}
-
-.cart-total {
-    text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.cart-total-title {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: black;
-    margin-right: 20px;
-}
-
-.cart-total-price {
-    color: #333;
-    font-size: 1.1em;
-}
-
-.btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
-}
-
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-
-}
-
 /* SAMPLES IMAGE SIZES */
 .shop-content{
     width: 100%;
     padding: 10%;
-}
-.product-box{
-    width: 280px;
-    padding: 5px;
+    margin-top: 4vw;
     z-index: 1;
-
-}
-input {
-  display: none;
-    z-index: 100000;
-    position: fixed;
+    width: 80vw;
+    margin-left: 10vw;
 }
 
-img {
-  transition: transform 0.25s ease;
-  cursor: zoom-in;
-    border-radius: 25px;
-  z-index: 1;
-  padding: 20px;
+/* The Transformation */
+.product-img {
+ transform-origin: 50% 50%; 
+ transition: transform 1s, filter .5s ease-out;
+ z-index: 10000;
+ width: 100%;
+height: auto;
+width: auto;
+  border-radius: 5vw;
+  z-index: 10000;
+  padding: 15px;
+}
+.product-img:hover{
+transform: scale(2.2);
+opacity: 5;
+z-index: 10000;
 }
 
-input:checked ~ label > img {
-  transform: scale(3);
-  cursor: zoom-out;
-  
-}
+</style>
 
+<title>English Awnings Direct - Fabric colours</title>
 
-/* SAMPLE IMAGES SIZES OVER */
+<head>
 
-
-        </style>
-                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Samples</title>
-</head>
-<%- include('partials/navbar'); -%>
-<body>
-<%- include('partials/sidebar'); -%>
-<%- include('partials/cookies'); -%>
-
-        <br>
-        <br>
-        <br>
-        <br>
-  
-          <!--START OF SAMPLES-->
-  </div>
-  
-  <div class="Eolis-shop">
-    <!--shop-->
-    
-    <section class="shop container">
-        <div class="usernum" style="display: flex; flex-direction: column; align-items: center; ">
-            <h1>Our range of fabric colours</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-        <h4 style="margin: 10px;">Please Enter Your Number to get sample</h4>
-        <h5>(for conformation)</h5>
-        <br>
-        <input type="tel" name="username" id="username" style="display: inline; width: 20vw; position: relative;">
+    <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+    <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+    <nav class="nav containermenutopfresh" id="nav">
+      <ul class="menu">
+        <li class="menu-item"><a href="/">home</a></li>
+        <li class="menu-item"><a href="/about">about</a></li>
+        <li class="menu-item"><a href="#">Products</a>
+            <ul class="sub-menu">
+            <li class="biggersub"><a href="/awnings">Awnings</a>
+              <ul class="sub-menu">
+                <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+                <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+                <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+                <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+                <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+                <li><a href="/bora/" class="alinkmenu">Bora</a></li>
+              </ul>
+            </li>
+            <li class="biggersub"><a href="/accessories">Accessories</a>
+              <ul class="sub-menu">
+                <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+                <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+                <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+                <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+                <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+                <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+                <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+                <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+        <li class="menu-item"><a href="">Guide</a>
+          <ul class="sub-menu">
+            <li><a href="/brackets/">Bracket types</a>
+            </li>
+            <li><a href="/ultimateguide/">Ultimate guide</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="/contact-us">Contact</a>
+        </li>
+        <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+        <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+          <!--Cart icon-->
+          <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    </head>
+        
+    <body>
+      <form action="/payment/" method="get">
+        <div class="cart">
+          <h2 class="cart-title">Your cart</h2>
+          <!--Content -->
+          <div class="cart-content">
+          </div>
+          <!--Total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <input style="display:none" id="price" name="price" class="total-price"/>
+          </div>
+          <!--But button-->
+          <button type="submit" class="btn-buy">Buy now</button>
+          <i class='bx bx-x' id="close-cart"></i>
+          </div>
+        </form>
     </div>
-      <!--Content-->
-      <div class="shop-content">
+    <%- include('partials/cookies'); -%>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="colourpallethaeding">
+    <h4>Our range of fabric colours</h4>
+    <br>
+    <br>
+    <br>
+    <p>Please Enter Your Number and e-mail to get sample</p>
+</div>
+<br>
+<!--START OF SAMPLES-->
+    <section class="shop containersamples">
+        <div class="usernum" style="display: flex; flex-direction: column; align-items: center; ">
+        <input type="tel" name="username" id="username" class="samplenumberemail" style="display: inline; position: relative;" required placeholder="Phone number">
+        <br>
+        <input type="email" name="username" id="username" class="samplenumberemail" style="display: inline; position: relative;" required placeholder="E-mail address">
+    </div>
 
+      <div class="shop-content">
         <!--Box 1-->
         <div class="product-box">
-            <input type="checkbox" id="zoomCheck">
-            <label for="zoomCheck">
                 <img src="/samples/0028__silver__melange.jpg" alt="" class="product-img">
                 <h2 class="product-title">Silver melange_0028</h2>
             </label>
@@ -429,21 +186,16 @@ input:checked ~ label > img {
         <!--Box 3-->
     </label>
         <div class="product-box">
-            <input type="checkbox" id="zoomCheck">
-            <label for="zoomCheck">
                 <img src="/samples/0054__melbourne.jpg" alt="" class="product-img">
                 <h2 class="product-title">Melbourne_0054</h2>
-            </label>
             <span class="price">£0</span>
             <i class='bx bx-shopping-bag add-cart'></i>
         </div>
         <!--Box 4-->
 
         <div class="product-box">
-
             <img src="/samples/0034__tweed__senape.jpg" alt="" class="product-img">
             <h2 class="product-title">Tweed senape_0034</h2>
-
             <span class="price">£0</span>
             <i class='bx bx-shopping-bag add-cart'></i>
         </div>
@@ -1122,7 +874,7 @@ input:checked ~ label > img {
         <!--Box 8-->
 
         <div class="product-box">
-            <img src="samples/4640__namib.jpg" alt="" class="product-img">
+            <img src="/samples/4640__namib.jpg" alt="" class="product-img">
             <h2 class="product-title">Namib_4640</h2>
             <span class="price">£0</span>
             <i class='bx bx-shopping-bag add-cart'></i>
@@ -1346,7 +1098,7 @@ input:checked ~ label > img {
         <!--Box 8-->
 
         <div class="product-box">
-            <img src="/samples/8446__tandem__grafito.jp" alt="" class="product-img">
+            <img src="/samples/8446__tandem__grafito.jpg" alt="" class="product-img">
             <h2 class="product-title">Tandem grafito_8446</h2>
             <span class="price">£0</span>
             <i class='bx bx-shopping-bag add-cart'></i>
@@ -1594,90 +1346,131 @@ input:checked ~ label > img {
       </div>
     </section>
   </div>
- <!-- FOOTER START -->
- <footer class="mainfooter" role="contentinfo">
-    <div class="footer-middle">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <!--Column1-->
-          <div class="footer-pad">
-            <div class="heading-footer">
-                English
-                <br>
-                 Awnings Direct
-            </div>
-            <ul class="list-unstyled">
-                <li>EnglishAwningsDirect.com</a></li>
-                <li>United Kingdom, Dorset</a></li>
-                <li>Unit 6 West Howe Industrial Estate</a></li>
-                <li>Elliot road</a></li>
-                <li>BH11 8JX</li> 
-            </ul>
-          </div>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+    <div class="myrowfooter">
+      <div class="columnfooter left1">
+        <div class="footerheader">
+            <h8>English Awnings Direct</h8>
         </div>
-        <!--Column2-->
-        <div class="col-md-3 col-sm-6">
-          <div class="footer-pad">
+        <ul class="liststyle">
+          <li class="listyle1">www.EnglishAwningsDirect.com</li>
+          <li class="listyle1">United Kingdom, Dorset</li>
+          <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+          <li class="listyle1">Elliot road</li>
+          <li class="listyle1">BH11 8JX</li>
+        </ul>
+      </div>
+      <h2 class="verticalline-footer">
+        <span></span>
+      </h2>
+      <div class="columnfooter left2">
+        <div class="footerheader">
             <h8>Awnings</h8>
-            <ul class="list-unstyled">
-              <li><a href="/casablanca/">Casablanca full cassette</a></li>
-              <li><a href="/corsica/">Corsica full cassette</a></li>
-              <li><a href="/palladio/">Palladio full cassette</a></li>
-              <li><a href="/silverplus/">Silver plus</a></li>
-              <li><a href="/boxitalia/">Italia sun blind</a></li>
-              <li><a href="/bora/">Bora side screen</a></li>
-            </ul>
-          </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <!--Column3-->
-          <div class="footer-pad">
+        <ul class="liststyle">
+          <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+          <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+          <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+          <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+          <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+          <li class="listyle1"><a href="/bora/">Bora</a></li>
+        </ul>
+      </div>
+      <h2 class="verticalline-footer">
+        <span></span>
+      </h2>
+      <div class="columnfooter left3">
+        <div class="footerheader">
             <h8>Features</h8>
-            <ul class="list-unstyled">
-              <li><a href="/color-pallet/">Fabric Colours</a></li>
-              <li><a href="/about/">Quality</a></li>
-              <li><a href="/about/#demo">Style</a></li>
-              <li><a href="/about/#ease">Ease</a></li>
-              <li><a href="/about/#features">Adjustment</a></li>
-              <li><a href="/about/#howto">Us</a></li>
+        </div>
+        <ul class="liststyle">
+          <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+          <li class="listyle1"><a href="/about/">Quality</a></li>
+          <li class="listyle1"><a href="/about/#demo">Style</a></li>
+          <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+          <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+          <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+        </ul>
+      </div>
+      <h2 class="verticalline-footer">
+        <span></span>
+      </h2>
+      <div class="columnfooter left4">
+        <div class="footerheader">
+            <h8>Follow us</h8>
+        </div>
+            <ul class="liststyle">
+              <div class="social-network social-circle">
+                <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              </div>
+              <br>
+              <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+              <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
             </ul>
           </div>
         </div>
-          <div class="col-md-3">
-              <h8>Follow Us</h8>
-              <ul class="social-network social-circle">
-                <br>
-                <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                <br>
-                <br>
-                <br>
-              </ul>	
-              <ul>
-                <li><a href="/cookiepolicy/">Privacy Policy</a></li>
-                <li><a href="/terms&conditions/">Terms & Conditions</a></li>
-              </ul>
-                    
-          </div>
       </div>
-      <div class="row">
-          <div class="col-md-12 copy">
-            <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
-          </div>
-      </div>
-  
-  
     </div>
+    <div class="columnfooter-bottomfooter">
+      <div class="col-md-12 copy">
+          <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+      </div>
     </div>
   </footer>
-
-<!-- FOOTER OVER-->
-        <!--Link to JS CART-->
-        <script src="/js/script1.js"></script>  
-        <script src="/js/main.js"></script>
+  <!-- FOOTER OVER-->
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                  <!--FACEBOOK CHAT START-->
+        <div id="fb-root"></div>
+        <!-- Your Chat plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
         
+        <script>
+          var chatbox = document.getElementById('fb-customer-chat');
+          chatbox.setAttribute("page_id", "101963445787288");
+          chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+        
+        <!-- Your SDK code -->
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              xfbml            : true,
+              version          : 'v13.0'
+            });
+          };
+        
+          (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+<!--FACEBOOK CHAT OVER-->
+
+
+<!--Link to JS CART-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/script1.js"></script> 
+<script src="/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+<!--BEST SELLERS-->
+<script src="/js/bestsells.json"></script>
+<!--SCRIPT FOR LETTER SUBSCRIBE -->
+<script src="https://kit.fontawesome.com/0e66a92efa.js" crossorigin="anonymous"></script>
+<!-- SCRIPT SLIDESHOW INDEX-->
+<script src="/js/slideshowindex.js"></script>
+<!-- START JS TOP MENU-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="/js/topmenuscript.js"></script>
+<!-- OVER JS TOP MENU-->
+<script src="/order.js"></script>
+<script src="/sample.js"></script>
+<script  src="/js/topmenurespo.js"></script>
+
 </body>
 </html>

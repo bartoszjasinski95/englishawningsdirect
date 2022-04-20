@@ -1,642 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-
-   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" > 
-
-<!-- Link to CSS CART-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!--NAVIGATION AWNINGS LEFT MENU-->
+<link rel="stylesheet" href="/css/navbarleft.css">
+<!--PICTURE SLIDE AWNING PAGE-->
+<link rel="stylesheet" href="/css/pictureslideAWNINGS.css">
+<!-- DROP DOWNS AWNINGS MENU LEFT-->
+<link rel="stylesheet" href="/css/dropdownawning.css">
+<!-- link ro interactive shop-->
 <link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/style1.css" />
-<!--Usage as font-->
-<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style1.css"> 
 
-    <style>
+<!-- EXTRAS-->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
+
+<!-- RESPONSIVITY-->
+<link rel="stylesheet" href="/css/awningres.css">
+
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
+<style>
         @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 
-.titlesawnings{
-  font-family: 'Oswald', sans-serif;
-    font-size: 45px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
+a{
+color: inherit;
 }
-h8{
-  font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
-
-.menu-left{
-  font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-/* Create three equal columns that floats next to each other */
-.columninfopro1 {
-  float: left;
-  width: 33.33%;
-  padding-left: 10%;
-}
-.columninfopro2 {
-  float: left;
-  width: 33.33%;
-}
-.columninfopro3 {
-  float: left;
-  width: 33.33%;
-  padding-right: 10%;
-}
-
-/* Clear floats after the columns */
-.rowinfopro:after {
-  content: "";
-  display: table;
-  clear: both;
-
-}
-
-p{
-  font-family: 'Oswald', sans-serif;
-    font-size: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-h2{
-  font-family: 'Oswald', sans-serif;
-    font-size: 45px;
-    letter-spacing: 0px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-
-h9{
-  font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-/* AWNING MENU */
-a{color: black;
-
-}
-.active {
-  background: rgba(255, 255, 255, 0.9);
-}
-/* OVER */
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-
-/* PICTURE SLIDE NUMBERS*/
-.ms--images {
-  position: relative;
-  overflow: hidden;
-}
-.ms--images.ms-container--horizontal {
-  width: 100%;
-  height: 400px;
-  max-width: 100%;
-}
-.ms--images.ms-container--horizontal .ms-track {
-  left: calc(50% - 350px);
-}
-.ms--images.ms-container--horizontal .ms-slide {
-  display: inline-flex;
-}
-.ms--images .ms-track {
-  display: flex;
-  position: absolute;
-  white-space: nowrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.ms--images .ms-slide {
-  align-items: center;
-  justify-content: center;
-  width: 700px;
-  height: 400px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.ms--images {
-  left: calc(50% - 280px);
-}
-.ms--images.ms-container--horizontal .ms-track {
-  left: -70px;
-}
-.ms--images .ms-slide:nth-child(1) .ms-slide__image {
-  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/02_Casablanca_wiz/wizualizacja_casablanca.jpg");
-}
-.ms--images .ms-slide:nth-child(2) .ms-slide__image {
-  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg");
-}
-.ms--images .ms-slide:nth-child(3) .ms-slide__image {
-  background-image: url("https://www.selt.com/images/galeria/02_markizy/2_Balkonowe/02_dom_mieszkalny_opole/2006_06_Italia_Kasetowa_Dom_Opole_03.jpg");
-}
-.ms--images .ms-slide:nth-child(4) .ms-slide__image {
-  background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg");
-}
-.ms--images .ms-slide__image-container {
-  width: 80%;
-  height: 80%;
-  background-color: rgba(208, 59, 228, 0.3);
-  overflow: hidden;
-}
-.ms--images .ms-slide__image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-
-.ms--numbers {
-  position: relative;
-  overflow: hidden;
-}
-.ms--numbers.ms-container--horizontal {
-  width: 180px;
-  height: 240px;
-  max-width: 100%;
- 
-}
-.ms--numbers.ms-container--horizontal .ms-track {
-  left: calc(60% - 120px);
-  top: calc(-20%);
-}
-.ms--numbers.ms-container--horizontal .ms-slide {
-  display: inline-flex;
-}
-.ms--numbers .ms-track {
-  display: flex;
-  position: absolute;
-  white-space: nowrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-/* width byl 240px */
-.ms--numbers .ms-slide {
-  align-items: center;
-  justify-content: center;
-  width: 240px;
-  height: 240px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.ms--numbers {
-  position: absolute;
-  left: calc(50% - 380px);
-  top: calc(50% - 300px);
-  z-index: -1;
-  pointer-events: none;
-}
-.ms--numbers .ms-slide {
-  font-size: 9em;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.2);
-}
-
-.ms--titles {
-  position: relative;
-  overflow: hidden;
-}
-.ms--titles.ms-container--vertical {
-  width: 400px;
-  height: 170px;
-  max-height: 100%;
-}
-.ms--titles.ms-container--vertical .ms-track {
-  flex-direction: column;
-  top: calc(50% - 85px);
-}
-.ms--titles.ms-container--vertical.ms-container--reverse .ms-track {
-  flex-direction: column-reverse;
-  top: auto;
-  bottom: calc(50% - 85px);
-}
-.ms--titles.ms-container--vertical .ms-slide {
-  display: flex;
-}
-.ms--titles .ms-track {
-  display: flex;
-  position: absolute;
-  white-space: nowrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.ms--titles .ms-slide {
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  height: 170px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.ms--titles {
-  position: absolute;
-  left: calc(50% - 420px);
-  top: calc(50% - 85px);
-  z-index: 1;
-  pointer-events: none;
-}
-.ms--titles .ms-track {
-  white-space: normal;
-}
-.ms--titles .ms-slide {
-  font-size: 3.3em;
-  font-weight: 600;
-}
-.ms--titles .ms-slide h3 {
-  margin: 0;
-  text-shadow: 1px 1px 2px black;
-}
-
-.ms--links {
-  position: relative;
-  overflow: hidden;
-}
-.ms--links.ms-container--vertical {
-  width: 120px;
-  height: 60px;
-  max-height: 100%;
-}
-.ms--links.ms-container--vertical .ms-track {
-  flex-direction: column;
-  top: calc(50% - 30px);
-}
-.ms--links.ms-container--vertical .ms-slide {
-  display: flex;
-}
-.ms--links .ms-track {
-  display: flex;
-  position: absolute;
-  white-space: nowrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.ms--links .ms-slide {
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 60px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.ms--links {
-  position: absolute;
-  left: calc(50% - 420px);
-  top: calc(50% + 105px);
-  z-index: 1;
-}
-.ms--links .ms-track {
-  white-space: normal;
-}
-.ms--links .ms-slide__link {
-  font-weight: 600;
-  padding: 5px 0 8px;
-  border-bottom: 2px solid white;
-  cursor: pointer;
-}
-
-.pagination {
-  display: flex;
-  position: absolute;
-  left: calc(50% - 420px);
-  top: calc(100%);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  z-index: 1;
-}
-.pagination__button {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 50px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-.pagination__button:before, .pagination__button:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: calc(50% - 10px);
-  width: 100%;
-  box-shadow: 0px 3px 3px #0B0D14;
-}
-.pagination__button:before {
-  height: 5px;
-  background-color: #a46497;
-}
-.pagination__button:after {
-  height: 7px;
-  background-color: #7e1b97;
-  opacity: 0;
-  transition: 0.5s opacity;
-}
-
-.pagination__item--active .pagination__button:after {
-  opacity: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .ms--numbers {
-    left: calc(50% - 120px);
-  }
-
-  .ms--titles {
-    left: calc(50% - 200px);
-    top: calc(50% - 135px);
-    text-align: center;
-  }
-
-  .ms--links {
-    left: calc(50% - 60px);
-    top: calc(50% + 80px);
-  }
-
-  .pagination {
-    left: 50%;
-    top: calc(100% - 50px);
-    transform: translateX(-50%);
-  }
-}
-@media screen and (max-width: 600px) {
-  .ms--images {
-    overflow: visible;
-  }
-}
-@media screen and (max-width: 400px) {
-  .ms--titles .ms-slide {
-    transform: scale(0.8);
-  }
-}
-
-
-.containerslideimages1 {
-  overflow: hidden;
-}
-
-.containerslideimages1 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: white(0, 0, 0, 0.1);
-}
-/* zmienianie paska tla */
-.containerslideimages1:before {
-  content: "";
-  position: absolute;
-  right: -116%;
-  top: 0;
-  width: 260%;
-  height: 125%;
-  background-color: rgb(180, 180, 180);
-  transform: rotate(50deg);
-  z-index: -1;
-}
-/* koniec*/
-
-.slideimages1 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px;
-}
-
-
-.sliders-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-@media screen and (max-width: 860px) {
-  .header__menu, .slideimages1 {
-    display: none;
-  }
-}
-/* PICTURE SLIDE NUMBERS OVER */
-
-.navibarmenu{
-  z-index: 1000;
-}
-
-.column1{
-  z-index: 10;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16.5px;
-  letter-spacing: 3px;
-  margin-top: 0%;
-  font-weight: 400;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-
+/* TITLE HEADING */
 
 </style>
-    <title>Awnings</title>
-</head>
-<%- include('partials/navbar'); -%>
-<body>
-  <%- include('partials/cookies'); -%> 
-  <%- include('partials/sidebar'); -%>
-  <br>
-  <br>
-  <br>
-  <div class="rowawningmenu">
-    <div class="column1">
-      <a class="menu-left" href="/casablanca/">/ Casablanca <br> full cassette</a>
-      <br>
-      <br>
-      <a class="menu-left" href="/corsica/">/ corsica <br> full cassette</a>
-      <br>
-      <br>
-      <a class="menu-left" href="/palladio/">/ Palladio <br> semi cassette</a>
-      <br>
-      <br>
-      <a class="menu-left" href="/Silverplus/">/ Silver plus <br> no cassette</a>
-      <br>
-      <br>
-      <a class="menu-left" href="/boxitalia/">/ Italia <br> sun blind</a>
-      <br>
-      <br>
-      <a class="menu-left" href="/bora/">/ Bora <br> side screen</a>       
-    </div>
+<title>English Awnings Direct - Awnings</title>
+<head>
+  <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+  <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+  <nav class="nav containermenutopfresh" id="nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="/">home</a></li>
+      <li class="menu-item"><a href="/about">about</a></li>
+      <li class="menu-item"><a href="#">Products</a>
+        <ul class="sub-menu">
+          <li class="biggersub"><a href="/awnings">Awnings</a>
+            <ul class="sub-menu">
+              <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+              <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+              <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+              <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+              <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+              <li><a href="/bora/" class="alinkmenu">Bora</a></li>
+            </ul>
+          </li>
+          <li class="biggersub"><a href="/accessories">Accessories</a>
+            <ul class="sub-menu">
+              <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+              <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+              <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+              <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+              <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+              <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+              <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+              <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+      <li class="menu-item"><a href="">Guide</a>
+        <ul class="sub-menu">
+          <li><a href="/brackets/">Bracket types</a>
+          </li>
+          <li><a href="/ultimateguide/">Ultimate guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/contact-us">Contact</a>
+      </li>
+      <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+      <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+        <!--Cart icon-->
+        <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+      
+  <body>
+    <form action="/payment/" method="get">
+      <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <!--Content -->
+        <div class="cart-content">
+        </div>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <input style="display:none" id="price" name="price" class="total-price"/>
+        </div>
+        <!--But button-->
+        <button type="submit" class="btn-buy">Buy now</button>
+        <i class='bx bx-x' id="close-cart"></i>
+        </div>
+      </form>
+  </div>
+
+
+
+
+<section class="dropdownawningsmenu">
+  <dl class="list maki">
+      <dt>Awnings</dt>
+        <dd><a href="/casablanca/">Casablanca</a></dd>
+        <dd><a href="/corsica/">Corsica</a></dd>
+        <dd><a href="/palladio/">Palladio</a></dd>
+        <dd><a href="/Silverplus/">Silver plus</a></dd>
+        <dd><a href="/boxitalia/">Italia blind</a></dd>
+        <dd><a href="/bora/">Bora Screen</a></dd>
+  </dl>
+</section>
+<br>
+<br>
 <br>
 <br>
 <div class="titlesawnings">
-<h9>English awnings direct <br> quality we are proud of.</h9>
+  <h9>English awnings direct <br> quality we are proud of.</h9>
 </div>
   <br>
   <br>
@@ -646,22 +146,19 @@ ul.social-network li {
   <br>
   <br>
   <br>
- <p>When it comes to our garden awnings, we offer a range of fabrics and colours to choose from! 
-<br>
-<br>
-Made of the highest quality components, Our 28 years experience lead us to perfection
-and happy costumers.
-<br>
-<br>
-Because of this, we are certain to supply you with some of the best awnings Dorset has to offer!
-<br>
-<br>
- With minimal maintenance and electric open and close functions, our garden awnings and other residential canopies are 
- <br>
- <br>
- guaranteed to provide you with the most efficient outdoor experience for your property!
-</p>
-
+  <div class="paragraphs">
+    <p>Looking for a new Innovative Canopy, Sunblind, or Electric Awning for your home or business?</p>
+    <p>Well, look no further than English Awnings direct.</p>
+    <p>We are proud of the Awnings & Outside covering we can provide to ensure</p>
+    <p>protection & sunshade to any outside area</p>
+    <p>or provide cover & shade to a part of your home or business in which the sun is just too bright.</p>
+    <br>
+    <p>With a variety of models & styles available, water-resistant fabrics & motorised sun & wind sensors</p>
+    <p>to protect your awning, what's stopping you?</p>
+    <p>If you subscribe to our newsletter, you get a 10% discount on your first order with us.</p>
+    <p>Oh, did I forget to mention you get a 2-year guarantee,</p>
+    <p>we can assure you that your outdoor area will never be the same again.</p>
+  </div>
 <br>
 <br>
 <br>
@@ -673,17 +170,12 @@ Because of this, we are certain to supply you with some of the best awnings Dors
 <br>
 <!-- PICTURES SLIDESHOW -->
 <div class="containerslideimages1">
-
   <main class="sliders-container">
-
-
-
       <ul class="pagination">
           <li class="pagination__item"><a class="pagination__button"></a></li>
           <li class="pagination__item"><a class="pagination__button"></a></li>
           <li class="pagination__item"><a class="pagination__button"></a></li>
           <li class="pagination__item"><a class="pagination__button"></a></li>
-          
       </ul>
   </main>
   <div class="slideimages1">
@@ -702,104 +194,88 @@ Because of this, we are certain to supply you with some of the best awnings Dors
 <br>
 <br>
 <br>
-<p>We have a fantastic range of residential canopies for customers in a UK.
-  <br>
-  <br>
-   We cater to all requirements and budgets so whatever kind of patio or garden awning you require.
-   <br>
-   <br>
-   We guarantee to have the perfect solution for you!</p>
+<div class="paragraphs">
+  <p>We have a fantastic range of residential canopies for customers in a UK.</p>
+  <p>We cater to all requirements and budgets so whatever kind of patio or garden awning you require.</p>
+  <p>We guarantee to have the perfect solution for you!</p>
+</div>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
- <!-- FOOTER START -->
- <footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <div class="heading-footer">
-              English
-              <br>
-               Awnings Direct
-          </div>
-          <ul class="list-unstyled">
-            <li>EnglishAwningsDirect.com</a></li>
-            <li>United Kingdom, Dorset</a></li>
-            <li>Unit 6 West Howe Industrial Estate</a></li>
-            <li>Elliot road</a></li>
-            <li>BH11 8JX</li> 
-          </ul>
-        </div>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+  <div class="myrowfooter">
+    <div class="columnfooter left1">
+      <div class="footerheader">
+          <h8>English Awnings Direct</h8>
       </div>
-      <!--Column2-->
-      <div class="col-md-3 col-sm-6">
-        <div class="footer-pad">
+      <ul class="liststyle">
+        <li class="listyle1">www.EnglishAwningsDirect.com</li>
+        <li class="listyle1">United Kingdom, Dorset</li>
+        <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+        <li class="listyle1">Elliot road</li>
+        <li class="listyle1">BH11 8JX</li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left2">
+      <div class="footerheader">
           <h8>Awnings</h8>
-          <ul class="list-unstyled">
-            <li><a href="/casablanca/">Casablanca full cassette</a></li>
-            <li><a href="/corsica/">Corsica full cassette</a></li>
-            <li><a href="/palladio/">Palladio full cassette</a></li>
-            <li><a href="/silverplus/">Silver plus</a></li>
-            <li><a href="/boxitalia/">Italia sunblind</a></li>
-            <li><a href="/bora/">Bora side screen</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column3-->
-        <div class="footer-pad">
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+        <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+        <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+        <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+        <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+        <li class="listyle1"><a href="/bora/">Bora</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left3">
+      <div class="footerheader">
           <h8>Features</h8>
-          <ul class="list-unstyled">
-            <li><a href="/color-pallet/">Fabric Colours</a></li>
-            <li><a href="/about/">Quality</a></li>
-            <li><a href="/about/#demo">Style</a></li>
-            <li><a href="/about/#ease">Ease</a></li>
-            <li><a href="/about/#features">Adjustment</a></li>
-            <li><a href="/about/#howto">Us</a></li>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+        <li class="listyle1"><a href="/about/">Quality</a></li>
+        <li class="listyle1"><a href="/about/#demo">Style</a></li>
+        <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+        <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+        <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left4">
+      <div class="footerheader">
+          <h8>Follow us</h8>
+      </div>
+          <ul class="liststyle">
+            <div class="social-network social-circle">
+              <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            </div>
+            <br>
+            <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+            <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
           </ul>
         </div>
       </div>
-        <div class="col-md-3">
-            <h8>Follow Us</h8>
-            <ul class="social-network social-circle">
-              <br>
-              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <br>
-              <br>
-              <br>
-            </ul>	
-            <ul>
-              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
-              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
-            </ul>
-                  
-        </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 copy">
-          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
-        </div>
-    </div>
-
-
   </div>
+  <div class="columnfooter-bottomfooter">
+    <div class="col-md-12 copy">
+        <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+    </div>
   </div>
 </footer>
-
 <!-- FOOTER OVER-->
+
+        
 <!--SCRIPT SLIDE IMAGES NUMBERS START-->
 
 
@@ -825,24 +301,10 @@ var msNumbers = new MomentumSlider({
 
 // Initializing the titles slider
 var titles = [
-    '01 <br> Bournemouth',
-    '02 <br> Poole',
-    '03 <br> Christchurch',
-    '04 <br> Southampton'
+
 ];
 var msTitles = new MomentumSlider({
-    el: slidersContainer,
-    cssClass: 'ms--titles',
-    range: [0, 3],
-    rangeContent: function (i) {
-        return '<h3>'+ titles[i] +'</h3>';
-    },
-    vertical: true,
-    reverse: true,
-    style: {
-        opacity: [0, 1]
-    },
-    interactive: false
+
 });
 
 // Initializing the links slider
@@ -900,8 +362,56 @@ pagination.addEventListener('click', function(e) {
 })();
               </script>
               <!--SCRIPT SLIDE IMAGES NUMBERS OVER-->
+        <!--FACEBOOK CHAT START-->
+        <div id="fb-root"></div>
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
 
-    <!--Link to JS CART-->
-    <script src="/js/main.js"></script>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "101963445787288");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v13.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!--Link to JS CART-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+<!--BEST SELLERS-->
+<script src="/js/bestsells.json"></script>
+<!--SCRIPT FOR LETTER SUBSCRIBE -->
+<script src="https://kit.fontawesome.com/0e66a92efa.js" crossorigin="anonymous"></script>
+<!-- SCRIPT SLIDESHOW INDEX-->
+<script src="/js/slideshowindex.js"></script>
+<!-- START JS TOP MENU-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="/js/topmenuscript.js"></script>
+<!-- OVER JS TOP MENU-->
+<script src="/order.js"></script>
+
+<!-- DROP DOWNS AWNINGS MENU LEFT JS-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="/js/dropdownawning.js"></script>
+<!-- FRESHMENU-->>
+<script  src="/js/topmenurespo.js"></script>
 </body>
 </html>

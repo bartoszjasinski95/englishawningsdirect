@@ -1,0 +1,31 @@
+
+
+
+
+.menu-left{
+    font-family: 'Oswald', sans-serif;
+      font-size: 1.4vw;
+      letter-spacing: 0.1vw;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;      
+}
+
+.column1 {
+  float: left;
+  width: 18%;
+  margin-top: 7vw;
+  margin-left: 3%;
+  position: fixed;
+  z-index: 1000;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 1;
+
+}
+
+.navibarmenu{
+  z-index: 1000;
+}

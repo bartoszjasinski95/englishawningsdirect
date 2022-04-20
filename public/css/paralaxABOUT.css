@@ -1,0 +1,369 @@
+
+
+
+.section {
+    background-image:  url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/01_Australia/wizualizacja_australia___Australian_apartment.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+  }
+  .section.two {
+    background-image: url("https://www.selt.com/images/galeria/02_markizy/1_Tarasowe/03_Corsica_wiz2/wizualizacja_corsica_Australian_home.jpg");
+  }
+  .section > h2{
+    padding: 25vh 0em;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+      font-size: 4vw;
+      letter-spacing: 10px;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 5;
+  }
+  
+  
+
+  
+  .button {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    width: auto;
+  }
+
+  .button a {
+    display: inline-block;
+    border: 2px solid #7e1b97;
+    padding: .75vw 1.5vw;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 3vw;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;
+      font-size: 1.4vw;
+  }
+  .button a:hover {
+    color: #FFFAF0;
+    background: #a46497;
+  }
+  #toTop img {
+    width: 50px;
+  }
+  #toTop img:hover {
+    cursor: pointer;
+  }
+
+  /* PARALAX NOT MOVING ON SMARTPHONES */
+
+  @media screen and (min-width:150px) and (max-width: 600px){
+    .section{
+      background-attachment: inherit;
+    }
+    .section{
+      margin-bottom: -10%;
+      width: fit-content;
+      width: 100%;
+
+    }
+  }
+    /* OVER PARALAX NOT MOVING ON SMARTPHONES */
+
+/* RESPONSIVITY 320 PX*/
+@media screen and (max-width:320px){
+
+  .section > h2{
+    font-size: 12vw;
+  }
+}
+
+/* RESPONSIVITY 360 X 640 PX*/
+  @media screen and (min-width:360px){
+    .section > h2{
+      font-size: 8vw;
+    }
+    .clickabout a{
+      width:10vh;
+      height: 3vh;
+      font-size: 2.5vw;
+    }
+    .bot a{
+      width:10vh;
+      height: 3vh;
+      font-size: 2.5vw;
+      margin-bottom: 10vw;
+    }
+  }
+
+/* RESPONSIVITY 390 X 844 PX*/
+@media screen and (min-width:390px){
+
+
+}
+
+/* RESPONSIVITY 601 */
+  @media screen and (min-width:601px){
+
+    .section > h2{
+      font-size: 8vw;
+    }
+    .clickabout a{
+      width:15vh;
+      height: 4vh;
+      font-size: 2.5vw;
+    }
+    .bot a{
+      width:15vh;
+      height: 4vh;
+      font-size: 2.5vw;
+      margin-bottom: 10vw;
+    }
+}
+  
+
+/* RESPONSIVITY 768 */
+@media screen and (min-width:768px){
+
+    .section > h2{
+      font-size: 8vw;
+    }
+    .clickabout a{
+      width:30vh;
+      height: 7vh;
+      font-size: 2.5vw;
+    }
+    .bot a{
+      width:30vh;
+      height: 7vh;
+      font-size: 2.5vw;
+      margin-bottom: 10vw;
+    }
+}
+
+/* RESPONSIVITY 810 */
+@media screen and (min-width:810px){
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:30vh;
+    height: 8vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:30vh;
+    height: 8vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+}
+
+/* RESPONSIVITY 962 */
+@media screen and (min-width:962px){
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:32vh;
+    height: 9vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:32vh;
+    height: 9vh;;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+
+}
+
+/* RESPONSIVITY 1024 x 600*/
+@media screen and (min-width:1024px){
+
+  .clickabout a{
+    width:35vh;
+    height: 10vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:35vh;
+    height: 10vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+
+}
+
+/* RESPONSIVITY 1080*/
+@media screen and (min-width:1080px){
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:38vh;
+    height: 10vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:38vh;
+    height: 10vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}
+
+/* RESPONSIVITY 1280px 800px */
+@media screen and (min-width:1280px){
+  
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:35vh;
+    height: 9vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:35vh;
+    height: 9vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}
+
+
+/* RESPONSIVITY 1440px 900px */
+@media screen and (min-width:1440px){
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:35vh;
+    height: 9vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:35vh;
+    height: 9vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}
+
+/* RESPONSIVITY 1536px 864px */
+@media screen and (min-width:1536px){
+
+}
+
+/* RESPONSIVITY 1600x 900px */
+@media screen and (min-width:1600px){
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:38vh;
+    height:10vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:38vh;
+    height:10vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}
+
+/* RESPONSIVITY 1680x 1050px */
+@media screen and (min-width:1680px){
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:38vh;
+    height:10vh;
+    font-size: 2.5vw;
+  }
+  .bot a{
+    width:38vh;
+    height:10vh;
+    font-size: 2.5vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}
+
+  /* RESPONSIVITY 1920px x 1080PX*/
+@media screen and (min-width:1920px){
+  .section{
+    width: fit-content;
+    width: 100%;
+
+  }
+  .section > h2{
+    font-size: 8vw;
+  }
+  .clickabout a{
+    width:32vh;
+    height:9vh;
+    font-size: 2vw;
+  }
+  .bot a{
+    width:32vh;
+    height:9vh;
+    font-size: 2vw;
+    margin-bottom: 10vw;
+  }
+  .marginaboutheadings{
+    margin-top: 10%;
+  }
+}

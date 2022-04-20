@@ -1,0 +1,75 @@
+
+
+.containerpricelist{
+    width: 100%;
+    max-width: 60vw;
+    max-height: 1vw;
+    height: auto;
+    font-size: 1.2vw;
+}
+
+/* PRICE LIST START */
+.containerpricelist th  {
+font-weight: bold;
+font-size: 1vw;
+color: #185875;
+}
+
+.containerpricelist td {
+    font-weight: normal;
+    font-size: 1vw;
+-webkit-box-shadow: 0 2px 2px -2px #0E1119;
+     -moz-box-shadow: 0 2px 2px -2px #0E1119;
+          box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.containerpricelist {
+overflow: hidden;
+width: 100%;
+margin-left: 21vw;
+display: table;
+}
+
+.containerpricelist td, .container th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+padding-left:2%;  
+}
+
+/* Background-color of the odd rows */
+.containerpricelist tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background-color of the even rows */
+.containerpricelist tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+.containerpricelist th {
+    background-color: #1F2739;
+}
+
+.containerpricelist td:first-child { color: #FB667A; }
+
+.containerpricelist tr:hover {
+ background-color: #464A52;
+-webkit-box-shadow: 0 0px 0px 0px #0E1119;
+     -moz-box-shadow: 0 0px 0px 0px #0E1119;
+          box-shadow: 0 0px 0px 0px #0E1119;
+}
+
+.containerpricelist td:hover {
+background-color: #a46497;
+color: #403E10;
+font-weight: bold;
+
+box-shadow: #7e1b97 5px 5px, #7e1b97 -5px -5px, #7e1b97 5px -5px, #7e1b97 5px 5px, #7e1b97 5px 5px, #7e1b97 -5px 5px;
+transform: translate3d( 1px, 1px, 1px);
+
+transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+transition-timing-function: line;
+}
+

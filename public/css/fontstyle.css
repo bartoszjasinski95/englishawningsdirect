@@ -1,0 +1,208 @@
+
+  @media screen and (min-width:1080px){
+p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6vw;
+    text-align: center;
+      font-weight: 400;
+      z-index: 10;
+      opacity: 1;
+  }
+
+h1{
+    font-family: 'Oswald', sans-serif;
+      font-size: 3vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;
+  }
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+}
+  
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 4vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+}
+  h4{
+    font-family: 'Oswald', sans-serif;
+      font-size: 3vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;
+  }
+  h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6vw;
+    text-align: center;
+      font-weight: 400;
+      z-index: 10;
+      opacity: 1;
+  }
+  h6{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+
+  h7{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+    text-align: left;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+
+
+  h8{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+  h9{
+    font-family: 'Oswald', sans-serif;
+      font-size: 3.5vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;  
+    }
+    .line-break {
+      border-bottom:1px solid black;
+      width: 150px; 
+      margin:0 auto;
+    }
+  }
+
+
+  @media screen and (min-width:1280px){
+  p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6vw;
+    text-align: center;
+      font-weight: 400;
+      z-index: 10;
+      opacity: 1;
+  }
+
+h1{
+    font-family: 'Oswald', sans-serif;
+      font-size: 3vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;
+  }
+h2{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+}
+  
+h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 4vw;
+  letter-spacing: 0.2vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+}
+  h4{
+    font-family: 'Oswald', sans-serif;
+      font-size: 1vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;
+  }
+  h5{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6vw;
+    text-align: center;
+      font-weight: 400;
+      z-index: 10;
+      opacity: 1;
+  }
+  h6{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+
+  h7{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+    text-align: left;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+
+
+  h8{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    opacity: 1;
+  }
+  h9{
+    font-family: 'Oswald', sans-serif;
+      font-size: 3.5vw;
+      letter-spacing: 10px;
+      text-align: center;
+      font-weight: 400;
+      text-transform: uppercase;
+      z-index: 10;
+      opacity: 1;  
+    }
+    .line-break {
+      border-bottom:1px solid black;
+      width: 150px; 
+      margin:0 auto;
+    }
+  
+}

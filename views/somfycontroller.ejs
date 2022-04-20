@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-     <link rel="stylesheet" href="/css/styleaccessoriess.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!-- link ro interactive shop-->
+<link rel="stylesheet" href="/css/style.css" />
+<!---->
+<link rel="stylesheet" href="/css/style1.css"> 
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
 
-    <!-- Link to CSS CART-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!--Usage as font-->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-     
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 
+<!--Usage as font-->
+<link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+
+<!--SLIDE SHOW INDEX-->
+<link rel="stylesheet" href="css/slideshowindex.css">
+
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
+<!--ACCESSORIES-->
+<link rel="stylesheet" href="/css/newaccess.css">
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
     <style>
                 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
 
-  /*
+
+.img-crank {
+  width: 650px;
+    padding: 5vw;
+}
+
+
+
+
+/*
 Basic input element using psuedo classes
 */
-
-h1{
-  font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-h3{
-  font-family: 'Oswald', sans-serif;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-h6{
-  font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    
-    z-index: 10;
-    opacity: 1;
-}
-p{
-  font-family: 'Oswald', sans-serif;
-    font-size: 28px;
-    letter-spacing: 1px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
 .active {
   background: rgba(255, 255, 255, 0.9);
 }
 /* Question */
-
 input.question,
 textarea.question {
   font-size: 30px;
@@ -82,9 +63,7 @@ textarea.question {
   transition: padding-top 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
 }
-
 /* Underline and Placeholder */
-
 input.question + label,
 textarea.question + label {
   display: block;
@@ -98,46 +77,38 @@ textarea.question + label {
   transition: width 0.4s ease;
   height: 0px;
 }
-
 input.question:focus + label,
 textarea.question:focus + label {
   width: 60%;
 }
-
 input.question:focus,
 input.question:valid {
   padding-top: 35px;
 }
-
 textarea.question:valid,
 textarea.question:focus {
   margin-top: 35px;
 }
-
 input.question:focus + label > span,
 input.question:valid + label > span {
   top: -100px;
   font-size: 22px;
   color: #a46497;
 }
-
 textarea.question:focus + label > span,
 textarea.question:valid + label > span {
   top: -150px;
   font-size: 22px;
   color: #a46497;
 }
-
 input.question:valid + label,
 textarea.question:valid + label {
   border-color: #7e1b97;
 }
-
 input.question:invalid,
 textarea.question:invalid {
   box-shadow: none;
 }
-
 input.question + label > span,
 textarea.question + label > span {
   font-weight: 300;
@@ -152,637 +123,266 @@ textarea.question + label > span {
   transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
 }
 
-
-input,
-span,
-label,
-textarea {
-  font-family: 'Lora', sans-serif;
-  display: block;
-  padding: 15px;
-  border: none;
-  font-size: 25px;
-}
-
 input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
   -webkit-animation: appear 1s forwards;
   animation: appear 1s forwards;
 }
-
 input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
   display: none;
 }
-
 @-webkit-keyframes appear {
   100% {
     opacity: 1;
   }
 }
-
 @keyframes appear {
   100% {
     opacity: 1;
   }
 }
-
-
 .emailusform{
   padding-left: 29%;
 }
-     
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-
-
-/* BUTTON SEND EMAIL */
-.emailbutton{
-  border: none;
-  margin-left: 650px;
-}
-.emailbutton:focus {
-    border: none;
-    outline: none;
-}
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-li.somfy1channelbullets {
-  color:black;
-  list-style:none;
-  font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
-li.somfy1channelbullets:before {
-   content:"\f00c";
-}
-li.somfy1channelbullets:hover:before {
-  color:#7e1b97;
-}
-li.somfy1channelbullets:before {
-  font-family:FontAwesome;
-  left: 0;
-  color:#ce7bbd;
-  font-size:25px;
-}
-.description{
-  padding-bottom: 10%;
-}
-/* RIGHT NAVI BAR MENU */
-.navibarmenu {
-    right: 1%;
-    cursor: pointer;
-    margin-top: 21.3%;
-	  z-index: 1;
-} 
+  
         </style>
-    <title>Document</title>
-</head>
-<body>
-  <div id="js-cookie-box" class="cookie-box cookie-box--hide">
-    We use cookies to improve your experience. Please read our <a href="">cookie policy</a> for more infotmation about how we use cookies. 🍪 ! <span id="js-cookie-button" class="cookie-button">Understand</span>
-  </div>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js'></script><script  src="./script.js"></script>
-
-<script>
-    const cookieBox = document.getElementById('js-cookie-box');
-const cookieButton = document.getElementById('js-cookie-button');
-
-if (!Cookies.get('cookie-box')) {
-
-  cookieBox.classList.remove('cookie-box--hide');
-
-  cookieButton.onclick = function () {
-    Cookies.set('cookie-box', true, { expires: 7 });
-    cookieBox.classList.add('cookie-box--hide');
-  };
-}
-</script>
-<!--HEader-->
-<header>
-  <div class="containertopmenu">
-    <section class="top-menu-cont">
-      <nav class="top-menu left">
-        <ul class="nav-top">
-
-          <li class="t-hidden m-hidden">
-            <a href="/home/">
-              Home
-            </a>
-          </li>
-          <li class="t-hidden m-hidden"><a href="/about/">About</a>
-            <ul class="menu-article2">
-              <li>
-                <a href="/about/#about">
-                  Quality
-                </a>
-              </li>
-              <li>
-                <a href="/about/#demo">
-                  Style
-                </a>
-              </li>
-              <li>
-                <a href="/about/#ease">
-                  Ease
-                </a>
-              </li>
-              <li>
-                <a href="/about/#features">
-                  Adjustment
-                </a>
-              </li>
-              <li>
-                <a href="/about/#howto">
-                  Us
-                </a>
-              </li>
+    <title>English Awnings Direct - Crank</title>
+<head>
+  <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+  <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+  <nav class="nav containermenutopfresh" id="nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="/">home</a></li>
+      <li class="menu-item"><a href="/about">about</a></li>
+      <li class="menu-item"><a href="#">Products</a>
+        <ul class="sub-menu">
+          <li class="biggersub"><a href="/awnings">Awnings</a>
+            <ul class="sub-menu">
+              <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+              <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+              <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+              <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+              <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+              <li><a href="/bora/" class="alinkmenu">Bora</a></li>
             </ul>
           </li>
-
-          <li class="t-hidden m-hidden l-hidden" id="menu-article2"><a href="awnings/">
-              Products</a>
-            <ul class="menu-article2">
-              <li>
-                <a href="/awnings/">
-                  Awnings
-                </a>
-              </li>
-              <li>
-                <a href="/accessories/">
-                  Accessories
-                </a>
-              </li>
+          <li class="biggersub"><a href="/accessories">Accessories</a>
+            <ul class="sub-menu">
+              <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+              <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+              <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+              <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+              <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+              <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+              <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+              <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
             </ul>
           </li>
-
-          <li class="t-hidden m-hidden l-hidden"><a href="/color-pallet/">Collor pallet</a></li>
-
-          <li class="t-hidden m-hidden"><a href="/contact-us/">Contact us</a></li>
-
-          <li class="m-hidden"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank"><i
-                class="fa fa-facebook"></i></a></li>
-
-
-          <!--CART -->
-          <form action="http://localhost:8080/payment/" method="get">
-            <li class="m-hidden"> <!--Cart icon-->
-                <i class="bx bx-shopping-bag" id="cart-icon"></i>
-                <!--Cart-->
-                <div class="cart">
-                  <h2 class="cart-title">Your cart</h2>
-                  <!--Content -->
-                  <div class="cart-content">
-  
-                  </div>
-                  <!--Total-->
-                  <div class="total">
-                    <div class="total-title">Total</div>
-                    <input style="display:none" id="price" name="price" class="total-price"/>
-                  </div>
-                  <!--But button-->
-                  <button type="submit" class="btn-buy">Buy now</button>
-                  <i class='bx bx-x' id="close-cart"></i>
-                </div>
-            </li>
-            </form>
-  </div>
-
-
-  </div>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+      <li class="menu-item"><a href="">Guide</a>
+        <ul class="sub-menu">
+          <li><a href="/brackets/">Bracket types</a>
+          </li>
+          <li><a href="/ultimateguide/">Ultimate guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/contact-us">Contact</a>
+      </li>
+      <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+      <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+        <!--Cart icon-->
+        <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+      </li>
+    </ul>
   </nav>
-  </section>
-  </div>
-
 </header>
-<!-- Component Start -->
-<div class="navibarmenu">
-    
-    <div class="homenavbar">
-        <a class="homenavbariconhome" href="/home/">
-            <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-            </svg>
-        </a>
-       
-
-        <a class="homenavbariconpallet" href="/color-pallet/">
-            <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-        </a>
-
-        <a class="homenavbariconadjustment" href="/awnings/">
-            <svg class="w-6 h-6 stroke-current"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-            </svg>
-        </a>
-
-        <a class="homenavbariconcontact" href="/contact-us/">
-            <svg class="w-6 h-6 stroke-current" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-            </svg>
-            <span class="absolute top-0 left-0 w-2 h-2 mt-2 ml-2 bg-indigo-500 rounded-full"></span>
-        </a>
-        </svg>
-    </div>
-    </a>
-</div>
-<div class="containeraccessories">
-  <!-- / .topnav -->
-  <section class="banner">
-    <div class="slide">
-      <div class="description">
-      <h1>Somfy Telis 1 RTS</h1>
-           <p>Control a single Somfy RTS product with one touch thanks to the wireless Somfy Telis 1 RTS one-channel remote control. 
-            This easy to program handset can also be used to operate a group of Somfy products simultaneously.
-             The stylish design features three buttons, including open, close and a ‘my’ button, which allows you to instantly recall your preferred position.</p>
-      </div>
-      <div class="somfy-controller-shop">
-        <!--shop-->
-        <section class="shop container">
-          <!--Content-->
-          <div class="shop-content">
-            <!--Box 1-->
-            <div class="product-box">
-              <img src="/img/accessories/somfy controller.png" alt="" class="product-img">
-              <h2 class="product-title">Somfy Telis 1 RTS</h2>
-              <span class="price">£48</span>
-              <i class='bx bx-shopping-bag add-cart'></i>
-            </div>
-          </div>
-        </section>
-      </div>
-          </ul>
-        </div>
-        <div class="somfy1channelbullet">
-          <ul>
-          <br>
-          <h6>
-            The handset is battery powered for wireless control and also comes with a shock and splash proof housing for durability.
-          </h5>
-          <br>
-          <li class="somfy1channelbullets">
-            One touch control of a Somfy RTS powered curtains, blind or other RTS enabled product, e.g. lighting modules
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            Includes open, close and stop functions, and programmable ‘my’ button
-
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            Shock and splash proof housing for durability
-
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            Battery powered with no wiring required
-
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            Supplied with a mounting pin for easy storage
-
-          </li>
-          <br>
-          <br>
-          <h6>What's included :</h6>
-          <br>
-          <li class="somfy1channelbullets">
-            1 Somfy Telis 1 one-channel remote control
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            1 Battery
-
-          </li>
-          <br>
-          <li class="somfy1channelbullets">
-            1 Wall mount
-          </li>
-      </div>
-      </div>
+  </head>
       
-    </div>
-
-    </div>
-    
-  </section>
-  
-  <!-- / .banner -->
-</div>
-<br>
-<br>
-<br>
- <!-- FOOTER START -->
- <footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <div class="heading-footer">
-              English
-              <br>
-               Awnings Direct
-          </div>
-          <ul class="list-unstyled">
-            <li>EnglishAwningsDirect.com</a></li>
-            <li>United Kingdom, Dorset</a></li>
-            <li>Unit 6 West Howe Industrial Estate</a></li>
-            <li>Elliot road</a></li>
-            <li>BH11 8JX</li> 
-          </ul>
+  <body>
+    <form action="/payment/" method="get">
+      <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <!--Content -->
+        <div class="cart-content">
         </div>
-      </div>
-      <!--Column2-->
-      <div class="col-md-3 col-sm-6">
-        <div class="footer-pad">
-          <h8>Awnings</h8>
-          <ul class="list-unstyled">
-            <li><a href="/casablanca/">Casablanca full cassette</a></li>
-            <li><a href="/corsica/">Corsica full cassette</a></li>
-            <li><a href="/palladio/">Palladio full cassette</a></li>
-            <li><a href="/silverplus/">Silver plus</a></li>
-            <li><a href="/boxitalia/">Italia sun blind</a></li>
-            <li><a href="/bora/">Bora side screen</a></li>
-          </ul>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <input style="display:none" id="price" name="price" class="total-price"/>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column3-->
-        <div class="footer-pad">
-          <h8>Features</h8>
-          <ul class="list-unstyled">
-            <li><a href="/color-pallet/">Fabric Colours</a></li>
-            <li><a href="/about/">Quality</a></li>
-            <li><a href="/about/#demo">Style</a></li>
-            <li><a href="/about/#ease">Ease</a></li>
-            <li><a href="/about/#features">Adjustment</a></li>
-            <li><a href="/about/#howto">Us</a></li>
-          </ul>
+        <!--But button-->
+        <button type="submit" class="btn-buy">Buy now</button>
+        <i class='bx bx-x' id="close-cart"></i>
         </div>
-      </div>
-        <div class="col-md-3">
-            <h8>Follow Us</h8>
-            <ul class="social-network social-circle">
-              <br>
-              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <br>
-              <br>
-              <br>
-            </ul>	
-            <ul>
-              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
-              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
-            </ul>
-                  
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 copy">
-          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
-        </div>
-    </div>
-
-
+      </form>
   </div>
+  <div class="containeraccessories">
+    <!-- / .topnav -->
+    <br>
+    <br>
+    <br>
+    <section class="banner">
+      <div class="slide">
+        <div class="descriptionaccessories">
+          <div class="nameaccessorie">
+            <h9>Somfy Telis 1 RTS</h9>
+          </div>
+          <div class="descriptionsensor">
+            <p>Control a single Somfy RTS product with one touch</p>
+            <p>thanks to the wireless Somfy Telis 1 RTS one-channel remote control.</p>
+            <p>This easy to program handset can also be used to operate a group of Somfy products simultaneously.</p>
+            <p>The stylish design features three buttons, including open, close and a ‘my’ button,</p>
+            <p>which allows you to instantly recall your preferred position.</p>
+            <br>
+            <br>
+            <div class="accordion_wrap" id="accordion-details">
+              <h2>Details & specifications</h2>
+                  <div class="accordion-content-block">
+                    
+                      <button class="d-flex align-items-center accordion-item-title subtitle_2" role="link" data-toggle="collapse" href="#detailsCollapse" aria-expanded="false" aria-controls="detailsCollapse">
+                        
+                        Technical characteristics :
+                        <span class="arrow-icon"></span>
+                      </button>
+                    
+                    <div data-parent="#accordion-details" class="accordion-item-content collapse show" id="detailsCollapse" style="">
+                      <br>
+                      <ul>
+                        <br>
+                        <li>The handset is battery powered for wireless control</li>
+                        <li>Comes with a shock and splash proof housing for durability.</li>
+                        <li>One touch control of a Somfy RTS powered curtains, blind or other RTS enabled product, e.g. lighting modules</li> 
+                        <li>Includes open, close and stop functions, and programmable ‘my’ button</li> 
+                        <li>Shock and splash proof housing for durability</li>
+                        <li>Battery powered with no wiring required</li>
+                        <li>Supplied with a mounting pin for easy storage</li>
+                      </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="accordion_wrap" id="accordion-details">
+                  <div class="accordion-content-block">
+                    
+                      <button class="d-flex align-items-center accordion-item-title subtitle_2" role="link" data-toggle="collapse" href="#detailsCollapse" aria-expanded="false" aria-controls="detailsCollapse">
+                        
+                        What's included:
+                        <span class="arrow-icon"></span>
+                      </button>
+                    
+                    <div data-parent="#accordion-details" class="accordion-item-content collapse show" id="detailsCollapse" style="">
+                      <br>
+                      <ul>
+                        <br>
+                        <li>1 Somfy Telis 1 one-channel remote control</li>
+                        <li>1 Battery</li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="nemored-shop">
+          <!--shop-->
+          <section class="shop container">
+            <!--Content-->
+            <div class="shop-content">
+              <!--Box 1-->
+              <div class="product-box">
+                <div class="img-accesorrie-buy">
+                  <img src="/img/accessories/somfy controller.png" alt="" class="product-img">
+                </div>  
+                <h2 class="product-title">Somfy Telis 1 RTS</h2>
+                <span class="price">£48</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    <!-- / .banner -->
+  </div>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+  <div class="myrowfooter">
+    <div class="columnfooter left1">
+      <div class="footerheader">
+          <h8>English Awnings Direct</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1">www.EnglishAwningsDirect.com</li>
+        <li class="listyle1">United Kingdom, Dorset</li>
+        <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+        <li class="listyle1">Elliot road</li>
+        <li class="listyle1">BH11 8JX</li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left2">
+      <div class="footerheader">
+          <h8>Awnings</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+        <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+        <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+        <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+        <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+        <li class="listyle1"><a href="/bora/">Bora</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left3">
+      <div class="footerheader">
+          <h8>Features</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+        <li class="listyle1"><a href="/about/">Quality</a></li>
+        <li class="listyle1"><a href="/about/#demo">Style</a></li>
+        <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+        <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+        <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left4">
+      <div class="footerheader">
+          <h8>Follow us</h8>
+      </div>
+          <ul class="liststyle">
+            <div class="social-network social-circle">
+              <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            </div>
+            <br>
+            <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+            <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columnfooter-bottomfooter">
+    <div class="col-md-12 copy">
+        <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+    </div>
   </div>
 </footer>
-
 <!-- FOOTER OVER-->
+ 
     <!--Link to JS CART-->
-    <script src="/js/main.js"></script>  
+    <script src="/js/main.js"></script>
+<script  src="/js/topmenurespo.js"></script>
+
 </body>
 </html>  

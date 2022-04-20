@@ -1,38 +1,24 @@
-const nodemailer = require('nodemailer');
-const mailGun = require('nodemailer-mailgun-transport');
-var bodyParser = require('body-parser');
+var nodemailer = require('nodemailer');
 
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'bartoszjasinski01@gmail.com',
+    pass: '4740570xDD'
+  }
+});
 
-
-const auth = {
-    auth: {
-        api_key:'key-4114a9d367a311fd7ba49871c49b7f99',
-        domain: 'sandboxd4d0a39f2aa949f8bbb6ad56bc25eed7.mailgun.org'
-    }
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'bartoszjasinski01@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
 };
 
-const transporter = nodemailer.createTransport(mailGun(auth));
-
-//Chunk 4
-
-const sendMail = (email, subject, text, cb) => {
-    const mailOptions = {
-        from: email,
-        to:'englishawningsdirect@gmail.com',
-        subject,
-        text
-    };
-    
-    transporter.sendMail(mailOptions, function(err, data) {
-        if (err) {
-            cb(err, null);
-        } else {
-            cb(null, data);
-    
-        }
-    });
-}
-
-
-module.exports = sendMail;
-
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});

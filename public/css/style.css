@@ -1,27 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@100&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  scroll-padding-top: 2rem;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
+
 :root {
   --main-color: red;
   --text-color: black;
   --bg-color: white;
 }
-img {
-  width: 100%;
-}
 
-.container {
-  max-width: 1068px;
-  margin: auto;
-  width: 100%;
-}
+
 /*HEader*/
 header {
   position: fixed;
@@ -40,15 +24,16 @@ header {
   padding: 20px 0;
 }
 .logo {
-  font-size: 1.1rem;
+  font-size: 1.1vw;
   color: var(--text-color);
   font-weight: 400;
 }
 .cart-icon {
-  float: right;
-  padding: 10px;
-  font-size: 1.4rem;
+  font-size: 2vw;
   cursor: pointer;
+  color: black;
+  margin-top: 0.2vw;
+  z-index: 100000;
 }
 /* CART*/
 
@@ -56,22 +41,26 @@ header {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 360px;
+  width: 20vw;
   min-height: 100vh;
-  padding: 20px;
   background: var(--bg-color);
   box-shadow: -2px 0 4px hsl(0 4% 15%/ 10%);
   transition: 0.3s;
   z-index: 1000;
 }
+
+
 .cart.active {
   right: 0;
 }
+
+
+
 .cart-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 500;
-  margin-top: 2rem;
+  margin-top: 2vw;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 10px;
   text-align: center;
@@ -83,8 +72,8 @@ header {
   display: grid;
   grid-template-columns: 32% 50% 18%;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1vw;
+  margin-top: 1vw;
 }
 .cart-img {
   width: 100px;
@@ -98,7 +87,7 @@ header {
 }
 .cart-product-title {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-weight: 500;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
@@ -193,37 +182,38 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.shop {
-  margin-top: 2rem;
-}
 /* Shop content */
 .shop-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  gap: 1.5rem;
+  gap: 1.2vw;
 }
 .product-box {
   position: relative;
 }
-.product-box:hover {
-  padding: 10px;
-  border: 1px solid var(--text-color);
-  transition: 0.4s;
-}
+
 .product-img {
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
+  
 }
 
 .product-title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 400;
   margin-bottom: 0.5rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
 }
 .price {
   font-weight: 500;
+  text-align: center;
+
 }
 .add-cart {
   position: absolute;
@@ -231,12 +221,20 @@ header {
   right: 0;
   background: var(--text-color);
   color: var(--bg-color);
-  padding: 10px;
+  padding: 22px;
   cursor: pointer;
+  margin-right: 10px;
+
+  
 }
 .add-cart:hover {
-  background: hsl(249 32% 17%);
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        
 }
+
+
 
 /* Breakpoints / Making Responsiv */
 @media (max-width: 1080px) {
@@ -247,9 +245,7 @@ header {
     margin: 0 auto;
     width: 90%;
   }
-  .shop {
-    margin-top: 2rem !important;
-  }
+
 }
 @media (max-width: 930px) {
   .nav-top > li > a{
@@ -311,9 +307,7 @@ header {
     padding: 10px 10px;
     margin: 0 auto;
   }
-  .shop {
-    margin-top: 1rem !important;
-  }
+
   .cart {
     width: 280px;
   }
@@ -325,10 +319,25 @@ header {
   #mobile {
     display:block;
   }
-  .shop {
-    margin-top: 1rem !important;
-  }
+
   .cart {
     width: 280px;
   }
 }
+
+.motors {
+  margin: 0 auto;
+  padding: 50px 0 0;
+  max-width: 960px;
+  z-index: 0;
+}
+
+
+
+/* PDF INSTRUCTIONS */
+.pdfinstruction{
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* OVER PDF INSTRUCTIONS */

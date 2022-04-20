@@ -1,0 +1,188 @@
+/* MY FOOTER */
+
+* {
+  box-sizing: border-box;
+}
+
+.myfooter{
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222a);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+  max-height: 15vw;
+  height: auto;
+  width: auto;
+}
+
+.myrowfooter{
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  width: auto;
+}
+
+/* Create four equal columns that floats next to each other */
+.columnfooter {
+  float: left;
+  padding: 1vw;
+}
+
+.left1, .left2, .left3, .left4 {
+  width: 25%;
+}
+.columnfooter-bottomfooter{
+  text-align: center;
+  font-size: 1.1vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  z-index: 10;
+  opacity: 1;
+  background: #7e1b97;
+  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222a);
+  background: linear-gradient(59deg, #a46497, #7e1b97);
+  color: white;
+
+}
+
+
+/* Clear floats after the columns */
+.myrowfooter:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.footerheader{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+}
+.liststyle {
+  text-align: center;
+  font-size: 1vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  z-index: 10;
+  opacity: 1;
+  list-style-type: none;
+}
+.listyle1{
+  margin-right: 10%;
+
+}
+footer a {
+  color: #fff;
+  transition-duration: 0.3s;
+}
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+.verticalline-footer:hover > span {
+  transform: translate(0 -50%);
+  transition: all ease-in-out 0.2s;
+}
+.verticalline-footer > span {
+  width: 1px;
+  height: 12vw;
+  background: #FFFFFF;
+  display: flex;
+  text-align: center;
+  margin: 1vw auto 1vw;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  z-index: 10;
+}
+--------------------------------------------
+
+
+/* FOOTER SOCIAL ICONS */
+.icoFacebook{
+  width: 100%;
+  max-width: 5vw;
+  max-height: 5vw;
+
+
+}
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+
+
+}
+ul.social-network li {
+  display: inline;
+
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #7e1b97;
+
+}
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+
+}
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+  width: 30px;
+
+}
+.social-network a {
+  background-color: #ffffff;
+}
+.social-network a.icoFacebook:hover i {
+  color: #fff;
+}
+
+/* RESPONSIVITY */
+@media screen and (min-width:1080px){
+  .listyle1{
+    font-size: 1vw;
+  }
+  .text-center-footer{
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 390px){
+  .listyle1  a{
+    font-size: 1vw;
+    margin-right: 30%;
+  }
+  .text-center-footer{
+    font-size: 1.5vw;
+  }
+}

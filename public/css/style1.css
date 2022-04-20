@@ -7,12 +7,6 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
-  font-size: 40px;
-  text-align: center;
-  font-family: "Lora", sans-serif;
-  font-weight: 300;
-}
 
 h7 {
   font-size: 42px;
@@ -50,8 +44,7 @@ nav.show-color .navbar-home {
   width: 100%;
   transform: translate(100%, -50%);
   transform: translate3d(100%, -50%, 0);
-  transition: transform 0.2s ease-in, opacity 0.2s ease-in,
-    visibilit 0.2s ease-in;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in,visibility 0.2s ease-in;
   opacity: 0;
   z-index: 100000000;
 }
@@ -183,13 +176,12 @@ ul.navbar-nav > li.active > a:focus {
 }
 
 .section-sub-header {
+  margin-top: 5vw;
   position: relative;
-  margin-bottom: 40px;
-  font-size: 22px;
+  margin-bottom: 5vw;
+  font-size: 1.5vw;
   font-weight: 300;
   text-align: center;
-  line-height: 60px;
-  letter-spacing: 1px;
 }
 
 .banner .banner-child {

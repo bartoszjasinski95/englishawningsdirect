@@ -1,0 +1,23 @@
+.headproperties{
+    font-family: 'Oswald', sans-serif;
+      text-decoration: underline #7e1b97;
+      letter-spacing: 0.1vw;
+      text-align: center;
+      z-index: 10;
+      opacity: 1;
+  }
+  
+ /* TICKIS */
+.columnpro1{
+    float: left;
+    width: 50%;
+    padding: 0px;
+    margin-left: 20%;
+    height: 500px;
+}
+/* Clear floats after the columns */
+.rowpro1:after {
+  content: "";
+  display: table;
+  clear: both;
+}

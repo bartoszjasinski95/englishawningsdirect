@@ -1,373 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/styles.css" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-     
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
 <link rel="stylesheet" href="/css/styles.css">
-
-<!-- Link to CSS CART-->
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<!-- link ro interactive shop-->
 <link rel="stylesheet" href="/css/style.css" />
-<link rel="stylesheet" href="/css/style1.css">
+<!---->
+<link rel="stylesheet" href="/css/style1.css"> 
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
 <!--Usage as font-->
 <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-  
 
 
+<!--SLIDE SHOW INDEX-->
+<link rel="stylesheet" href="css/slideshowindex.css">
 
-    <style>
-                @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
 
-  /*
-Basic input element using psuedo classes
-*/
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+<!--NAVIGATION AWNINGS LEFT MENU-->
+<link rel="stylesheet" href="/css/navbarleft.css">
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
 
-h1{
-  font-family: 'Oswald', sans-serif;
-    font-size: 80px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-h2{
-  font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-h3{
-  font-family: 'Oswald', sans-serif;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-h8{
-  font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
+<style>
+ @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+</style>
 
-p{
-  font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
-.advantages{
-  text-decoration: underline violet;
-}
-.active {
-  background: rgba(255, 255, 255, 0.9);
-}
-
-.Steve-Maraboli{
-  font-family: 'Oswald', sans-serif;
-    font-size: 22px;
-    letter-spacing: 10px;
-    text-align: right;
-    font-weight: 500;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-
-/* Question */
-
-input.question,
-textarea.question {
-  font-size: 30px;
-  font-weight: 300;
-  border-radius: 2px;
-  margin: 0;
-  border: none;
-  width: 80%;
-  background: #a46497(0, 0, 0, 0);
-  transition: padding-top 0.2s ease, margin-top 0.2s ease;
-  overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
-}
-
-/* Underline and Placeholder */
-
-input.question + label,
-textarea.question + label {
-  display: block;
-  position: relative;
-  white-space: nowrap;
-  padding: 5px;
-  margin: 0;
-  width: 20%;
-  border-top: 1.5px solid #a46497;
-  -webkit-transition: width 0.4s ease;
-  transition: width 0.4s ease;
-  height: 0px;
-}
-
-input.question:focus + label,
-textarea.question:focus + label {
-  width: 60%;
-}
-
-input.question:focus,
-input.question:valid {
-  padding-top: 35px;
-}
-
-textarea.question:valid,
-textarea.question:focus {
-  margin-top: 35px;
-}
-
-input.question:focus + label > span,
-input.question:valid + label > span {
-  top: -100px;
-  font-size: 22px;
-  color: #a46497;
-}
-
-textarea.question:focus + label > span,
-textarea.question:valid + label > span {
-  top: -150px;
-  font-size: 22px;
-  color: #a46497;
-}
-
-input.question:valid + label,
-textarea.question:valid + label {
-  border-color: #7e1b97;
-}
-
-input.question:invalid,
-textarea.question:invalid {
-  box-shadow: none;
-}
-
-input.question + label > span,
-textarea.question + label > span {
-  font-weight: 300;
-  margin-left: -480px;
-  position: absolute;
-  color: #a46497;
-  font-size: 30px;
-  top: -100px;
-  left: 450px;
-  z-index: 0;
-  -webkit-transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-  transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;
-}
-
-
-input,
-span,
-label,
-textarea {
-  font-family: 'Lora', sans-serif;
-  display: block;
-  padding: 15px;
-  border: none;
-  font-size: 25px;
-}
-
-input.question:valid ~ input[type="submit"], textarea.question:valid ~ input[type="submit"] {
-  -webkit-animation: appear 1s forwards;
-  animation: appear 1s forwards;
-}
-
-input.question:invalid ~ input[type="submit"], textarea.question:invalid ~ input[type="submit"] {
-  display: none;
-}
-
-@-webkit-keyframes appear {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes appear {
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.emailusform{
-  padding-left: 29%;
-}
-
-
-
-/*FOOTER*/
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-/*navigation bar */
-
-.navibarmenu {
-  width: 75px;
-  right: 1%;
-  cursor: pointer;
-  margin-top: 21.3%;
-  z-index: 10000;
-}
-img{
-  position: static;
-  z-index: 10;
-}
-
-        </style>
-</head>
-<%- include('partials/navbar'); -%>
-<body>
-<%- include('partials/cookies'); -%> 
-<%- include('partials/sidebar'); -%>
-<h1>Ultimate Guide</h1>
-
+<title>English Awnings Direct - Ultimate Guide</title>
+<head>
+  <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+  <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+  <nav class="nav containermenutopfresh" id="nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="/">home</a></li>
+      <li class="menu-item"><a href="/about">about</a></li>
+      <li class="menu-item"><a href="#">Products</a>
+        <ul class="sub-menu">
+          <li class="biggersub"><a href="/awnings">Awnings</a>
+            <ul class="sub-menu">
+              <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+              <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+              <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+              <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+              <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+              <li><a href="/bora/" class="alinkmenu">Bora</a></li>
+            </ul>
+          </li>
+          <li class="biggersub"><a href="/accessories">Accessories</a>
+            <ul class="sub-menu">
+              <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+              <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+              <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+              <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+              <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+              <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+              <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+              <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+      <li class="menu-item"><a href="">Guide</a>
+        <ul class="sub-menu">
+          <li><a href="/brackets/">Bracket types</a>
+          </li>
+          <li><a href="/ultimateguide/">Ultimate guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/contact-us">Contact</a>
+      </li>
+      <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+      <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+        <!--Cart icon-->
+        <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+      </li>
+    </ul>
+  </nav>
+</header>
+  </head>
+      
+  <body>
+    <form action="/payment/" method="get">
+      <div class="cart">
+        <h2 class="cart-title">Your cart</h2>
+        <!--Content -->
+        <div class="cart-content">
+        </div>
+        <!--Total-->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <input style="display:none" id="price" name="price" class="total-price"/>
+        </div>
+        <!--But button-->
+        <button type="submit" class="btn-buy">Buy now</button>
+        <i class='bx bx-x' id="close-cart"></i>
+        </div>
+      </form>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="line-break margin-top-10"></p>
+<h4>Ultimate Guide</h4>
+<br>
+<br>
 <!--WHAT ARE AWNINGS FOR ?>-->
 <h2>1. What are awnings for ?</h2>
 <br>
@@ -376,12 +134,13 @@ img{
 <p>cooling your home more efficiently than blinds or drapes or any other indoor or outdoor decoraction.</p>
 <br>
 <br>
+<p class="line-break margin-top-10"></p>
 <h2>2. Why choose awnings?</h2>
 <h2>Five huge advantages!</h2>
 <br>
 <br>
 <!--REDUCE YOUR ENERGY COSTS-->
-<h3 class="advantages">Reduce your Energy Costs</h3>
+<h2 class="advantages">Reduce your Energy Costs</h2>
 <br>
 <p>A strategically mounted awning will help you save money and reduce your carbon footprint!</p>
 <p>Frequently known as the unique air conditioner, an awning can decrease your electricity charges through up to 25%.</p>
@@ -389,14 +148,14 @@ img{
 <p>enjoy the extra warm temperature and mild the sun offers.</p>
 <br>
 <!--LOW MAINTENANCE AND EASY CARE>-->
-<h3 class="advantages">Low Maintenance and Easy Care</h3>
+<h2 class="advantages">Low Maintenance and Easy Care</h2>
 <p>English Awnings Direct offers the highest level of design and performance.</p>
 <p>Featuring 100% acrylic fabrics, our awnings are mildew resistant and water repellent.</p>
 <p>Your retractable awning is available in a wide range of colours and patterns,</p>
 <p>so it will remain bright and beatiful for many years to come!</p>
 <br>
 <!-- YOU CAN ENHANCE THE LOOK AND FEEL OF YOUR HOME-->
-<h3 class="advantages">You can enhance the look and feel of your home</h3>
+<h2 class="advantages">You can enhance the look and feel of your home</h2>
 <br>
 <p>Retractable awnings are a great way to expand your seasonal living space while adding value to your home</p>
 <p>without requiring expensive and inconvenient renovations.</p>
@@ -404,7 +163,7 @@ img{
 <p>Every awning is costum designed and fabricated to order.</p>
 <br>
 <!--EVENING ENTERTAINING-->
-<h3 class="advantages">Evening entertaining</h3>
+<h2 class="advantages">Evening entertaining</h2>
 <br>
 <p>We all like savouring the long summer evenings during he summer.</p>
 <p>So, even if the weather isn't scorching, a BBQ or a few drinks in the backyard with family and friends</p>
@@ -412,14 +171,15 @@ img{
 <p>Awnings give cover, allowing you to spend more time in the garden without being interrupted by the wind or a light shower.</p>
 <br>
 <!--PROTECT FURNISHING-->
-<h3 class="advantages">Protect Furnishings</h3>
+<h2 class="advantages">Protect Furnishings</h2>
 <br>
 <p>For those of you who are fortunate enough to have a south-facing garden, the sun will shine for the most of the day.</p>
 <p>However, furniture near south-facing indows may suffer from sun damage as a result of this.</p>
 <p>An awning may provide shade for your-facing rooms, reducing the fading of your furnishings.</p>
 <p>Awnings are especially popular with wide bilfold or patio doors that let a lot of light into the area.</p>
 <br>
-<!-- WHAT IS THE BEST WAY TO MEASURE AN AWNING? -->
+<!-- WHAT IS THE BEST WAY TO MEASURE AN AWN ING? -->
+<p class="line-break margin-top-10"></p>
 <h2>3. What is the best way to measure an awning?</h2>
 <br>
 <p>You'll need to acquire the 'A' measurement to make sure you can purchase an awning that fits your house properly.</p>
@@ -432,9 +192,10 @@ img{
 
 
 <!-- HOW TO CLEAN AN AWNING?-->
+<p class="line-break margin-top-10"></p>
 <h2>4. How to clean an Awning?</h2>
 <br>
-<h3>Follow these steps to mantain your canopy fabric:</h3>
+<h2 class="advantages">Follow these steps to mantain your canopy fabric:</h2>
 <br>
 
     <p>1.Remove loose dirt with a brush</p>
@@ -445,12 +206,14 @@ img{
     <p>6.Let it air dry</p>
 <br>
 <!--CAN AWNINGS BE POWER WASHED ?-->
+<p class="line-break margin-top-10"></p>
 <h2>5. Can awnings be power washed ?</h2>
 <br>
 <p>We strongly warns against washing your awning with a high-pressure cleaner.</p>
 <p>Our recommendation is to use a mild soap or 303 fabric cleaner diluted in warm water.</p>
 <br>
 <!--CAN AWNINGS BE USED IN A RAIN?-->
+<p class="line-break margin-top-10"></p>
 <h2>6. Can awnings be used in a rain?</h2>
 <br>
 <p>Most awnings provide some kind of water protection, yet they aren't considered waterproof because</p>
@@ -461,12 +224,14 @@ img{
 <p>We can also advise you on the finest materials for your needs also via our help line or online chat.</p>
 <br>
 <!--CAN AWNINGS WITHSTAND WIND ?-->
+<p class="line-break margin-top-10"></p>
 <h2>7. Can awnings withstand wind ?</h2>
 <br>
 <p>Most self-supported awnings are tested at wind of 20 to 25 miles per hour,</p>
 <p>however this assumes a constant wind rather than a buffeting irregular wind, which is significantly more dangerous.</p>
 <br>
 <!--HOW DO YOU SECURE AWNING FROM STRONG WIND?-->
+<p class="line-break margin-top-10"></p>
 <h2>8. How do you secure awning from strong wind ?</h2>
 <br>
 <p>The best solution for strong wind protection is to install one of our wind sensor which automatically extends/retracts</p>
@@ -475,6 +240,7 @@ img{
 <p>and is pegged in at either side to pin the awning down.</p>
 <br>
 <!--CAN AWNINGS BE USED IN WINTER ?-->
+<p class="line-break margin-top-10"></p>
 <h2>9. Can awnings be used in winter ?</h2>
 <br>
 <p>Yes, our awnings can do that ! Retracable awnings provide ourdooor shelter and ultimate protection from winter inclementns.</p>
@@ -527,7 +293,7 @@ img{
                                                                         <!--SENSOR PROBLEM-->
 <h2>Sensor problems</h2>
 <br>
-<h3>Problem:</h3>
+<h2>Problem:</h2>
 <br>
 <p>My sensor is broken and my awning won't automatically retract.</p>
 <br>
@@ -535,12 +301,12 @@ img{
 <p>The snsor, like any other electrical component, might fail, preventing the awning from</p>
 <p>opening normally.</p>
 <br>
-<h3>Cause:</h3>
+<h2>Cause:</h2>
 <br>
 <p>The sensor may have been destroyed by severe weather, or in the circuitry may have blown out.</p>
 <p>During periods of severe rain, if the components or awnings aren't adequately waterproofed, they might be destroyed.</p>
 <br>
-<h3>Solution:</h3>
+<h2>Solution:</h2>
 <br>
 <p>A expert can diagnose the issue with your sensor and determine whether or not it needs to be replaced.</p>
 <p>Replacing a sensor is straightforward and does not necessitate tampering with other components.</p>
@@ -550,17 +316,17 @@ img{
 <!--MOTOR PROBLEM-->
 <h2>Motor problem</h2>
 <br>
-<h3>Problem:</h3>
+<h2>Problem:</h2>
 <br>
 <p>The motor is broken and the awning won't move.</p>
 <p>The actual movement of your awning fabric is controlled by the motor.</p>
 <p>Your awning will not extend or retract when you push the remote control of the motor is faulty.</p>
 <br>
-<h3>Cause:</h3>
+<h2>Cause:</h2>
 <br>
 <p>The engine may have overheated, or it may have just reached the end of its useful life.</p>
 <br>
-<h3>Solution:</h3>
+<h2>Solution:</h2>
 <br>
 <p>Have the motor inspected by a professional.</p>
 <p>They'll be able to tell if the motor needs to be repaired or if it has to be replaced totally.</p>
@@ -573,7 +339,7 @@ img{
 <p>Check to see whether your awning has been recalled before you start prying around.</p>
 <br>
 <!-- FIVE ADVICES FOR TROUBLESHOOTING-->
-<h3 class="advantages">Check our five advices for troubleshooting:</h3>
+<h2 class="advantages">Check our five advices for troubleshooting:</h2>
 <br>
     <p>1.First, look for tripped circuit breakers and blown fuses.</p>
     <p>If you don't hear any motor operation at all, all the awning's fuse might be blown.</p>
@@ -596,8 +362,8 @@ img{
 <!--TRACKS-->
 <h2>Track problem</h2>
 <br>
-<h3>Awning will not retract problem</h3>
-<h3>Check what to do !</h3>
+<h2>Awning will not retract problem</h2>
+<h2>Check what to do !</h2>
 <br>
 <p>1.Examine the awning to verify if it is correctly positioned on the rail.</p>
 <p>Awnings, both manual and electric, have trouble retracing if they aren't uniformly spaced on the rail.</p>
@@ -630,16 +396,16 @@ img{
 <!--FABRIC PROBLEM-->
 <h2>Fabric problem</h2>
 <br>
-<h3>Problem:</h3>
+<h2>Problem:</h2>
 <br>
 <p>The awning fabric is torn or mouldy.</p>
 <br>
-<h3>Cause:</h3>
+<h2>Cause:</h2>
 <br>
 <p>Fabrics that aren't properly weatherproofed might be damaged, spawn mould, or even decompose </p>
 <p>after prolonged exposure to the elements.</p>
 <br>
-<h3>Solution:</h3>
+<h2>Solution:</h2>
 <br>
 <p>Awning fabric that has become mouldy or rotted must be replaced.</p>
 <p>A expert might be able to repair tiny damages without having to replace the entire fabric.</p>
@@ -666,14 +432,14 @@ img{
 <p>Our awnings are made of good quality, both manual and retractable, are made to last, but time will wear them down.</p>
 <p>While good awning maintenance can keep its appearance and funcionality, age-related difficulties can and will arise.</p>
 <br>
-<h3>The problem:</h3>
+<h2>The problem:</h2>
 <br>
 <p>Age-related problems can't be avoided. Electricity may play a role in some age-related issues.</p>
 <p>The issue might be due to awning's construction, implying that the tracks have reached their maximum.</p>
 <p>One of the most prevalent age-related difficulties is aesthetic concerns.</p>
 <p>An awning with rusted components and fading bafric may be functional, but it will detract from the curb appeal of your property.</p>
 <br>
-<h3>The solution:</h3>
+<h2>The solution:</h2>
 <br>
 <p>Any significant concerns with an awning should be handled by specialists if you're wondering how to reapir an awning.</p>
 <p>If your awning's age-related issues are electrical, you'll almost probably need to replace the troublesome pieces.</p>
@@ -685,22 +451,23 @@ img{
 <!--POOLING WATER-->
 <h2>Pooling water</h2>
 <br>
-<h3>Problem:</h3>
+<h2>Problem:</h2>
 <br>
 <p>Water is accumulating on the awning's fabric because it isn't draining properly.</p>
 <br>
-<h3>Cause:</h3>
+<h2>Cause:</h2>
 <br>
 <p>The majority of the time, pooor installation and materials are to fault.</p>
 <p>The awning will not drain adequately if it is not pitched at the proper angle.</p>
 <p>To allow for drainage, the fabric should be water resistant.</p>
 <br>
-<h3>Solution:</h3>
+<h2>Solution:</h2>
 <br>
 <p>Ensure that you awning is installed by professional installers.</p>
 <p>Your awning's pitch may need to be re-calibrated, or the fabric may need to be replaced.</p>
 <br>
 <!--Can awnings be repaired ?-->
+<p class="line-break margin-top-10"></p>
 <h2>10. Can awnings be repaired ?</h2>
 <br>
 <p>Even significant damage may be repaired for a fraction of the cost of a new awning.</p>
@@ -710,6 +477,7 @@ img{
 <br>
 <!-- HOW TO DISPOSE OF USED AWNINGS?-->
 <br>
+<p class="line-break margin-top-10"></p>
 <h2>11. How to dispose of used awnings ?</h2>
 <p>After the end of product lifetime it must be disassembled and separate material must be segregated</p>
 <p>according to Regulation of the Minister of Environment of 27 September 2001 on waste catalogue </p>
@@ -717,6 +485,7 @@ img{
 <br>
 <!--IMPORTANT INFORMATION ONCERNING UTILISATION-->
 <br>
+<p class="line-break margin-top-10"></p>
 <h2>12. Important information concerning utilisation:</h2>
 <br>
 <p>Pursuant to the regulations of the Act dated of 29 July 2005 about waste electrical or</p>
@@ -728,92 +497,126 @@ img{
 <p>due to used electrical and electronic equipment and to assure a proper level of</p>
 <p>collection, recovery and recycling. There are no dangerous elements in the</p>
 <p>equipment which are of particularly adverse effect on the environment and human health.</p>
-<br>
-<br>
-<br>
-<br>
-
-        <!-- FOOTER START -->
-        <footer class="mainfooter" role="contentinfo">
-          <div class="footer-middle">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3 col-sm-6">
-                <!--Column1-->
-                <div class="footer-pad">
-                  <div class="heading-footer">
-                      English
-                      <br>
-                       Awnings Direct
-                  </div>
-                  <ul class="list-unstyled">
-                    <li>EnglishAwningsDirect.com</a></li>
-                    <li>United Kingdom, Dorset</a></li>
-                    <li>Unit 6 West Howe Industrial Estate</a></li>
-                    <li>Elliot road</a></li>
-                    <li>BH11 8JX</li> 
-                  </ul>
-                </div>
-              </div>
-              <!--Column2-->
-              <div class="col-md-3 col-sm-6">
-                <div class="footer-pad">
-                  <h8>Awnings</h8>
-                  <ul class="list-unstyled">
-                    <li><a href="/casablanca.html">Casablanca full cassette</a></li>
-                    <li><a href="/corsica.html">Corsica full cassette</a></li>
-                    <li><a href="/palladio.html">Palladio full cassette</a></li>
-                    <li><a href="/silverplus.html">Silver plus</a></li>
-                    <li><a href="/boxitalia.html">Italia sun blind</a></li>
-                    <li><a href="/bora.html">Bora side screen</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <!--Column3-->
-                <div class="footer-pad">
-                  <h8>Features</h8>
-                  <ul class="list-unstyled">
-                    <li><a href="/color-pallet.html">Fabric Colours</a></li>
-                    <li><a href="/about.html">Quality</a></li>
-                    <li><a href="/about.html#demo">Style</a></li>
-                    <li><a href="/about.html#ease">Ease</a></li>
-                    <li><a href="/about.html#features">Adjustment</a></li>
-                    <li><a href="/about.html#howto">Us</a></li>
-                  </ul>
-                </div>
-              </div>
-                <div class="col-md-3">
-                    <h8>Follow Us</h8>
-                    <ul class="social-network social-circle">
-                      <br>
-                      <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                      <br>
-                      <br>
-                      <br>
-                    </ul>	
-                    <ul>
-                      <li><a href="/cookiepolicy.html">Privacy Policy</a></li>
-                      <li><a href="/terms&conditions.html">Terms & Conditions</a></li>
-                    </ul>
-                          
-                </div>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+  <div class="myrowfooter">
+    <div class="columnfooter left1">
+      <div class="footerheader">
+          <h8>English Awnings Direct</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1">www.EnglishAwningsDirect.com</li>
+        <li class="listyle1">United Kingdom, Dorset</li>
+        <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+        <li class="listyle1">Elliot road</li>
+        <li class="listyle1">BH11 8JX</li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left2">
+      <div class="footerheader">
+          <h8>Awnings</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+        <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+        <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+        <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+        <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+        <li class="listyle1"><a href="/bora/">Bora</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left3">
+      <div class="footerheader">
+          <h8>Features</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+        <li class="listyle1"><a href="/about/">Quality</a></li>
+        <li class="listyle1"><a href="/about/#demo">Style</a></li>
+        <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+        <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+        <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left4">
+      <div class="footerheader">
+          <h8>Follow us</h8>
+      </div>
+          <ul class="liststyle">
+            <div class="social-network social-circle">
+              <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             </div>
-            <div class="row">
-                <div class="col-md-12 copy">
-                  <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
-                </div>
-            </div>
-        
-        
-          </div>
-          </div>
-        </footer>
-        
+            <br>
+            <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+            <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columnfooter-bottomfooter">
+    <div class="col-md-12 copy">
+        <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+    </div>
+  </div>
+</footer>
 <!-- FOOTER OVER-->
-    <!--Link to JS CART-->
-    <script src="/js/main.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+                <!--FACEBOOK CHAT START-->
+                <div id="fb-root"></div>
+                <!-- Your Chat plugin code -->
+                <div id="fb-customer-chat" class="fb-customerchat">
+                </div>
+                
+                <script>
+                  var chatbox = document.getElementById('fb-customer-chat');
+                  chatbox.setAttribute("page_id", "101963445787288");
+                  chatbox.setAttribute("attribution", "biz_inbox");
+                </script>
+                
+                <!-- Your SDK code -->
+                <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      xfbml            : true,
+                      version          : 'v13.0'
+                    });
+                  };
+                
+                  (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+                </script>
+
+<!--Link to JS CART-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222500318-1"></script>
+<!--BEST SELLERS-->
+<script src="/js/bestsells.json"></script>
+<!--SCRIPT FOR LETTER SUBSCRIBE -->
+<script src="https://kit.fontawesome.com/0e66a92efa.js" crossorigin="anonymous"></script>
+<!-- SCRIPT SLIDESHOW INDEX-->
+<script src="/js/slideshowindex.js"></script>
+<!-- START JS TOP MENU-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="/js/topmenuscript.js"></script>
+<!-- OVER JS TOP MENU-->
+<script src="/order.js"></script>
+
+<script  src="/js/topmenurespo.js"></script>
 
 </body>
 </html>  

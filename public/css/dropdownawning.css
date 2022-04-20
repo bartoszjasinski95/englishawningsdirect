@@ -1,0 +1,272 @@
+
+
+
+a {
+    color: inherit;
+    -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -moz-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -ms-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    -o-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+
+    font-family: 'Oswald', sans-serif;
+}
+
+/* List styles */
+.list {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-stle: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    position: absolute;
+    margin-left: -49vw;
+    top: 25%;
+    width: 15vw;
+    position: fixed;
+    z-index: 10;
+    
+}
+.list a {
+    display: block;
+    color: inherit;
+}
+.list a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.list dt, .list dd {
+    text-indent: 0vw;
+    line-height: 5vh;
+    margin: 0;
+    color: white;
+    
+    
+
+}
+.list dt {
+    /* Since we're hiding elements behind here, we need it in 3d */
+    -webkit-transform: translateZ(0.3px);
+    -moz-transform: translateZ(0.3px);
+    -ms-transform: translateZ(0.3px);
+    -o-transform: translateZ(0.3px);
+    transform: translateZ(0.3px);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 2.4vw;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.list dd {
+    border-top: 1px dashed rgba(255,255,255,0.3);
+    font-size: 1.5vw;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+/* Individual styles */
+.maki dt, .maki dd, .maki a { background:#a46497 ;  }
+
+.maki a:hover { background: #9f45b6; }
+
+.maki {
+    -webkit-transform: perspective(600px) translateZ(1px) !important;
+    -moz-transform: perspective(600px) translateZ(1px) !important;
+    -ms-transform: perspective(600px) translateZ(1px) !important;
+    -o-transform: perspective(600px) translateZ(1px) !important;
+    transform: perspective(600px) translateZ(1px) !important;
+    left: 50%;
+}
+
+
+/* RESPONSIVITY */
+
+
+/* RESPONSIVITY 320 PX*/
+@media screen and (max-width:320px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 360 X 640 PX*/
+  @media screen and (min-width:360px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+}
+
+
+/* RESPONSIVITY 390 X 844 PX*/
+@media screen and (min-width:390px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 601 */
+  @media screen and (min-width:601px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 40px;
+    }
+    .list dd{
+        height: 36px;
+        font-size: 2.8vw;
+    }
+ }
+
+/* RESPONSIVITY 768 */
+  @media screen and (min-width:768px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 35px;
+    }
+    .list dd{
+        height: 38px;
+        font-size: 2.8vw;
+    }
+  }
+
+/* RESPONSIVITY 810 */
+@media screen and (min-width:810px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+  }
+
+/* RESPONSIVITY 962 */
+@media screen and (min-width:962px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1024 x 600*/
+@media screen and (min-width:1024px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 38px;
+    }
+    .list dd{
+        height: 40px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1080*/
+@media screen and (min-width:1080px){
+    .list dt{
+        font-size: 3.2vw;
+        height: 50px;
+    }
+    .list dd{
+        height: 52px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1280px 800px */
+@media screen and (min-width:1280px){
+    .list dt{
+        font-size: 3.2vw;
+        height: 50px;
+    }
+    .list dd{
+        height: 52px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1366px 768px */
+@media screen and (min-width:1366px){
+
+}
+
+/* RESPONSIVITY 1440px 900px */
+@media screen and (min-width:1440px){
+    .list dt{
+        font-size: 3.2vw;
+        height: 60px;
+    }
+    .list dd{
+        height: 52px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1536px 864px */
+@media screen and (min-width:1536px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 50px;
+    }
+    .list dd{
+        height: 52px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1600x 900px */
+@media screen and (min-width:1600px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 60px;
+    }
+    .list dd{
+        height: 52px;
+        font-size: 2.8vw;
+    }
+}
+
+/* RESPONSIVITY 1680x 1050px */
+@media screen and (min-width:1680px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 60px;
+    }
+    .list dd{
+        height: 54px;
+        font-size: 2.8vw;
+    }
+}
+
+  /* RESPONSIVITY 1920px x 1080PX*/
+@media screen and (min-width:1920px){
+    .list dt{
+        font-size: 3.4vw;
+        height: 65px;
+    }
+    .list dd{
+        height: 54px;
+        font-size: 2.8vw;
+    }
+}

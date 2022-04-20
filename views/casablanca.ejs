@@ -1,763 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/276062963_111075821542717_3691481390296484530_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=acusAwlB-tUAX-t9yHb&_nc_ht=scontent-lcy1-1.xx&oh=00_AT-HqLxoyXHs18H6YqR2_8nUdefN7PPZFb3UY8WZlx1pmw&oe=624FF685">
+<!-- MY STYLES-->
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/responsiveimg.css">
+<link rel="stylesheet" href="/css/footer.css">
+<link rel="stylesheet" href="/css/characteristicsbox.css">
+<link rel="stylesheet" href="/css/sizeschart.css">
+<!--Properties LIST-->
+<link rel="stylesheet" href="/css/tickisbullets.css">
+<!--CHOOSE MOTORS BOX-->
+<link rel="stylesheet" href="/css/choosemotors.css">
+<!-- DROP DOWNS AWNINGS MENU LEFT-->
+<link rel="stylesheet" href="/css/dropdownawning.css">
 
-     <!-- link to css page -->
-    <link rel="stylesheet" href="/css/styles.css">
-
-
-<!-- Link to CSS CART-->
+<!-- link ro interactive shop-->
 <link rel="stylesheet" href="/css/style.css" />
+<!---->
+<link rel="stylesheet" href="/css/style1.css"> 
+    
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css'>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
 <!--Usage as font-->
 <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-    <style>
 
 
+<!--SLIDE SHOW INDEX-->
+<link rel="stylesheet" href="css/slideshowindex.css">
+
+<!-- FONT CSS MAIN STYLE-->
+<link rel="stylesheet" href="/css/fontstyle.css">
+<!--FONT CSS RESPONSIVE STYLE-->
+<link rel="stylesheet" href="/css/fontresponsive.css">
+<!--NAVIGATION AWNINGS LEFT MENU-->
+<link rel="stylesheet" href="/css/navbarleft.css">
+
+<!-- FRESH MENU -->
+<link rel="stylesheet" href="/css/topmenurespo.css">
+
+<style>
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
-h8{
-  font-family: 'Oswald', sans-serif;
-    font-size: 35px;
-    text-align: center;
-    font-weight: 400;
-    z-index: 10;
-    opacity: 1;
-}
-
-.Info-cassette{
-  font-family: 'Oswald', sans-serif;
-  font-size: 22px;
-    letter-spacing: 10px;
-    text-align: center;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-    padding-left: 20.2%;
-}
-        .casablancasite{
-            margin-left: 703px;
-        }
-        
-        .casablancafront{
-            margin-left: 300px;
-        }
-
-        /* TICKIS */
-
-.headproperties{
-  font-family: 'Oswald', sans-serif;
-    text-decoration: underline #7e1b97;
-    letter-spacing: 7px;
-    text-align: center;
-    z-index: 10;
-    opacity: 1;
-}
-        
-        /* TICKIS properties*/
-        li.two {
-  color:black;
-  list-style:none;
-  position: relative;
-  padding-left:50px;
-  line-height: 2;
-  font-size:20px;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 3px;
-  text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
-  opacity: 1;
-}
-li.two:before {
-   content:"\f00c";
-}
-li.two:hover:before {
-  color:#7e1b97;
-}
-li.two:before {
-  font-family:FontAwesome;
-  position: absolute;
-  left: 0;
-  color:#ce7bbd;
-  font-size:32px;
-}
 
 
-.menu-left{
-  font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
-
-.columnpro1{
-    float: left;
-    width: 50%;
-    padding: 0px;
-    margin-left: 20%;
-    height: 500px;
-}
-/* Clear floats after the columns */
-.rowpro1:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* PARAMETERS BOX */
 *{outline:none !important;box-sizing:border-box !important;}
 a{color: rgb(51, 51, 51);}
-.cell_flex{display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex: 0 1 auto;-webkit-box-flex: 0;flex: 0 1 auto;-ms-flex-direction: row;-webkit-box-orient: horizontal;-webkit-box-direction: normal;flex-direction: row;-ms-flex-wrap: wrap;flex-wrap: wrap;}
-
-.offer_parameters_wrapper .system_img{width: calc(100% / 3);border:1px solid #ddd;margin: 0;margin-top: -1px;font-size: 1.5em;padding: 20px 40px;text-align: center;position: relative;}
-.offer_parameters_wrapper .system_img figcaption{margin-bottom: 20px;}
-.offer_parameters_wrapper .system_img img{max-width: 70%;}
-.offer_parameters_wrapper .system_img .img{width:100%;height: 60%;max-height: 450px;max-width: 450px;background-position:center;background-size:contain;background-repeat:no-repeat;}
-.offer_parameters_wrapper .parameters_row{width: calc(100% / 3 * 2);}
-.offer_parameters_wrapper .parameters_row ul,
-.offer_parameters_wrapper .parameters_row ol{padding: 0 !important;margin:0;width: 100%;list-style:none;display: -ms-flexbox;display: -webkit-box;display: flex;-ms-flex: 0 1 auto;-webkit-box-flex: 0;flex: 0 1 auto;-ms-flex-direction: row;-webkit-box-orient: horizontal;-webkit-box-direction: normal;flex-direction: row;-ms-flex-wrap: wrap;flex-wrap: wrap;}
-.offer_parameters_wrapper .parameters_row ul li,
-.offer_parameters_wrapper .parameters_row ol li,
-.offer_parameters_wrapper .item{font-size:1.5em;font-style: italic;line-height:1em;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:calc(100% / 3);flex-basis:calc(100% / 3);padding: 20px 40px;border: 1px solid #ddd;margin-left: -1px;margin-top: -1px;position: relative;}
-.offer_parameters_wrapper .parameters_row h1,
-.offer_parameters_wrapper .parameters_row h2,
-.offer_parameters_wrapper .parameters_row ul li strong,
-.offer_parameters_wrapper .parameters_row ol li strong,
-.offer_parameters_wrapper .system_img figcaption{display:block;font-weight:400;color:#999;padding-bottom: 5px;font-size: 14px;font-style: normal;text-align: left;}
-
-
-.cell_flex {
-    box-shadow: 0px 20px 30px #a46497;
-    
-}
-.cell_flex :hover {
-  background: url(http://img7.imageshack.us/img7/2341/skwf.jpg);
-  box-shadow: inset 0px 0px 0px #b8b8b8;
-}
-.offer_parameters_wrapper.cell_flex{
-  margin-left: 20%;
-    margin-right: 10%;
-    width: 65%;
-}
-/* END PARAMETERS BOX */
-
-a {
-    color: black;
-}
-/*FOOTER*/
-
-h2{
-  font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 10px;
-    margin-top: 1%;
-    text-align: center;
-    font-weight: 400;
-    opacity: 1;
-}
-
-footer {
-  background: #7e1b97;
-  background: -webkit-linear-gradient(59deg, rgb(250, 250, 250), #16222A);
-  background: linear-gradient(59deg, #a46497, #7e1b97);
-  color: white;
-  margin-top:100px;
-}
-
-footer a {
-  color: #fff;
-  font-size: 14px;
-  transition-duration: 0.2s;
-}
-
-footer a:hover {
-  color: #FA944B;
-  text-decoration: none;
-}
-
-.copy {
-  font-size: 12px;
-  padding: 10px;
-  border-top: 1px solid #FFFFFF;
-}
-
-.footer-middle {
-  padding-top: 2em;
-  color: white;
-}
-
-
-/*SOCİAL İCONS*/
-
-/* footer social icons */
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-
-/* footer social icons */
-
-.social-network a.icoFacebook:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoLinkedin:hover {
-  background-color: #7e1b97;
-}
-
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
-  color: #fff;
-}
-
-.social-network a.socialIcon:hover,
-.socialHoverClass {
-  color: #a46497;
-}
-
-.social-circle li a {
-  display: inline-block;
-  position: relative;
-  margin: 0 auto 0 auto;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  font-size: 15px;
-}
-
-.social-circle li i {
-  margin: 0;
-  line-height: 30px;
-  text-align: center;
-}
-
-.social-circle li a:hover i,
-.triggeredHover {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -ms--transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.social-circle i {
-  color: #595959;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  -ms-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.social-network a {
-  background-color: #F9F9F9;
-}
-
-
-
-
-
-
-/* CSSY SELECTIONS */
-
-
-
-.motorclass {
-  padding: 0px 25px 25px;
-  position: relative;
-  width: 100%;
-  
-
-}
-
-@media (min-width: 900px) {
-  .motorclass {
-    padding: 0 0 40px;
-  }
-}
-
-
-/* WHOLE OBJECTS */
-
-.motors {
-  margin: 0 auto;
-  padding: 50px 0 0;
-  max-width: 960px;
-  z-index: 0;
-}
-
-.panel {
-  border-radius: 10px;
-  padding: 15px 25px;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-}
-
-.pricing-table {
-  box-shadow: 10px 10px 30px 6px rgba(0, 0, 0, 0.08), 10px 10px 30px 6px rgba(0, 0, 0, 0.09), 10px 10px 30px 6px rgba(0, 0, 0, 0.02);
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 900px) {
-  .pricing-table {
-    flex-direction: row;
-  }
-}
-
-.pricing-table  {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
-.pricing-plan:last-child {
-  border-bottom: none;
-}
-
-@media (min-width: 900px) {
-  .pricing-plan {
-    border-bottom: none;
-    border-right: 1px solid #e1f1ff;
-    flex-basis: 100%;
-    padding: 25px 50px;
-  }
-
-  .pricing-plan:last-child {
-    border-right: none;
-  }
-}
-
-.pricing-img {
-  margin-bottom: 25px;
-  max-width: 100%;
-}
-
-.pricing-header {
-  color: #888;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-
-.pricing-features {
-  color: #016FF9;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin: 50px 0 25px;
-}
-
-.pricing-features-item {
-  border-top: 1px solid white;
-  font-size: 12px;
-  line-height: 1.5;
-  padding: 15px 0;
-}
-
-.pricing-features-item:last-child {
-  border-bottom: 1px solid white;
-}
-
-.pricing-price {
-  color: #016FF9;
-  display: block;
-  font-size: 32px;
-  font-weight: 700;
-}
-
-
-
-
-
-/* CSS BUY OPTIONS */
-
-
-.content {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  margin: 5em auto 0;
-}
-.content article {
-  transition: transform .3s ease-in-out;
-  transform: translateX(100%);
-}
-
-.content article label {
-  display: inline-block;
-  margin-bottom: 3em;
-}
-.content article label input {
-  display: inline-block;
-}
-
-.legend {
-  z-index: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-label {
-  box-sizing: border-box;
-  padding: 1em;
-  cursor: pointer;
-  transition: all .15s ease-in-out;
-  color: #0a4069;
-  border: 1px solid rgba(254, 254, 254, 0.6);
-  border-radius: 0;
-  flex: 0 0 6em;
-}
-label:first-child {
-  margin-right: 0;
-  border-radius: .2em 0 0 .2em;
-}
-label:last-child {
-  margin-left: 0;
-  border-radius: 0 .2em .2em 0;
-}
-
-
-
-
-input[name='status']:checked + .content {
-  z-index: 10;
-}
-input[name='status']:checked + .content article {
-  transform: translateX(0);
-}
-input[name='status']:checked + .content article .chart .bar .growing-bar {
-  transition-delay: .3s;
-  transition-duration: .6s;
-}
-/* MOTORS */
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='motorchoice']:checked ~ label[for='crank'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='motorchoice']:checked + .small-font-size {
-  font-size: 2em;
-}
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='motorchoice']:checked ~ label[for='nemo-red'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='motorchoice']:checked + .small-font-size {
-  font-size: 2em;
-}
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='motorchoice']:checked ~ label[for='nemo-yellow'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='motorchoice']:checked + .small-font-size {
-  font-size: 2em;
-}
-/* SENSORS */
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='sensors']:checked ~ label[for='shock'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='sensors']:checked + .small-font-size {
-  font-size: 2em;
-}
-
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='sensors']:checked ~ label[for='eolis'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='sensors']:checked + .small-font-size {
-  font-size: 2em;
-}
-
-
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='sensors']:checked ~ label[for='soliris'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='sensors']:checked + .small-font-size {
-  font-size: 2em;
-}
-
-/* VALANCE TYPES */
-
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='valance-type']:checked ~ label[for='straight'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-input[id='valance-type']:checked + .small-font-size {
-  font-size: 2em;
-}
-
-
-input[id='status-1']:checked ~ .legend > label[for='status-1'],
-input[id='status-2']:checked ~ .legend > label[for='status-2'],
-input[id='status-3']:checked ~ .legend > label[for='status-3'],
-input[id='valance-type']:checked ~ label[for='wavy'] {
-  color: white;
-  border: 1px solid #7e1b97;
-  background-color: #7e1b97;
-}
-
-
-/* SELECT COLOR */
-.desc { color:#7e1b97;}
-        
-        .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
-        .dropdown dd { position:relative; }
-        .dropdown a, .dropdown a:visited { color:black; text-decoration:none; outline:none;}
-        .dropdown a:hover { color:black;}
-        .dropdown dt a:hover { color:grey; border: 1px solid grey;}
-        .dropdown dt a {background:white url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
-                        border:1px solid #7e1b97; width:300px;}
-        .dropdown dt a span {cursor:pointer; display:block; padding:5px;}
-        .dropdown dd ul { background:white none repeat scroll 0 0; border:1px solid #7e1b97; color:#7e1b97; display:none;
-                          left:0px; padding:5px 0px; position:absolute; top:2px; width:auto; min-width:170px; list-style:none;}
-        .dropdown span.value { display:none;}
-        .dropcolor a { padding:5px; display:block;}
-        .dropcolor a:hover { background-color:rgb(204, 202, 202);}
-        
-        .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
-        .flagvisibility { display:none;}
-
-        .flag{
-            width: 280px;
-            height: 50px;
-            
-        }
-
-        .dropdown{
-          margin-left: 42%;
-          display: block;
-          z-index: 1000;
-          bottom: 10%;
-          list-style: none;
-          overflow-y: auto;
-          min-height: 350px;
-         
-          
-        }
-        .dropcolors{
-          float: none;
-          display: block;     
-        }
-
-        .dropcolorfabric{
-          text-align: center;
-        }
-
-        /* SELECT COLOR OVER */
-
-/* HANDING OPTION */
-        .handingoption{
-        text-align: center;
-}
-/* HANDING OPTION OVER */
-
-/* PRICE LIST START */
-.containerpricelist th  {
-	  font-weight: bold;
-	  font-size: 1em;
-  text-align: left;
-  color: #185875;
-}
-
-.containerpricelist td {
-	  font-weight: normal;
-	  font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-	   -moz-box-shadow: 0 2px 2px -2px #0E1119;
-	        box-shadow: 0 2px 2px -2px #0E1119;
-}
-
-.containerpricelist {
-	  text-align: left;
-	  overflow: hidden;
-	  width: 70%;
-	  margin-left: 18%;
-  display: table;
-  padding: 0 0 8em 0;
-}
-
-.containerpricelist td, .container th {
-	  padding-bottom: 2%;
-	  padding-top: 2%;
-  padding-left:2%;  
-}
-
-/* Background-color of the odd rows */
-.containerpricelist tr:nth-child(odd) {
-	  background-color: #323C50;
-}
-
-/* Background-color of the even rows */
-.containerpricelist tr:nth-child(even) {
-	  background-color: #2C3446;
-}
-
-.containerpricelist th {
-	  background-color: #1F2739;
-}
-
-.containerpricelist td:first-child { color: #FB667A; }
-
-.containerpricelist tr:hover {
-   background-color: #464A52;
--webkit-box-shadow: 0 0px 0px 0px #0E1119;
-	   -moz-box-shadow: 0 0px 0px 0px #0E1119;
-	        box-shadow: 0 0px 0px 0px #0E1119;
-}
-
-.containerpricelist td:hover {
-  background-color: #a46497;
-  color: #403E10;
-  font-weight: bold;
-  
-  box-shadow: #7e1b97 5px 5px, #7e1b97 -5px -5px, #7e1b97 5px -5px, #7e1b97 5px 5px, #7e1b97 5px 5px, #7e1b97 -5px 5px;
-  transform: translate3d( 1px, 1px, 1px);
-  
-  transition-delay: 0s;
-	  transition-duration: 0.4s;
-	  transition-property: all;
-  transition-timing-function: line;
-}
-
-@media (max-width: 800px) {
-.containerpricelist td:nth-child(4),
-.containerpricelist th:nth-child(4) { display: none; }
-}
-
-
 tr{
   color: white;
 }
 
-/*navigation bar */
 
-.navibarmenu {
-  width: 75px;
-  right: 1%;
-  cursor: pointer;
-  margin-top: 24.2%;
-  z-index:10000;
-}
-/* AWNINGS LEFT MENU */
-.column1{
-  z-index: 10;
-  font-family: 'Oswald', sans-serif;
-  font-size: 16.5px;
-  letter-spacing: 3px;
-  margin-top: -1%;
-  font-weight: 400;
-  text-transform: uppercase;
-  opacity: 1;
-}
 
-.menu-left{
-  font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    letter-spacing: 3px;
-    font-weight: 400;
-    text-transform: uppercase;
-    z-index: 10;
-    opacity: 1;
-}
 
-/* PRICE LIST OVER */
+
     </style>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Casablanca</title>
-    <%- include('partials/navbar'); -%>
-    <body>
-      <%- include('partials/cookies'); -%> 
-      <%- include('partials/sidebar'); -%>
-    <br>
-    <br>
-    <br>
-    <div class="rowawningmenu">
-      <div class="column1">
-        <a class="menu-left" href="/casablanca/">/ Casablanca <br> full cassette</a>
-        <br>
-        <br>
-        <a class="menu-left" href="/corsica/">/ corsica <br> full cassette</a>
-        <br>
-        <br>
-        <a class="menu-left" href="/palladio/">/ Palladio <br> semi cassette</a>
-        <br>
-        <br>
-        <a class="menu-left"href="/Silverplus/">/ Silver plus <br> no cassette</a>
-        <br>
-        <br>
-        <a class="menu-left" href="/boxitalia/">/ Italia <br> sun blind</a>
-        <br>
-        <br>
-        <a class="menu-left" href="/bora/">/ Bora <br> side screen</a>       
-      </div>
+    <title>English Awnings Direct - Casablanca</title>
+<head>
+  <%- include('partials/cookies'); -%>
+<!--START MENU-->
+<header id="header">
+  <div class="brand containermenutopfresh"><a class="logo" href="/" rel="home">English Awnings Direct</a><span class="tagline">Relax with us</span></div>
+  <nav class="nav containermenutopfresh" id="nav">
+    <ul class="menu">
+      <li class="menu-item"><a href="/">home</a></li>
+      <li class="menu-item"><a href="/about">about</a></li>
+      <li class="menu-item"><a href="#">Products</a>
+        <ul class="sub-menu">
+          <li class="biggersub"><a href="/awnings">Awnings</a>
+            <ul class="sub-menu">
+              <li><a href="/casablanca/" class="alinkmenu">Casablanca</a></li>
+              <li><a href="/corsica/" class="alinkmenu">Corsica</a></li>
+              <li><a href="/palladio/" class="alinkmenu">Palladio</a></li>
+              <li><a href="/Silverplus/" class="alinkmenu">Silver plus</a></li>
+              <li><a href="/boxitalia/" class="alinkmenu">Italia</a></li>
+              <li><a href="/bora/" class="alinkmenu">Bora</a></li>
+            </ul>
+          </li>
+          <li class="biggersub"><a href="/accessories">Accessories</a>
+            <ul class="sub-menu">
+              <li><a href="/nemored/" class="alinkmenu">Motor nemo red</a></li>
+              <li><a href="/nemoyellow/" class="alinkmenu">Motor nemo yellow</a></li>
+              <li><a href="/eolis/" class="alinkmenu">Eolis</a></li>
+              <li><a href="/soliris/" class="alinkmenu">Soliris</a></li>
+              <li><a href="/shock/" class="alinkmenu">Shock</a></li>
+              <li><a href="/somfycontroller/" class="alinkmenu">Somfy controller</a></li>
+              <li><a href="/crank/" class="alinkmenu">Crank</a></li>
+              <li><a href="/fabric1x1/" class="alinkmenu">Fabrics</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/color-pallet">Fabric colours</a>
+      <li class="menu-item"><a href="">Guide</a>
+        <ul class="sub-menu">
+          <li><a href="/brackets/">Bracket types</a>
+          </li>
+          <li><a href="/ultimateguide/">Ultimate guide</a>
+          </li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="/contact-us">Contact</a>
+      </li>
+      <li><a href="#" class=""><i class="fa fa-search"></i></a></li>
+      <li><a href="https://www.facebook.com/EnglishAwningsDirect/" target="_blank"><i class=" menufont fa fa-facebook head-social-link"></i></a></li>
+        <!--Cart icon-->
+        <li class=" m-hidden card-right"><i class=" bx bx-shopping-bag cart-icon"></i></li>
+      </li>
+    </ul>
+  </nav>
+</header>
     
-
-
+<body>
+  <form action="/payment/" method="get">
+    <div class="cart">
+      <h2 class="cart-title">Your cart</h2>
+      <!--Content -->
+      <div class="cart-content">
+      </div>
+      <!--Total-->
+      <div class="total">
+        <div class="total-title">Total</div>
+        <input style="display:none" id="price" name="price" class="total-price"/>
+      </div>
+      <!--But button-->
+      <button type="submit" class="btn-buy">Buy now</button>
+      <i class='bx bx-x' id="close-cart"></i>
+      </div>
+    </form>
+</div>
+      <div class="head-social-link">
+          <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+      </div>
+    </div>
+    <section class="dropdownawningsmenu">
+      <dl class="list maki">
+          <dt>Awnings</dt>
+            <dd><a href="/casablanca/">Casablanca</a></dd>
+            <dd><a href="/corsica/">Corsica</a></dd>
+            <dd><a href="/palladio/">Palladio</a></dd>
+            <dd><a href="/Silverplus/">Silver plus</a></dd>
+            <dd><a href="/boxitalia/">Italia</a></dd>
+            <dd><a href="/bora/">Bora</a></dd>
+      </dl>
+  </section>
 <br>
 <br>
 <h7>Casablanca.</h7>
@@ -766,10 +159,10 @@ tr{
         <br>
         <br>
         <div class="casablancafront";>
-        <img src="/img/awnings style/Casablanca Cassette.png" width="1400px" alt="">
+        <img src="/img/awnings style/Casablanca Cassette.png" class="casablanca-img-front" alt="">
         </div>
         <div class="casablancasite"; >
-        <img src="/img/awnings style/Casablanca Cassette site.png" width="1200px" alt="">
+        <img src="/img/awnings style/Casablanca Cassette site.png" class="casablanca-img-side" alt="">
         </div>        
         <br>
         <br>
@@ -800,43 +193,29 @@ tr{
                 <li class="two">
                 Increased functionality thanks to the use of automation with wind-shock sensors and radio control.
                 </li>
-
               </ul></p>
             </div>
           </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="offer_parameters_wrapper cell_flex">
-
-            <figure class="system_img">
+        <div class="characteristics">
+          <h2>Characteristics</h2>
+          <div class="offer_parameters_wrapper cell_flex">
+              <figure class="system_img">
+                  <figcaption>
+                    <p>Draft of the system</p>
+                    </figcaption>
                 <img src="https://archiselt.com/en/media/system/oferta/s_Casablanca.png" class="img-flex">
-            </figure>
-    
+              </figure>
             <div class="parameters_row">
                 <div class="cell_flex">
-                        <ul> 	<li><strong>Electric drive:</strong>&nbsp;yes</li> 	<li><strong>Manual drive:</strong>&nbsp;yes</li>
-                             	<li><strong>Maximum width:</strong>&nbsp;6.0 m</li> 	<li><strong>Maximum projection:</strong>&nbsp;3.6 m</li>
-                                  	<li><strong>Cassette:</strong>&nbsp;yes</li> 	<li><strong>Optional hood:</strong>&nbsp;no</li> 
-                                      	<li><strong>Tilt angle:&nbsp;</strong>5° - 40°</li> 	<li><strong>Colour:</strong>&nbsp;RAL</li> 
-                                          	<li><strong>Valance:</strong>&nbsp;no</li> </ul> 
+                        <ul> 	<li><strong>Electric drive:</strong>&nbsp;<p>yes</p></li> 	<li><strong>Manual drive:</strong>&nbsp;<p>yes</p></li>
+                             	<li><strong>Maximum width:</strong>&nbsp;<p>6.0 m</p></li> 	<li><strong>Maximum projection:</strong>&nbsp;<p>3.6 m</p></li>
+                                  	<li><strong>Cassette:</strong>&nbsp;<p>yes</p></li> 	<li><strong>Optional hood:</strong>&nbsp;<p>no</p></li> 
+                                      	<li><strong>Tilt angle:&nbsp;</strong><p>5° - 40°</p></li> 	<li><strong>Colour:</strong>&nbsp;<p>RAL</p></li> 
+                                          	<li><strong>Valance:</strong>&nbsp;<p>no</p></li> </ul> 
                 </div>
-            </div>
-            
+            </div>       
         </div>
-
         <br>
         <br>
         <br>
@@ -845,18 +224,19 @@ tr{
         <br>
         <br>
         <br>
+        <h2>Sizes chart</h2>
          <!--Casablanca-->
       <table class="containerpricelist">
         <thead>
             <tr>
-                <th><h1>Projection (cm)</h1></th>
-                <h1> Width (cm)</h1>
-                <th><h1>200-290</h1></th>
-                <th><h1>291-350</h1></th>
-                <th><h1>351-410</h1></th>
-                <th><h1>411-470</h1></th>
-                <th><h1>471-530</h1></th>
-                <th><h1>531-600</h1></th>
+                <th>Projection (cm)</th>
+                <h2>Width (cm)</h2>
+                <th>200-290</th>
+                <th>291-350</th>
+                <th>351-410</th>
+                <th>411-470</th>
+                <th>471-530</th>
+                <th>531-600</th>
                 
             </tr>
         </thead>
@@ -921,16 +301,18 @@ tr{
 <br>
 <br>
 <br>
+<br>
+<br>
+<p class="line-break margin-top-10"></p>
+<h3>Start your application</h3>
+<br>
 <form action="http://localhost:8080/customizedorder" method="post">
 <div class="projection-width">
-<h2>Write your specific measurements in cm:</h2>
+<h2>Write your specific measurements in cm</h2>
   <p>Please be aware to add extra 10cm by each site for mounting</p>
   <br>
-  
-    
-      Projection: <input type="text" name="projection">
-      Width: <input type="text" name="width"><br> 
-
+      <p>Projection: <input type="text" name="projection" class="projectioninput">
+        Width: <input type="text" name="width" class="widthinput"></p>
 </div>
 <br>
 <br>
@@ -939,16 +321,14 @@ tr{
 <br>
 <br>
 <div class="wallmountchoice">
-  <h2>Please select your mounting bracket:</h2>
-  <p>For brackets description click <a href="/about/#features">HERE</a></p>
-
+  <h2>Please select your mounting bracket</h2>
+  <p>For brackets description click <a href="/brackets">HERE</a></p>
 <br>
 <br>
 <br>
-  
     <div class="rowbrackets">
       <div class="columnbrackets" style="background-color:white;">
-    
+            
           <input type="radio" id="spreader" name="wallmount" value="spreader">
           <label for="spreader">Spreader bracket</label><br>
   
@@ -975,9 +355,6 @@ tr{
           <input type="radio" id="offset-gutter" name="wallmount" value="offset-gutter">
           <label for="offset-gutter">Offset gutter bracket</label><br>
   
-          <input type="radio" id="Last bracket" name="wallmount" value="Last bracket">
-          <label for="Last bracket">Last bracket</label><br>
-
     </div>
   </div>
   </div>
@@ -987,17 +364,15 @@ tr{
 <br>
 <br>
 <!-- OVER PRICE LIST-->
-<div class="fontcololor">
-<h2>Please select your fabric color:</h2>
-</div>
+<div class="fontcololor"></div>
+<h2>Please select your fabric color</h2>
 <br>
 <br>
-
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script>
-        <dl id="sample" class="dropdown">
-            <dt class="dropcolorfabric"><a href="#dropcolor"><span>Please select colour</span></a></dt>
-            
-            <dd>
+        <dl class="dropdown" id="sample">
+            <dt class="dropcolorfabric" id="sample" ><a href="#dropcolor"><span>Please select colour</span></a></dt>
+      
+            <dd id="sample">
                 <ul class="dropcolors">
                     <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0028__silver__melange.jpg" alt="" />Silver melange_0028<span class="value">Silver melange_0028</span></a></li>
                     <li class="dropcolor"><a href="#dropcolor"><img class="flag" src="/images/fabrics colors/0034__tweed__senape.jpg" alt="" />Tweed senape_0034<span class="value">Tweed senape_0034</span></a></li>
@@ -1145,8 +520,7 @@ tr{
                 </ul>  
             </dd>
         </dl>
-        <span id="result"></span>
-        
+        <span id="result"></span> 
     <script>
            $(".dropdown img.flag").addClass("flagvisibility");
     
@@ -1179,9 +553,7 @@ tr{
     </script>
 <div class="framecolors">
   <h2>Frame color:</h2>
-
-      <p>Please select your frame color:</p>
-            <input type="radio" id="white" name="framecolor" value="white">
+      <input type="radio" id="white" name="framecolor" value="white">
       <label for="white">White</label>
 
       <input type="radio" id="silver" name="framecolor" value="silver">
@@ -1191,28 +563,34 @@ tr{
       <label for="black">Black</label>
     
       <input type="radio" id="anyspecific" name="framecolor" value="anyspecific">
-      <label for="anyspecific">Any specific RAL color</label>
+      <label for="anyspecific">Cream</label>
     <br>
 </div>
-
 <br>
 <br>
-
-
-
+<div class="choicesaccessorries">
     <!--HANDING OPTION-->
     <div class="handingoption">
         <h2>Please select your handing:</h2>
-        <input type="radio" id="left" name="handingoption" value="left">
+        <input type="radio" id="left" class="radioselectawnings" name="handingoption" value="left">
         <label for="left">Left</label>
-        <input type="radio" id="right" name="handingoption" value="right">
+        <input type="radio" id="right" class="radioselectawnings" name="handingoption" value="right">
         <label for="right">Right</label><br>
+    </div>
+    <br>
+    <br>
+    <div class="valanceoption">
+      <h2>Choose your valance style:</h2>
+        <input type="radio" id="straight" class="radioselectawnings" name="valanceoption" value="straight">
+        <label for="straight">Straight</label>
+        <input type="radio" id="wave" class="radioselectawnings" name="valanceoption" value="wave">
+        <label for="wave">Wave</label><br>
     </div>
     <br>
     <br>
     <br>
         <div>
-          <input type="radio" name="status" id="status-1" checked>
+          <input type="radio" name="status" id="status-1"  checked>
           <section class="content">
             <article>
               <br>
@@ -1237,21 +615,21 @@ tr{
                         </div>
                     
                         <div class="pricing-plan">
-                          <img src="/img/accessories/nemored.jpeg" alt="" class="pricing-img">
+                          <img src="/img/accessories/nemored.jpg" alt="" class="pricing-img">
                           <h2 class="pricing-header">Nemo red motor</h2>
                           <ul class="pricing-features">
                             <li class="pricing-features-item">Built-in radio receiver</li>
                             <li class="pricing-features-item">Electronic limit switches</li>
                             <li class="pricing-features-item">Remote controller icnluded</li>
                           </ul>
-                          <span class="pricing-price">£130</span>
+                          <span class="pricing-price">£229</span>
       
                           <input type="radio" id="motorchoice" name="motorchoice" value="nemo-red">
           <label for="nemo-red">Choose</label><br>
                         </div>
                           
                         <div class="pricing-plan">
-                          <img src="/img/accessories/nemoyellowrts.jpeg" alt="" class="pricing-img">
+                          <img src="/img/accessories/nemoyellow.jpg" alt="" class="pricing-img">
                           <h2 class="pricing-header">Nemo yellow motor</h2>
                           <ul class="pricing-features">
                             <li class="pricing-features-item">Built-in control unit</li>
@@ -1259,7 +637,7 @@ tr{
                             <li class="pricing-features-item">Electronically controlled motor rotation</li>
                             <li class="pricing-features-item">Remote controller included</li>
                           </ul>
-                          <span class="pricing-price">£220</span>
+                          <span class="pricing-price">£399</span>
                           <input type="radio" id="motorchoice" name="motorchoice" value="nemo-yellow">
           <label for="nemo-yellow">Choose</label>
                       
@@ -1270,8 +648,9 @@ tr{
       
             </article>
           </section>
-         
+
           <input type="radio" name="status" id="status-2">
+
           <section class="content">
             <article>
               <br>
@@ -1291,7 +670,7 @@ tr{
                         <li class="pricing-features-item">Including simple controller</li>
                         <li class="pricing-features-item">Including battery</li>
                       </ul>
-                      <span class="pricing-price">£40</span>
+                      <span class="pricing-price">£69</span>
                       <input type="radio" id="sensors" name="sensorchoice" value="shock">
       <label for="shock">Choose</label><br>
                     </div>
@@ -1304,7 +683,7 @@ tr{
                       <li class="pricing-features-item">Including Telis 1 controller</li>
                       <li class="pricing-features-item">Including battery</li>
                     </ul>
-                    <span class="pricing-price">£79</span>
+                    <span class="pricing-price">£132</span>
                     <input type="radio" id="sensors" name="sensorchoice" value="eolis">
                     <label for="eolis">Choose</label><br>
                   </div>
@@ -1319,7 +698,7 @@ tr{
                       <li class="pricing-features-item">Power Supply: 230V~</li>
                      
                     </ul>
-                    <span class="pricing-price">£99</span>
+                    <span class="pricing-price">£164</span>
                     <input type="radio" id="sensors" name="sensorchoice" value="soliris">
                     <label for="soliris">Choose</label><br>
                   </div>
@@ -1328,177 +707,228 @@ tr{
             </div>
             </article>
           </section>
-
           <nav class="legend">
-            <label for="status-1">Choose motor</label>
-            <label for="status-2">Choose sensor</label>
+            <label for="status-1" class="choosemotorsensor">Choose motor</label>
+            <label for="status-2" class="choosemotorsensor">Choose sensor</label>
           </nav>
         </div>
+      </div>
+</div>
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="warranty">
+        <h2>We can extend your warranty for extra 3 years</h2>
+        <p>Tick below if You are interested and one of our colleagues will talk you thru it.</p>
+        <br>
+        <input type="checkbox" name="addwarranty" id="addwarranty" class="addwarrantycheck">
       </div>
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-<div class="understandbox">
-  <h2>Final Checks:</h2>
-
-    <br>
-    <br>
-    <h9><input type="checkbox" required name="terms"> I understand this is a bespoke product and
-       cannot be cancelled once the
-        manufacture has commenced</h9>
-  <br>
-    <h9><input type="checkbox" name="terms"> I can confirm that my choices are 
-      suitable for myself and wall mounting.</h9>
-<br>
-<h9><input type="checkbox" required name="terms"> I agree to Insignia <a href="">Terms&conditions.</a></h9>
-<br>
-<input type="number" name="number" id="number" required placeholder="Enter your mobile number" style="margin: 10px;">
-    <p><input type="submit"></p>
-    
-</div>
+      <div class="understandbox">
+        <h2>Final Checks:</h2>
+        <br>
+        <p><input type="checkbox" required name="terms"> I understand this is a bespoke product and cannot </p>
+        <p>be cancelled once themanufacture has commenced</p> 
+        <p><input type="checkbox" name="terms"> I can confirm that my choices are 
+        suitable for myself and wall mounting.</p>
+        <p><input type="checkbox" required name="terms"> I agree to English Awnings direct <a href="">Terms&conditions.</a></h9>
+        <br>
+        <input type="text" name="firstAddress" id="firstAddress" class="inputchecks" required placeholder="House number">
+        <br>
+        <input type="text" name="secondAddress" id="secondAddress" class="inputchecks" required placeholder="Street name">
+        <br>
+        <input type="text" name="postcode" id="postcode" class="inputchecks" required placeholder="Postcode">
+        <br>
+        <input type="email" name="email" id="email" class="inputchecks" required placeholder="E-mail">
+        <br>
+        <input type="number" name="number" id="number" class="inputchecks" required placeholder="Mobile number">
+        <p><input type="submit" class="inputchecks"></p>
+      </div> 
 </form>
       <br>
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    
-
- <!-- FOOTER START -->
- <footer class="mainfooter" role="contentinfo">
-  <div class="footer-middle">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <!--Column1-->
-        <div class="footer-pad">
-          <div class="heading-footer">
-              English
-              <br>
-               Awnings Direct
-          </div>
-          <ul class="list-unstyled">
-            <li>EnglishAwningsDirect.com</a></li>
-            <li>United Kingdom, Dorset</a></li>
-            <li>Unit 6 West Howe Industrial Estate</a></li>
-            <li>Elliot road</a></li>
-            <li>BH11 8JX</li> 
-          </ul>
-        </div>
+      <h2>Installation manual / Declaration of performance</h2>
+      <div class="pdfinstruction">
+        <a href="https://archiselt.com/en/media/system/oferta/DT-E-11-8-1-IM-CASABLANCA-EN-.pdf" target=”_blank” ><i class="fa-solid fa-file-pdf fa-8x"></i></a>
+        <a href="https://archiselt.com/en/media/system/oferta/DWU-08-M-2018-CASABLANCA-EN.pdf" target=”_blank” ><i class="fa-solid fa-file-pdf fa-8x"></i></a>
       </div>
-      <!--Column2-->
-      <div class="col-md-3 col-sm-6">
-        <div class="footer-pad">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<!-- MY FOOTER-->
+<footer class="myfooter">
+  <div class="myrowfooter">
+    <div class="columnfooter left1">
+      <div class="footerheader">
+          <h8>English Awnings Direct</h8>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1">www.EnglishAwningsDirect.com</li>
+        <li class="listyle1">United Kingdom, Dorset</li>
+        <li class="listyle1">Unit 6 West Howe Industrial Estate</li>
+        <li class="listyle1">Elliot road</li>
+        <li class="listyle1">BH11 8JX</li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left2">
+      <div class="footerheader">
           <h8>Awnings</h8>
-          <ul class="list-unstyled">
-            <li><a href="/casablanca/">Casablanca full cassette</a></li>
-            <li><a href="/corsica/">Corsica full cassette</a></li>
-            <li><a href="/palladio/">Palladio full cassette</a></li>
-            <li><a href="/silverplus/">Silver plus</a></li>
-            <li><a href="/boxitalia/">Italia sunblind</a></li>
-            <li><a href="/bora/">Bora side screen</a></li>
-          </ul>
-        </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <!--Column3-->
-        <div class="footer-pad">
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/casablanca/">Casablanca cassette</a></li>
+        <li class="listyle1"><a href="/corsica/">Corsica cassette</a></li>
+        <li class="listyle1"><a href="/palladio/">Palladio cassette</a></li>
+        <li class="listyle1"><a href="/silverplus/">Silver plus</a></li>
+        <li class="listyle1"><a href="/boxitalia/">Italia sun blind</a></li>
+        <li class="listyle1"><a href="/bora/">Bora</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left3">
+      <div class="footerheader">
           <h8>Features</h8>
-          <ul class="list-unstyled">
-            <li><a href="/color-pallet/">Fabric Colours</a></li>
-            <li><a href="/about/">Quality</a></li>
-            <li><a href="/about/#demo">Style</a></li>
-            <li><a href="/about/#ease">Ease</a></li>
-            <li><a href="/about/#features">Adjustment</a></li>
-            <li><a href="/about/#howto">Us</a></li>
+      </div>
+      <ul class="liststyle">
+        <li class="listyle1"><a href="/color-pallet/">Fabric colour pallet</a></li>
+        <li class="listyle1"><a href="/about/">Quality</a></li>
+        <li class="listyle1"><a href="/about/#demo">Style</a></li>
+        <li class="listyle1"><a href="/about/#ease">Ease</a></li>
+        <li class="listyle1"><a href="/about/#features">Adjustment</a></li>
+        <li class="listyle1"><a href="/about/#howto">About Us</a></li>
+      </ul>
+    </div>
+    <h2 class="verticalline-footer">
+      <span></span>
+    </h2>
+    <div class="columnfooter left4">
+      <div class="footerheader">
+          <h8>Follow us</h8>
+      </div>
+          <ul class="liststyle">
+            <div class="social-network social-circle">
+              <li class="listyle1"><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            </div>
+            <br>
+            <li class="listyle1"><a href="/cookiepolicy/">Privacy Policy</a></li>
+            <li class="listyle1"><a href="/terms&conditions/">Terms & Conditions</a></li>
           </ul>
         </div>
       </div>
-        <div class="col-md-3">
-            <h8>Follow Us</h8>
-            <ul class="social-network social-circle">
-              <br>
-              <li><a href="https://www.facebook.com/English-Awnings-Direct-101963445787288" target="_blank" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-              <br>
-              <br>
-              <br>
-            </ul>	
-            <ul>
-              <li><a href="/cookiepolicy/">Privacy Policy</a></li>
-              <li><a href="/terms&conditions/">Terms & Conditions</a></li>
-            </ul>
-                  
-        </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 copy">
-          <p class="text-center">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
-        </div>
-    </div>
-
-
   </div>
+  <div class="columnfooter-bottomfooter">
+    <div class="col-md-12 copy">
+        <p class="text-center-footer">&copy; Copyright 2022 - English Awnings Direct.  All rights reserved.</p>
+    </div>
   </div>
 </footer>
-
 <!-- FOOTER OVER-->
+
+
+                <!--FACEBOOK CHAT START-->
+                <div id="fb-root"></div>
+                <!-- Your Chat plugin code -->
+                <div id="fb-customer-chat" class="fb-customerchat">
+                </div>
+                
+                <script>
+                  var chatbox = document.getElementById('fb-customer-chat');
+                  chatbox.setAttribute("page_id", "101963445787288");
+                  chatbox.setAttribute("attribution", "biz_inbox");
+                </script>
+                
+                <!-- Your SDK code -->
+                <script>
+                  window.fbAsyncInit = function() {
+                    FB.init({
+                      xfbml            : true,
+                      version          : 'v13.0'
+                    });
+                  };
+                
+                  (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  }(document, 'script', 'facebook-jssdk'));
+                </script>
+                <!--FACEBOOK CHAT OVER-->
     <!--Link to JS CART-->
     <script src="/js/main.js"></script>
+        <!--SCRIPT FOR ICONS -->
+<script src="https://kit.fontawesome.com/0e66a92efa.js" crossorigin="anonymous"></script>
+    <!-- START JS TOP MENU-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script  src="/js/topmenuscript.js"></script>
+    <!-- OVER JS TOP MENU-->
+<!-- DROP DOWNS AWNINGS MENU LEFT JS-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="/js/dropdownawning.js"></script>
+<script  src="/js/topmenurespo.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,68 @@
+
+/* .serch-box */
+.search-box{display:none;}
+.search-box .form-group input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    background: #ddd;
+    border: 0;
+    color: #7e1b97;
+    font-size: 1.3vw;  
+}
+  
+.menu-search{
+    font-size: 5vw;
+}
+
+.cart-icon {
+    font-size: 8vw;
+    cursor: pointer;
+    color: black;
+     z-index: 100;
+}
+
+.menu-search{
+        font-size: 5vw;
+}
+
+.cart-icon {
+    font-size: 8vw;
+    cursor: pointer;
+    color: black;
+     z-index: 100;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

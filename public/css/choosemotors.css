@@ -1,0 +1,295 @@
+*{outline:none !important;box-sizing:border-box !important;}
+* {
+  box-sizing: border-box;
+} 
+
+/* MAIN CONTENT */
+.content {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  margin: 5vw auto 5vw;
+  padding-bottom: auto;
+  border: 0px solid blue;
+
+}
+
+.content article {
+  transition: transform .3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.content article label {
+  display: inline-block;
+  margin-bottom: 1vw;
+  width: 100%;
+  max-width: 10vw;
+  max-height: 30vw;
+  height: auto;
+  width: auto;
+}
+.content article label input {
+  display: inline-block;
+}
+/* OVER MAIN CONTENT*/
+
+.motorclass {
+    padding: 0px 25px 25px;
+    position: relative;
+    width: 100%;
+  }
+  
+  @media (min-width: 900px) {
+    .motorclass {
+      padding: 0 0 40px;
+    }
+  }
+  .panel {
+    border-radius: 10px;
+    padding: 15px 25px;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+  .pricing-table {
+    box-shadow: 10px 10px 30px 6px rgba(0, 0, 0, 0.08), 10px 10px 30px 6px rgba(0, 0, 0, 0.09), 10px 10px 30px 6px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 900px) {
+    .pricing-table {
+      flex-direction: row;
+    }
+  }
+  .pricing-table  {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .pricing-plan:last-child {
+    border-bottom: none;
+  }
+  @media (min-width: 100px) {
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      flex-basis: 100%;
+      padding: 25px 50px;
+    }
+  
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
+  
+
+  .pricing-img {
+    margin-bottom: 3vw;
+    width: 100%;
+    max-width: 10vw;
+    max-height: 30vw;
+    height: auto;
+    width: auto;
+  }
+
+  /* CHOOSE MOTOR CHOOSE SENSOR SWPIE BUTTONS */
+
+  label {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    color: #0a4069;
+    border: 1px solid rgba(254, 254, 254, 0.6);
+    border-radius: 0;
+    flex: 0 0 6em;
+  }
+  label:first-child {
+    margin-right: 0;
+    border-radius: .2em 0 0 .2em;
+  }
+  label:last-child {
+    margin-left: 0;
+    border-radius: 0 .2em .2em 0;
+  }
+  
+/*  OVER CHOOSE MOTOR CHOOSE SENSOR SWPIE BUTTONS */
+
+
+
+  .pricing-header {
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-features {
+    color: #016FF9;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 50px 0 25px;
+  }
+  
+  .pricing-features-item {
+    border-top: 1px solid white;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+  }
+  
+  .pricing-features-item:last-child {
+    border-bottom: 1px solid white;
+  }
+  
+  .pricing-price {
+    color: #016FF9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  /* CSS BUY OPTIONS */
+  
+  .legend {
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+
+/* INPUTS*/
+
+
+input[name='status']:checked + .content {
+    z-index: 10;
+  }
+  input[name='status']:checked + .content article {
+    transform: translateX(0);
+  }
+  input[name='status']:checked + .content article .chart .bar .growing-bar {
+    transition-delay: .3s;
+    transition-duration: .6s;
+  }
+  /* MOTORS */
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='motor-choice']:checked ~ label[for='crank'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='motor-choice']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='motor-choice']:checked ~ label[for='nemo-red'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='motor-choice']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='motor-choice']:checked ~ label[for='nemo-yellow'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='motor-choice']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  /* SENSORS */
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='sensors']:checked ~ label[for='shock'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='sensors']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='sensors']:checked ~ label[for='eolis'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='sensors']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  
+  
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='sensors']:checked ~ label[for='soliris'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='sensors']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  
+  /* VALANCE TYPES */
+  
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='valance-type']:checked ~ label[for='straight'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+  input[id='valance-type']:checked + .small-font-size {
+    font-size: 2em;
+  }
+  
+  
+  input[id='status-1']:checked ~ .legend > label[for='status-1'],
+  input[id='status-2']:checked ~ .legend > label[for='status-2'],
+  input[id='status-3']:checked ~ .legend > label[for='status-3'],
+  input[id='valance-type']:checked ~ label[for='wavy'] {
+    color: white;
+    border: 1px solid #7e1b97;
+    background-color: #7e1b97;
+  }
+  
+
+  /* HIDE RADIO BUTTONS MOTOR OPTIONS */
+#status-1{
+    position: fixed;
+    opacity: 0;
+    display: flex;
+    height: auto;
+    width: auto;
+  }
+  
+    
+    #status-2{
+      position: fixed;
+      opacity: 0;
+      display: flex;
+      height: auto;
+      width: auto;
+    
+    }
+    /* OVER HIDE RADIO BUTTONS MOTOR OPTIONS */
