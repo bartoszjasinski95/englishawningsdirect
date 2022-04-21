@@ -1,9 +1,36 @@
-
+/* FONT LOGO */
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Nothing+You+Could+Do&display=swap');
+/* FONT RELAX WITH US */
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&display=swap');
 a{
   color: inherit;
   color: black;
 }
 
+.fa.fa-facebook, .fa.fa-twitter{
+  font-size: 1.2vw;
+}
+.logo{
+  font-family: 'Long Cang', cursive;
+font-family: 'Nothing You Could Do', cursive;
+padding-left: 1vw;
+}
+[id=header] .tagline .logo {
+  font-size: 4vw;
+  font-weight: 400;
+  padding-left: 0.5vw;
+}
+.logo1{
+  font-family: 'Long Cang', cursive;
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 1.8vw;
+  padding-left: 0vw;
+}
+
+
+.tagline{
+  font-family: 'Dr Sugiyama', cursive;
+}
 #header{
   position: fixed;
 }
@@ -250,7 +277,7 @@ ul {
   left: 0;
   z-index: 1000;
   background: white;
-  box-shadow: 0px 2.5px 12px 1px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 0.1px 7px 5px rgba(0, 0, 0, 0.125);
   transition: all 0.3s cubic-bezier(0.5, 0, 0, 1) 0.2s;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -283,16 +310,31 @@ ul {
   color: black;
 }
 [id=header] .tagline {
-  font-size: 12px;
-  display: none;
-  cursor: default;
+  font-weight: 400;
+  padding-left: 0.5vw;
 }
-@media (min-width: 640px) {
+@media (min-width: 1000px){
+  .fa.fa-facebook, .fa.fa-twitter{
+    font-size: 1.5vw;
+  }
+}
+@media (min-width: 640px) and (max-width: 999px) {
+  .fa.fa-facebook, .fa.fa-twitter{
+    font-size: 5vw;
+  }
   [id=header] .tagline {
     display: inline;
   }
 }
+[id=header] .tagline {
+  font-weight: 400;
+  padding-left: 0.5vw;
+}
 @media (max-width: 640px) {
+
+  .fa.fa-facebook, .fa.fa-twitter{
+    font-size: 5vw;
+  }
   body:not([class*=menu]) [id=header] {
     position: static !important;
     transform: none !important;
@@ -730,6 +772,7 @@ html.nav-open, html.nav-open body {
 .menu-mobile [id=nav] .menu > li > a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: inherit;
 }
 .menu-mobile [id=nav] .menu > li > button {
   padding: 1.5em;
@@ -760,6 +803,7 @@ html.nav-open, html.nav-open body {
 }
 .menu-mobile [id=nav] .menu > li > ul a, .menu-mobile [id=nav] .menu > li > ul button {
   padding: 0.25em 1.5em;
+  color: inherit;
 }
 .menu-mobile [id=nav] .menu > li > ul [class*=children] {
   padding-right: 1.5em;
@@ -956,6 +1000,9 @@ html.nav-open, html.nav-open body {
 .nav-open [id=header] {
   color: white;
 }
+.nav-open .logo{
+  color: white;
+}
 .nav-open [id=header]:before {
   bottom: 50% !important;
 }
@@ -1000,7 +1047,7 @@ text-align: left;
 
 .menu-mobile [id=nav] .menu > li > ul a, .menu-mobile [id=nav] .menu > li > ul button{
   padding: 0.1em 0.5em;
-
+  color: inherit;
 }
 
 .menu-toggle:before, .menu-toggle:after {
@@ -1042,3 +1089,31 @@ text-align: left;
   opacity: 1;
 }
 
+
+@media (max-width:450px){
+  [id=header] .tagline .logo {
+    font-size: 5vw;
+    font-weight: 400;
+    padding-left: 0.5vw;
+  }
+}
+@media (min-width: 640px){
+  [id=header] .logo {
+    font-size: 1.8vw;
+    font-weight: 400;
+    padding-left: 0.5vw;
+  }
+}
+
+@media (min-width: 900px){
+  [id=header] .logo {
+    font-size: 2.2vw;
+    font-weight: 400;
+    padding-left: 0.5vw;
+  }
+  [id=header] .tagline {
+    font-size: 2vw;
+    font-weight: 400;
+    padding-left: 0.5vw;
+  }
+}

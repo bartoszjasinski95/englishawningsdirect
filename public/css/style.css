@@ -23,11 +23,7 @@ header {
   justify-content: space-between;
   padding: 20px 0;
 }
-.logo {
-  font-size: 1.1vw;
-  color: var(--text-color);
-  font-weight: 400;
-}
+
 .cart-icon {
   font-size: 2vw;
   cursor: pointer;
@@ -44,7 +40,7 @@ header {
   width: 20vw;
   min-height: 100vh;
   background: var(--bg-color);
-  box-shadow: -2px 0 4px hsl(0 4% 15%/ 10%);
+  box-shadow: -3px 10px 5px hsl(0 4% 15%/ 10%);
   transition: 0.3s;
   z-index: 1000;
 }

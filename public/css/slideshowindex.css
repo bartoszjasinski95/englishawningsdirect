@@ -352,6 +352,7 @@ body[data-route-option=prev-section] .slideshow__slide-caption-subtitle.-load, b
     font-size: 6.25rem;
   }
 }
+
 .c-header-home_subheading {
   display: inline-block;
   padding: 1.875rem 0;
@@ -1793,8 +1794,9 @@ button.slider-more-button {
 }
 
 p.slideshow__slide-caption-content {
-  padding-left: 8vw;
-  padding-right: 8vw;
+  padding-top: 3vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
@@ -1987,5 +1989,17 @@ button .floating-btn:focus {
     padding-right: 0rem;
     padding-left: 0rem;
     max-width: 140rem;
+  }
+}
+@media (min-width: 1900px){
+  .slideshow__slide-caption-title{
+    margin-left: -25%;
+  }
+  .slideshow__slide-caption-content{
+    margin-left: -25%;
+
+  }
+  .p.slideshow__slide-caption-content{
+    min-width: 400px;
   }
 }

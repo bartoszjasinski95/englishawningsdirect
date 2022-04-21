@@ -29,6 +29,7 @@
     .titlesawnings{
         font-size: 4vw;
         letter-spacing: 0.3vw;
+        padding-top: 5%;
     }
 }
 
@@ -37,6 +38,7 @@
     .titlesawnings{
         font-size: 4vw;
         letter-spacing: 0.3vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 20vw;
@@ -57,6 +59,7 @@
     .titlesawnings{
         font-size: 4vw;
         letter-spacing: 0.1vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 20vw;
@@ -80,6 +83,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 20vw;
@@ -104,6 +108,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 20vw;
@@ -130,6 +135,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 18vw;
@@ -150,6 +156,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 18vw;
@@ -173,6 +180,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 18vw;
@@ -203,6 +211,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 18vw;
@@ -227,6 +236,7 @@
         letter-spacing: 0.3vw;
         padding-left: 17vw;
         padding-right: 17vw;
+        padding-top: 5%;
     }
     .paragraphs{
         padding-left: 18vw;
@@ -254,6 +264,7 @@
         padding-left: 15vw;
         padding-right: 15vw;
         line-height: 4vw;
+        padding-top: 5%;
     }
     .paragraphs{
         
@@ -281,8 +292,9 @@
     letter-spacing: 0.3vw;
     padding-left: 17vw;
     padding-right: 17vw;
-
+    padding-top: 5%;
 }
+
 .paragraphs{
     padding-left: 18vw;
     padding-right: 18vw;
